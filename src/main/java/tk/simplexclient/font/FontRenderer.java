@@ -18,6 +18,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
+/**
+ * This class was not coded by any of the SimplexClient developers!
+ *
+ * @author Unknown
+ */
 @SuppressWarnings("all")
 public class FontRenderer
 {
