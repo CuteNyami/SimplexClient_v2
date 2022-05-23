@@ -6,6 +6,7 @@
   "mixins": [
     "MixinEntityPlayerSP",
     "MixinGuiIngame",
-    "MixinMinecraft"
+    "MixinMinecraft",
+    "gui.MixinGuiMainMenu"
   ]
 }
