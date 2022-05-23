@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "verbose": true,
+  "package": "tk.simplexclient.mixin.impl",
+  "mixins": [
+    "MixinEntityPlayerSP",
+    "MixinGuiIngame",
+    "MixinMinecraft",
+    "gui.MixinGuiMainMenu"
+  ]
+}
