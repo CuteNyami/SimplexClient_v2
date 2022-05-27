@@ -10,7 +10,7 @@ import org.lwjgl.input.Mouse;
 
     @Setter private int color;
 
-    private int x, y, width, height, lastX, lastY;
+    @Setter private int x, y, width, height, lastX, lastY;
 
     private boolean dragging;
 

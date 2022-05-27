@@ -15,9 +15,9 @@ public class ModuleConfig extends JsonFile {
     }
 
     public void saveModuleConfig() {
-        for (ModuleCreator m : SimplexClient.getInstance().getModuleManager().getModule()) {
+        for (ModuleCreator m : SimplexClient.getInstance().getModuleManager().getModules()) {
             append(m.getName().toLowerCase() + " x", m.getX());
-            append(m.getName().toLowerCase() + " y", m.getX());
+            append(m.getName().toLowerCase() + " y", m.getY());
             append(m.getName().toLowerCase() + " enabled", m.isEnabled());
             save();
         }

@@ -16,15 +16,18 @@ public abstract class ModuleCreator {
 
     private int x, y;
 
+    @Getter private int id;
+
     @Setter @Getter private boolean enabled;
 
     @Getter ModuleDraggable drag;
 
     public final FontRenderer fr = new FontRenderer("smooth", 15.0f);
 
-    public ModuleCreator(String name, String description, int x, int y) {
+    public ModuleCreator(int id, String name, String description, int x, int y) {
         this.name = name;
         this.description = description;
+        this.id = id;
 
         try {
             this.x = SimplexClient.getInstance().getModuleConfig().get(name.toLowerCase() + " x", Integer.class);
@@ -39,9 +42,10 @@ public abstract class ModuleCreator {
         drag = new ModuleDraggable(this.x, this.y, getWidth(), getHeight(), new Color(0, 0, 0, 0).getRGB());
     }
 
-    public ModuleCreator(String name, int x, int y) {
+    public ModuleCreator(int id, String name, int x, int y) {
         this.name = name;
         this.description = null;
+        this.id = id;
 
         try {
             this.x = SimplexClient.getInstance().getModuleConfig().get(name.toLowerCase() + " x", Integer.class);
@@ -50,7 +54,7 @@ public abstract class ModuleCreator {
         } catch (NullPointerException e) {
             this.x = x;
             this.y = y;
-            this.enabled = true;
+            this.enabled = false;
         }
 
         drag = new ModuleDraggable(this.x, this.y, getWidth(), getHeight(), new Color(0, 0, 0, 0).getRGB());

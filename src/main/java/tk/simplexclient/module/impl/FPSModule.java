@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class FPSModule extends ModuleCreator {
     public FPSModule() {
-        super("fps", 100, 100);
+        super(1, "fps", 100, 100);
     }
 
     private final Minecraft mc = Minecraft.getMinecraft();
