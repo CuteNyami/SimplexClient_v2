@@ -37,7 +37,7 @@ public class FPSModule extends ModuleCreator {
 
     @Override
     public int getWidth() {
-        return (int) fr.getWidth(Minecraft.getDebugFPS() + " FPS") + 1;
+        return (int) fr.getWidth("1000 FPS") + 1;
     }
 
     @Override

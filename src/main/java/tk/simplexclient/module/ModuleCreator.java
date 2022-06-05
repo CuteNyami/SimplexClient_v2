@@ -12,15 +12,21 @@ import java.awt.*;
 
 public abstract class ModuleCreator {
 
-    @Getter @Setter private String name, description;
+    @Getter
+    @Setter
+    private String name, description;
 
     private int x, y;
 
-    @Getter private int id;
+    @Getter
+    private final int id;
 
-    @Setter @Getter private boolean enabled;
+    @Getter
+    @Setter
+    private boolean enabled;
 
-    @Getter ModuleDraggable drag;
+    @Getter
+    ModuleDraggable drag;
 
     public final FontRenderer fr = new FontRenderer("smooth", 15.0f);
 

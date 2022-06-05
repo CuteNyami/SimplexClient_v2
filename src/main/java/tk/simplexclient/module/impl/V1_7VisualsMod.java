@@ -8,6 +8,7 @@ import net.minecraft.item.ItemFishingRod;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.MovingObjectPosition;
+import tk.simplexclient.SimplexClient;
 import tk.simplexclient.access.AccessEntityLivingBase;
 import tk.simplexclient.event.EventTarget;
 import tk.simplexclient.event.Listener;
@@ -39,7 +40,7 @@ public class V1_7VisualsMod extends ModuleCreator implements Listener {
     private final Minecraft mc = Minecraft.getMinecraft();
 
     public V1_7VisualsMod() {
-        super(7, "1.7-visuals", 0, 0);
+        super(7, "1.7-visuals", 120, 120);
     }
 
     @Override

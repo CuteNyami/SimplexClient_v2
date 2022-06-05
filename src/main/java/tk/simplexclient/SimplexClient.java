@@ -6,6 +6,8 @@ import lombok.Getter;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.lwjgl.input.Keyboard;
 import tk.simplexclient.event.EventManager;
 import tk.simplexclient.event.EventTarget;
@@ -17,9 +19,6 @@ import tk.simplexclient.module.ModuleConfig;
 import tk.simplexclient.module.ModuleManager;
 import tk.simplexclient.module.dragging.GuiModuleDrag;
 import tk.simplexclient.module.impl.*;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import tk.simplexclient.shader.ShaderManager;
 
 import java.util.Arrays;
 
@@ -38,8 +37,6 @@ public final class SimplexClient {
 
     @Getter private ModuleConfig moduleConfig;
 
-    @Getter private ShaderManager shaderManager;
-
     @Getter private FontRenderer smoothFont;
 
     public KeyBinding CLICK_GUI = new KeyBinding("Open the Settings GUI", Keyboard.KEY_RSHIFT, "SimplexClient");
@@ -53,11 +50,8 @@ public final class SimplexClient {
         smoothFont = new FontRenderer("smooth", 15.0F);
 
         // Module instances
-        moduleManager = new ModuleManager();
         moduleConfig = new ModuleConfig();
-
-        // Shader
-        shaderManager = new ShaderManager();
+        moduleManager = new ModuleManager();
 
         // Modules
         moduleManager.registerModules(
@@ -75,7 +69,7 @@ public final class SimplexClient {
 
         // Events
         EventManager.register(new TickListener());
-        EventManager.register(new V1_7VisualsMod());
+        EventManager.register(moduleManager.v1_7Visual);
     }
 
     public void stop() {
@@ -83,7 +77,7 @@ public final class SimplexClient {
         moduleConfig.saveModuleConfig();
 
         EventManager.unregister(new TickListener());
-        EventManager.unregister(new V1_7VisualsMod());
+        EventManager.unregister(moduleManager.v1_7Visual);
     }
 
     public static void registerKeyBind(KeyBinding key) {

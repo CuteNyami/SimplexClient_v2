@@ -6,6 +6,8 @@
   "mixins": [
     "client.MixinEntityLivingBase",
     "client.MixinEntityPlayerSP",
+    "client.MixinGuiConnecting",
+    "client.MixinGuiDisconnected",
     "client.MixinGuiIngame",
     "client.MixinItemRenderer",
     "client.MixinMinecraft",

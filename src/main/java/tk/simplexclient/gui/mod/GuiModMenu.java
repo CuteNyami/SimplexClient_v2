@@ -106,6 +106,7 @@ public class GuiModMenu extends GuiScreen {
     public void onGuiClosed() {
         Keyboard.enableRepeatEvents(false);
         mc.entityRenderer.stopUseShader();
+        SimplexClient.getInstance().getModuleConfig().saveModuleConfig();
     }
 
     @Override
