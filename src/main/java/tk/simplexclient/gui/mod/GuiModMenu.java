@@ -9,9 +9,12 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.SimplexClient;
+import tk.simplexclient.animations.Animate;
+import tk.simplexclient.animations.Easing;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gl.GLRectUtils;
 import tk.simplexclient.module.ModuleCreator;
+import tk.simplexclient.shader.RoundedShaderRenderer;
 import tk.simplexclient.ui.buttons.ModButton;
 import tk.simplexclient.ui.buttons.round.ImageButton;
 import tk.simplexclient.ui.elements.InputField;
@@ -50,6 +53,7 @@ public class GuiModMenu extends GuiScreen {
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
         // Window Background
+
         GLRectUtils.drawRect((float) width / 2 - 125, (float) height / 2 - 75, (float) (width / 2 - 125) + 250, (float) (height / 2 - 75) + 150, new Color(0, 0, 0, 140).getRGB());
         GLRectUtils.drawRect((float) width / 2 - 30, (float) height / 2 - 75, (float) (width / 2 - 30) + 1, (float) (height / 2 - 75) + 150, new Color(255, 255, 255, 140).getRGB());
 
@@ -100,6 +104,7 @@ public class GuiModMenu extends GuiScreen {
         super.drawScreen(mouseX, mouseY, partialTicks);
 
         GL11.glDisable(GL11.GL_SCISSOR_TEST);
+
     }
 
     @Override

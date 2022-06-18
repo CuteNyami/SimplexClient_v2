@@ -10,15 +10,15 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.input.Keyboard;
 import tk.simplexclient.event.EventManager;
-import tk.simplexclient.event.EventTarget;
-import tk.simplexclient.event.impl.ClientTickEvent;
 import tk.simplexclient.font.FontRenderer;
+import tk.simplexclient.gui.mod.theme.ThemeManager;
+import tk.simplexclient.gui.mod.theme.themes.MacOS;
 import tk.simplexclient.gui.utils.SimplexGui;
 import tk.simplexclient.listener.TickListener;
 import tk.simplexclient.module.ModuleConfig;
 import tk.simplexclient.module.ModuleManager;
-import tk.simplexclient.module.dragging.GuiModuleDrag;
 import tk.simplexclient.module.impl.*;
+import tk.simplexclient.shader.RoundedShaderRenderer;
 
 import java.util.Arrays;
 
@@ -28,6 +28,8 @@ public final class SimplexClient {
 
     // Client Logger
     @Getter private static final Logger logger = LogManager.getLogger();
+
+    @Getter private static RoundedShaderRenderer roundedShaderRenderer;
 
     public static final Gson GSON = new GsonBuilder().setPrettyPrinting().serializeNulls().create();
 
@@ -40,14 +42,17 @@ public final class SimplexClient {
     @Getter private FontRenderer smoothFont;
 
     public KeyBinding CLICK_GUI = new KeyBinding("Open the Settings GUI", Keyboard.KEY_RSHIFT, "SimplexClient");
+    public KeyBinding TEST_GUI = new KeyBinding("Just a gui to test some things", Keyboard.KEY_0, "SimplexClient");
 
     public void init() {
+
     }
 
     public void start() {
         instance = this;
         gui = new SimplexGui();
         smoothFont = new FontRenderer("smooth", 15.0F);
+        roundedShaderRenderer = new RoundedShaderRenderer();
 
         // Module instances
         moduleConfig = new ModuleConfig();
@@ -66,6 +71,9 @@ public final class SimplexClient {
 
         // Keybindings
         registerKeyBind(CLICK_GUI);
+        registerKeyBind(TEST_GUI);
+
+        ThemeManager.registerTheme(new MacOS());
 
         // Events
         EventManager.register(new TickListener());
@@ -87,12 +95,5 @@ public final class SimplexClient {
     public static void unregisterKeyBind(KeyBinding key) {
         if (Arrays.asList(Minecraft.getMinecraft().gameSettings.keyBindings).contains(key))
             Minecraft.getMinecraft().gameSettings.keyBindings = ArrayUtils.remove(Minecraft.getMinecraft().gameSettings.keyBindings, Arrays.asList(Minecraft.getMinecraft().gameSettings.keyBindings).indexOf(key));
-    }
-
-    @EventTarget
-    public void onTick(ClientTickEvent event) {
-        if (CLICK_GUI.isPressed()) {
-            Minecraft.getMinecraft().displayGuiScreen(new GuiModuleDrag());
-        }
     }
 }

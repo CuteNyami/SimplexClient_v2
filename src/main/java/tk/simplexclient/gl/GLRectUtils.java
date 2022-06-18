@@ -8,6 +8,9 @@ import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.WorldRenderer;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import org.lwjgl.opengl.GL11;
+import tk.simplexclient.shader.RoundedShaderRenderer;
+
+import java.awt.*;
 
 /**
  * This class was not coded by any of the SimplexClient developers!
@@ -15,6 +18,7 @@ import org.lwjgl.opengl.GL11;
  * @author Unknown
  */
 public class GLRectUtils extends FontUtils {
+
     public static void drawRect(float left, float top, float right, float bottom, final int color) {
         if (left < right) {
             final float i = left;
@@ -92,6 +96,11 @@ public class GLRectUtils extends FontUtils {
         drawRect(left - width, top, left, bottom, color);
     }
 
+    /**
+     * Render a rounded rectangle
+     * @deprecated use {@link RoundedShaderRenderer#drawRound}.
+     */
+    @Deprecated
     public static void drawRoundedRect(final float nameInt1, final float nameInt2, final float nameInt3, final float nameInt4, final float radius, final int color) {
         final float f1 = (color >> 24 & 0xFF) / 255.0f;
         final float f2 = (color >> 16 & 0xFF) / 255.0f;

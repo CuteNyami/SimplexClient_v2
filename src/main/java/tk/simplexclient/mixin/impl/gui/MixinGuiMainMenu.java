@@ -5,7 +5,6 @@ import net.minecraft.client.gui.*;
 import net.minecraft.client.renderer.texture.ITextureObject;
 import net.minecraft.client.renderer.texture.SimpleTexture;
 import net.minecraft.util.ResourceLocation;
-import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -40,7 +39,7 @@ public class MixinGuiMainMenu extends GuiScreen {
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
         this.drawDefaultBackground();
         this.mc.getTextureManager().bindTexture(new ResourceLocation("simplex/menu/main/bg.png"));
-        Gui.drawModalRectWithCustomSizedTexture(-21 + Mouse.getX() / 90, Mouse.getY() * -1 / 90, 0.0f, 0.0f, this.width + 20, this.height + 20, (float)(this.width + 21), (float)(this.height + 20));
+        Gui.drawModalRectWithCustomSizedTexture(-21 / 90, -1 / 90, 0.0f, 0.0f, this.width + 20, this.height + 20, (float)(this.width + 21), (float)(this.height + 20));
 
         String s1 = "Copyright Mojang AB";
         SimplexClient.getInstance().getSmoothFont().drawString(s1, this.width - this.fontRendererObj.getStringWidth(s1) + 25, this.height - 11, -1);

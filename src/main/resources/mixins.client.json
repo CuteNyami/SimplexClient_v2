@@ -11,6 +11,7 @@
     "client.MixinGuiIngame",
     "client.MixinItemRenderer",
     "client.MixinMinecraft",
+    "gui.MixinGuiIngameMenu",
     "gui.MixinGuiMainMenu",
     "item.MixinRenderEntityItem",
     "mod.MixinV1_7VisualsMod$MixinEntityRenderer",

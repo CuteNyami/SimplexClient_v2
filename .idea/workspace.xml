@@ -4,60 +4,123 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="938c721c-e78a-4d37-a667-e7b80c775bf9" name="Changes" comment="Fixed some stuff">
+    <list default="true" id="938c721c-e78a-4d37-a667-e7b80c775bf9" name="Changes" comment="Init">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/animations/Animate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/animations/Delta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/animations/Easing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/theme/Theme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/theme/ThemeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/theme/Themes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiIngameMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/shader/RoundedShaderRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shader/blur.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shader/rounded.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shader/vertex.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/gradle.log" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/gradle.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-27-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-27-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-27-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-27-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-27-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-27-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/optionsof.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/Mineshaft.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages_end.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages_nether.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_mcr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/408d12c9-559c-3212-bca5-d1a3fc38a0f7.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/57d398cf-761b-3b7e-a466-e4fc0f425972.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/5f97b8e7-1c17-34e1-ba31-af3a61d45498.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/825162a0-782b-3bd7-995d-a72551a0b3e8.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/bfc5c6f8-886e-30ef-aac9-4df3c4277f54.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/e012d939-bd4c-38f9-ae46-831d4959ff05.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/ee42fa47-a4b9-300f-9ec1-9216651e7b1c.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/408d12c9-559c-3212-bca5-d1a3fc38a0f7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/57d398cf-761b-3b7e-a466-e4fc0f425972.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/5f97b8e7-1c17-34e1-ba31-af3a61d45498.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/825162a0-782b-3bd7-995d-a72551a0b3e8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/bfc5c6f8-886e-30ef-aac9-4df3c4277f54.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/e012d939-bd4c-38f9-ae46-831d4959ff05.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/ee42fa47-a4b9-300f-9ec1-9216651e7b1c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/simplex/modules/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-31-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2022-05-31-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-31-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2022-05-31-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-31-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2022-05-31-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-31-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2022-05-31-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-31-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2022-05-31-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-31-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2022-05-31-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2022-05-31-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2022-05-31-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/optionsof.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/optionsof.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/Mineshaft.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/Mineshaft.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/villages_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/villages_nether.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/5098f6b6-5b18-3f91-8634-ca13195fea22.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/5098f6b6-5b18-3f91-8634-ca13195fea22.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/5098f6b6-5b18-3f91-8634-ca13195fea22.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/5098f6b6-5b18-3f91-8634-ca13195fea22.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/simplex/modules/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/simplex/modules/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessEntityLivingBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessEntityLivingBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessMinecraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/EventManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/impl/KeyEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/impl/KeyEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/impl/TransformFirstPersonItemEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/impl/TransformFirstPersonItemEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/CharColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/CharColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gl/GLRectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gl/GLRectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gl/GLUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gl/GLUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/GuiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/GuiUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/SimplexGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/SimplexGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/json/IDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/json/IDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/json/JsonDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/json/JsonDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/json/JsonFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/json/JsonFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/listener/TickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/listener/TickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/math/MathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/math/MathUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/Tweaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/Tweaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityLivingBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityLivingBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityPlayerSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityPlayerSP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiConnecting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiConnecting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiDisconnected.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiDisconnected.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiIngame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiIngame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/item/MixinRenderEntityItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/item/MixinRenderEntityItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/mod/MixinV1_7VisualsMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/mod/MixinV1_7VisualsMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/ModuleDraggable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/ModuleDraggable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/FPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/FPSModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ItemPhysics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ItemPhysics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/KeyStrokesModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/KeyStrokesModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MemoryMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MemoryMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/PingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/PingMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TimeMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TimeMod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/V1_7VisualsMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/V1_7VisualsMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/shader/ShaderManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/ModButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/ModButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/main/ExitButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/main/ExitButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/round/ImageButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/round/ImageButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/round/RoundedButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/round/RoundedButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/elements/InputField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/elements/InputField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/utils/ConnectingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/utils/ConnectingUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/shaders/post/menu_blur.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/shaders/post/menu_blur.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/shaders/program/menu_blur.fsh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/shaders/program/menu_blur.fsh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/shaders/program/menu_blur.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/shaders/program/menu_blur.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/main/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mixins.client.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mixins.client.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +160,12 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="forgegradle" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SimplexClient_v2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -107,6 +176,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -122,6 +193,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="29USJWhNGuUJlazMYpRVXr5jYP3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -134,23 +208,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SimplexClient_v2-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\plugins\SimplexClient_v2\src\main\java\tk\simplexclient" />
+      <recent name="F:\plugins\SimplexClient_v2\src\main\resources\assets\minecraft\simplex\menu\main" />
+      <recent name="F:\plugins\SimplexClient_v2\src\main\java\tk\simplexclient\shader" />
       <recent name="F:\plugins\SimplexClient_v2\run\resourcepacks" />
       <recent name="F:\plugins\SimplexClient_v2\src\main\resources\assets\minecraft\simplex" />
-      <recent name="F:\plugins\SimplexClient_v2\libs" />
-      <recent name="F:\plugins\SimplexClient_v2\src\main\java\me\cutenyami\simplexclient\font" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\plugins\SimplexClient_v2\libs" />
       <recent name="F:\plugins\SimplexClient_v2\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tk.simplexclient.shader" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
@@ -165,6 +242,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="--tweakClass me.cutenyami.simplexclient.mixin.Tweaker" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/run" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SimplexClient_v2" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
     <configuration name="SimplexClient build" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" value="SimplexClient build" />
@@ -177,6 +269,27 @@
         <option name="taskNames">
           <list>
             <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SimplexClient_v2 [cleanCache]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="cleanCache" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -253,10 +366,12 @@
       <item itemvalue="Gradle.runClient" />
       <item itemvalue="Gradle.SimplexClient_v2 [runClient]" />
       <item itemvalue="Gradle.SimplexClient_v2 [setupDecompWorkspace]" />
+      <item itemvalue="Gradle.SimplexClient_v2 [cleanCache]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.SimplexClient_v2 [runClient]" />
+        <item itemvalue="Gradle.SimplexClient_v2 [cleanCache]" />
         <item itemvalue="Gradle.SimplexClient_v2 [setupDecompWorkspace]" />
       </list>
     </recent_temporary>
@@ -277,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653682202693</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Init">
+      <created>1654422376611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654422376611</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,7 +412,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -299,10 +420,14 @@
     </ignored-roots>
     <MESSAGE value="First commit" />
     <MESSAGE value="Fixed some stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some stuff" />
+    <MESSAGE value="Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SimplexClient_v2$Minecraft_Client.ic" NAME="Minecraft Client Coverage Results" MODIFIED="1655558062929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
