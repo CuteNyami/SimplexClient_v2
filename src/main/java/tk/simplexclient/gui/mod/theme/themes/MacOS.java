@@ -17,7 +17,7 @@ public class MacOS extends Theme {
     @Override
     public void render(int mouseX, int mouseY, float partialTicks) {
         // Background
-        rounded.drawRound((float) width / 2 - 125, (float) height / 2 - 75, 50, 150, 2F, new Color(209, 209, 209));
+        rounded.drawRound((float) width / 2 - 125, (float) height / 2 - 75, 50, 150, 2F, new Color(209, 209, 209, 119));
         rounded.drawRound((float) width / 2 - 75, (float) height / 2 - 75, 220, 150, 2F, new Color(255, 255, 255));
         super.render(mouseX, mouseY, partialTicks);
     }

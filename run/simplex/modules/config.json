@@ -1,1 +1,23 @@
-{}
+{
+  "fps x": 100,
+  "fps y": 100,
+  "fps enabled": false,
+  "keystrokes x": 200,
+  "keystrokes y": 200,
+  "keystrokes enabled": false,
+  "memory x": 600,
+  "memory y": 200,
+  "memory enabled": false,
+  "ping x": 400,
+  "ping y": 400,
+  "ping enabled": false,
+  "time x": 100,
+  "time y": 300,
+  "time enabled": false,
+  "item-physics x": 100,
+  "item-physics y": 100,
+  "item-physics enabled": false,
+  "1.7-visuals x": 120,
+  "1.7-visuals y": 120,
+  "1.7-visuals enabled": false
+}

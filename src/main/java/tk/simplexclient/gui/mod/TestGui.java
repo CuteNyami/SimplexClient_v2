@@ -2,14 +2,12 @@ package tk.simplexclient.gui.mod;
 
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
-import tk.simplexclient.animations.Animate;
-import tk.simplexclient.gl.GLRectUtils;
+import net.minecraft.util.ResourceLocation;
 import tk.simplexclient.gui.mod.theme.Theme;
 import tk.simplexclient.gui.mod.theme.ThemeManager;
 import tk.simplexclient.gui.mod.theme.Themes;
 import tk.simplexclient.shader.RoundedShaderRenderer;
 
-import java.awt.*;
 import java.io.IOException;
 
 public class TestGui extends GuiScreen {
@@ -19,6 +17,8 @@ public class TestGui extends GuiScreen {
     @Override
     public void initGui() {
         ThemeManager.setTheme(Themes.MACOS);
+
+        mc.entityRenderer.loadShader(new ResourceLocation("shaders/post/menu_blur.json"));
 
         if (ThemeManager.getCurrentTheme() == null) return;
         ThemeManager.getCurrentTheme().init();
@@ -40,10 +40,16 @@ public class TestGui extends GuiScreen {
     }
 
     @Override
-    protected void actionPerformed(GuiButton p_actionPerformed_1_) throws IOException {
+    protected void actionPerformed(GuiButton button) throws IOException {
         if (ThemeManager.getCurrentTheme() == null) return;
-        ThemeManager.getCurrentTheme().actionPerformed(p_actionPerformed_1_);
+        ThemeManager.getCurrentTheme().actionPerformed(button);
 
-        super.actionPerformed(p_actionPerformed_1_);
+        super.actionPerformed(button);
+    }
+
+    @Override
+    public void onGuiClosed() {
+        mc.entityRenderer.stopUseShader();
+        super.onGuiClosed();
     }
 }
