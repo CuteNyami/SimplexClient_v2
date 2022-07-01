@@ -2,6 +2,7 @@ package tk.simplexclient.mixin.impl.client;
 
 import net.minecraft.client.resources.DefaultResourcePack;
 import net.minecraft.client.resources.data.IMetadataSerializer;
+import optifine.xdelta.Delta;
 import org.lwjgl.Sys;
 import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.gen.Invoker;
@@ -12,7 +13,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import tk.simplexclient.access.AccessMinecraft;
-import tk.simplexclient.animations.Delta;
 import tk.simplexclient.event.impl.ClientTickEvent;
 import net.minecraft.util.Timer;
 
@@ -44,7 +44,6 @@ public abstract class MixinMinecraft implements AccessMinecraft {
         long currentTime = getTime();
         int deltaTime = (int) (currentTime - lastFrame);
         lastFrame = currentTime;
-        Delta.DELTATIME = deltaTime;
     }
 
     @Override

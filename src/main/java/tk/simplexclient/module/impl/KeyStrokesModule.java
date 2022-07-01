@@ -5,6 +5,7 @@ import net.minecraft.client.gui.Gui;
 import net.minecraft.client.settings.KeyBinding;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.gl.GLRectUtils;
+import tk.simplexclient.math.MathUtil;
 import tk.simplexclient.module.ModuleCreator;
 
 import java.awt.*;
@@ -12,6 +13,8 @@ import java.awt.*;
 public class KeyStrokesModule extends ModuleCreator {
 
     private KeystrokesMode mode;
+
+    private int fadeTime = 40;
 
     public KeyStrokesModule() {
         super(2, "keystrokes", 200, 200);
@@ -25,14 +28,22 @@ public class KeyStrokesModule extends ModuleCreator {
 
         for (Key key : mode.getKeys()) {
 
+            if (key.isDown()) {
+                key.fade += 1F / (float)fadeTime;
+            } else {
+                key.fade -= 1F / (float)fadeTime;
+            }
+            // Clamp fade
+            key.fade = Math.max(0, Math.min(1, key.fade));
+
             int textWidth = (int) fr.getWidth(key.getName());
 
-            Gui.drawRect(getX() + key.getX(), getY() + key.getY(), getX() + key.getX() + key.getWidth(), getY() + key.getY() + key.getHeight(), key.isDown() ? new Color(255, 255, 255, 102).getRGB() : new Color(0, 0, 0, 120).getRGB());
+            Gui.drawRect(getX() + key.getX(), getY() + key.getY(), getX() + key.getX() + key.getWidth(), getY() + key.getY() + key.getHeight(), MathUtil.lerp(new Color(0, 0, 0, 102), new Color(255, 255, 255, 120), key.fade).getRGB());
 
             if (!key.getName().contains("-")) {
-                fr.drawString(key.getName(), getX() + key.getX() + key.getWidth() / 2 - textWidth / 2 - 0.45F, getY() + key.getY() + key.getHeight() / 2 - 5, key.isDown() ? new Color(0, 0, 0, 255).getRGB() : -1);
+                fr.drawString(key.getName(), getX() + key.getX() + key.getWidth() / 2 - textWidth / 2 - 0.45F, getY() + key.getY() + key.getHeight() / 2 - 5, MathUtil.lerp(new Color(255, 255, 255, 255), new Color(0, 0, 0, 255), key.fade).getRGB());
             } else {
-                Minecraft.getMinecraft().fontRendererObj.drawString(key.getName(), getX() + key.getX() + key.getWidth() / 2 - textWidth / 2 - 5, getY() + key.getY() + key.getHeight() / 2 - 4, key.isDown() ? new Color(0, 0, 0, 255).getRGB() : -1);
+                Minecraft.getMinecraft().fontRendererObj.drawString(key.getName(), getX() + key.getX() + key.getWidth() / 2 - textWidth / 2 - 5, getY() + key.getY() + key.getHeight() / 2 - 4, MathUtil.lerp(new Color(255, 255, 255, 255), new Color(0, 0, 0, 255), key.fade).getRGB());
             }
         }
 
@@ -40,7 +51,7 @@ public class KeyStrokesModule extends ModuleCreator {
     }
 
     @Override
-    public void renderDummy(int mouseX, int mouseY) {
+    public void renderDummy() {
         GL11.glPushMatrix();
 
         mode = KeystrokesMode.WASD_JUMP_MOUSE;
@@ -62,8 +73,6 @@ public class KeyStrokesModule extends ModuleCreator {
 
         GLRectUtils.drawRectOutline(getX(), getY(), getX() + getWidth(), getY() + getHeight(), 0.25f, new Color(0, 0, 0, 160).getRGB());
         GLRectUtils.drawRect(getX(), getY(), getX() + getWidth(), getY() + getHeight(), new Color(255, 255, 255, 70).getRGB());
-
-        super.renderDummy(mouseX, mouseY);
     }
 
     public static class Key {
@@ -83,6 +92,8 @@ public class KeyStrokesModule extends ModuleCreator {
         private final String name;
         private final KeyBinding keyBind;
         private final int x, y, w, h;
+
+        private float fade;
 
         public Key(String name, KeyBinding keyBind, int x, int y, int w, int h) {
             this.name = name;
