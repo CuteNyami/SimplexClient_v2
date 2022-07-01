@@ -10,10 +10,16 @@ import tk.simplexclient.module.ModuleCreator;
 import tk.simplexclient.ui.buttons.round.RoundedButton;
 
 import java.io.IOException;
+import java.util.Optional;
 
 public class GuiModuleDrag extends GuiScreen {
 
     private final Minecraft mc = Minecraft.getMinecraft();
+
+    public Optional<ModuleCreator> selected = Optional.empty();
+
+    private int prevX;
+    private int prevY;
 
     @Override
     public void initGui() {
@@ -25,9 +31,16 @@ public class GuiModuleDrag extends GuiScreen {
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
         for (ModuleCreator m : SimplexClient.getInstance().getModuleManager().getModules()) {
             if (m.isEnabled()) {
-                m.renderDummy(mouseX, mouseY);
+                m.renderDummy();
             }
         }
+        selected.ifPresent(m -> {
+            m.setX(mouseX + m.getX() - prevX);
+            m.setY(mouseY + m.getY() - prevY);
+
+            prevX = mouseX;
+            prevY = mouseY;
+        });
         super.drawScreen(mouseX, mouseY, partialTicks);
     }
 
@@ -37,6 +50,37 @@ public class GuiModuleDrag extends GuiScreen {
             mc.displayGuiScreen(new GuiModMenu());
         }
         super.actionPerformed(button);
+    }
+
+    @Override
+    protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
+        super.mouseClicked(mouseX, mouseY, mouseButton);
+
+        prevX = mouseX;
+        prevY = mouseY;
+
+        selected =
+                SimplexClient
+                .getInstance()
+                .getModuleManager()
+                .getModules()
+                .stream()
+                .filter(m ->
+                        m.isEnabled()
+                        && mouseX >= m.getX()
+                        && mouseX <= m.getX() + m.getWidth()
+                        && mouseY >= m.getY()
+                        && mouseY <= m.getY() + m.getHeight())
+                .findFirst();
+    }
+
+    @Override
+    protected void mouseReleased(int mouseX, int mouseY, int state) {
+        super.mouseReleased(mouseX, mouseY, state);
+        selected = Optional.empty();
+        prevX = 0;
+        prevY = 0;
+
     }
 
     @Override

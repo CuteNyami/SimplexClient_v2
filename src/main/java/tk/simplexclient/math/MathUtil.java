@@ -2,6 +2,8 @@ package tk.simplexclient.math;
 
 import net.minecraft.util.*;
 
+import java.awt.*;
+
 public class MathUtil
 {
     private static final double[] a;
@@ -36,6 +38,14 @@ public class MathUtil
 
     public static float denormalizeValue(final float value, final float valueMin, final float valueMax, final float valueStep) {
         return snapToStepClamp(valueMin + (valueMax - valueMin) * MathHelper.clamp_float(value, 0.0f, 1.0f), valueMin, valueMax, valueStep);
+    }
+
+    public static int lerp(int a, int b, float f) {
+        return (int) (a + (b - a) * f);
+    }
+
+    public static Color lerp(Color a, Color b, float f) {
+        return new Color(lerp(a.getRed(), b.getRed(), f), lerp(a.getGreen(), b.getGreen(), f), lerp(a.getBlue(), b.getBlue(), f), lerp(a.getAlpha(), b.getAlpha(), f));
     }
 
     static {

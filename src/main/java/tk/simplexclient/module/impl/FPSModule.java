@@ -21,7 +21,7 @@ public class FPSModule extends ModuleCreator {
     }
 
     @Override
-    public void renderDummy(int mouseX, int mouseY) {
+    public void renderDummy() {
         GL11.glPushMatrix();
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
         GL11.glEnable(GL11.GL_BLEND);
@@ -32,7 +32,6 @@ public class FPSModule extends ModuleCreator {
         GL11.glDisable(GL11.GL_BLEND);
         GL11.glPopMatrix();
         this.fr.drawString(Minecraft.getDebugFPS() + " FPS", getX(), getY(), -1);
-        super.renderDummy(mouseX, mouseY);
     }
 
     @Override

@@ -6,27 +6,20 @@ import org.lwjgl.opengl.GL11;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gl.GLRectUtils;
-import tk.simplexclient.module.dragging.ModuleDraggable;
 
 import java.awt.*;
 
+@Getter @Setter
 public abstract class ModuleCreator {
 
-    @Getter
-    @Setter
     private String name, description;
 
     private int x, y;
 
-    @Getter
     private final int id;
 
-    @Getter
-    @Setter
     private boolean enabled;
 
-    @Getter
-    ModuleDraggable drag;
 
     public final FontRenderer fr = new FontRenderer("smooth", 15.0f);
 
@@ -44,8 +37,6 @@ public abstract class ModuleCreator {
             this.y = y;
             this.enabled = false;
         }
-
-        drag = new ModuleDraggable(this.x, this.y, getWidth(), getHeight(), new Color(0, 0, 0, 0).getRGB());
     }
 
     public ModuleCreator(int id, String name, int x, int y) {
@@ -62,8 +53,6 @@ public abstract class ModuleCreator {
             this.y = y;
             this.enabled = false;
         }
-
-        drag = new ModuleDraggable(this.x, this.y, getWidth(), getHeight(), new Color(0, 0, 0, 0).getRGB());
     }
 
     public void drawDummyBackground(int x, int y, int width, int height) {
@@ -80,8 +69,8 @@ public abstract class ModuleCreator {
 
     public abstract void render();
 
-    public void renderDummy(int mouseX, int mouseY) {
-        drag.draw(mouseX, mouseY);
+    public void renderDummy() {
+        render();
     }
 
     public int getWidth() {
@@ -92,11 +81,4 @@ public abstract class ModuleCreator {
         return 0;
     }
 
-    public int getX() {
-        return drag.getX();
-    }
-
-    public int getY() {
-        return drag.getY();
-    }
 }

@@ -23,12 +23,11 @@ public class TimeMod extends ModuleCreator {
     }
 
     @Override
-    public void renderDummy(int mouseX, int mouseY) {
+    public void renderDummy() {
         GLRectUtils.drawRectOutline(getX() - 4, getY() - 2, getX() + getWidth() + 4, getY() + getHeight() + 2, 0.25f, new Color(0, 0, 0, 160).getRGB());
         GLRectUtils.drawRect(getX() - 4, getY() - 2, getX() + getWidth() + 4, getY() + getHeight() + 2, new Color(255, 255, 255, 70).getRGB());
 
         this.fr.drawString(getTime(), getX() + 1, getY(), -1);
-        super.renderDummy(mouseX, mouseY);
     }
 
     public String getTime() {
