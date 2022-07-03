@@ -93,7 +93,7 @@ key_key.hotbar.9:10
 key_of.key.zoom:46
 key_Open the Settings GUI:54
 key_Just a gui to test some things:11
-soundCategory_master:1.0
+soundCategory_master:0.5033113
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

@@ -13,6 +13,7 @@
     "client.MixinMinecraft",
     "gui.MixinGuiIngameMenu",
     "gui.MixinGuiMainMenu",
+    "gui.MixinGuiNewChat",
     "item.MixinRenderEntityItem",
     "mod.MixinV1_7VisualsMod$MixinEntityRenderer",
     "mod.MixinV1_7VisualsMod$MixinItemRenderer",

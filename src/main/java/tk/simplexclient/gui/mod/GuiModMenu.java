@@ -4,17 +4,15 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
+import net.minecraft.util.Cartesian;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.SimplexClient;
-import tk.simplexclient.animations.Animate;
-import tk.simplexclient.animations.Easing;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gl.GLRectUtils;
 import tk.simplexclient.module.ModuleCreator;
-import tk.simplexclient.shader.RoundedShaderRenderer;
 import tk.simplexclient.ui.buttons.ModButton;
 import tk.simplexclient.ui.buttons.round.ImageButton;
 import tk.simplexclient.ui.elements.InputField;
@@ -22,6 +20,8 @@ import tk.simplexclient.ui.elements.InputField;
 import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 
 public class GuiModMenu extends GuiScreen {
 
@@ -128,8 +128,10 @@ public class GuiModMenu extends GuiScreen {
             mc.displayGuiScreen(null);
         } else if (button.id == 123456789) {
             for (ModuleCreator module : SimplexClient.getInstance().getModuleManager().getModules()) {
-                module.getDrag().setX(0);
-                module.getDrag().setY(0);
+                if (module.isEnabled()) {
+                    module.setX(0);
+                    module.setY(0);
+                }
             }
             SimplexClient.getLogger().info("The mod positions have been reset!");
         }

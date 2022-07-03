@@ -7,7 +7,7 @@ Description: Rendering screen
 java.lang.IllegalStateException: Shader failed to compile! : 35632
 	at tk.simplexclient.shader.BlurShaderRenderer.createShader(BlurShaderRenderer.java:72)
 	at tk.simplexclient.shader.BlurShaderRenderer.getInstance(BlurShaderRenderer.java:30)
-	at tk.simplexclient.gui.mod.theme.themes.MacOS.render(MacOS.java:23)
+	at tk.simplexclient.gui.mod.theme.themes.LightTheme.render(MacOS.java:23)
 	at tk.simplexclient.gui.mod.TestGui.drawScreen(TestGui.java:35)
 	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1435)
 	at net.minecraft.client.Minecraft.runGameLoop(SourceFile:915)
@@ -34,7 +34,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Stacktrace:
 	at tk.simplexclient.shader.BlurShaderRenderer.createShader(BlurShaderRenderer.java:72)
 	at tk.simplexclient.shader.BlurShaderRenderer.getInstance(BlurShaderRenderer.java:30)
-	at tk.simplexclient.gui.mod.theme.themes.MacOS.render(MacOS.java:23)
+	at tk.simplexclient.gui.mod.theme.themes.LightTheme.render(MacOS.java:23)
 	at tk.simplexclient.gui.mod.TestGui.drawScreen(TestGui.java:35)
 
 -- Screen render details --

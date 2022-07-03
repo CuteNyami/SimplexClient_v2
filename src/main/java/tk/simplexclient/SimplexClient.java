@@ -12,7 +12,7 @@ import org.lwjgl.input.Keyboard;
 import tk.simplexclient.event.EventManager;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gui.mod.theme.ThemeManager;
-import tk.simplexclient.gui.mod.theme.themes.MacOS;
+import tk.simplexclient.gui.mod.theme.themes.LightTheme;
 import tk.simplexclient.gui.utils.SimplexGui;
 import tk.simplexclient.listener.TickListener;
 import tk.simplexclient.module.ModuleConfig;
@@ -73,7 +73,7 @@ public final class SimplexClient {
         registerKeyBind(CLICK_GUI);
         registerKeyBind(TEST_GUI);
 
-        ThemeManager.registerTheme(new MacOS());
+        ThemeManager.registerTheme(new LightTheme());
 
         // Events
         EventManager.register(new TickListener());
