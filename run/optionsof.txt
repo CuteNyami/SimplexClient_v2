@@ -29,7 +29,7 @@ ofAnimatedTextures:true
 ofRainSplash:true
 ofLagometer:false
 ofShowFps:false
-ofAutoSaveTicks:4000
+ofAutoSaveTicks:7200
 ofBetterGrass:3
 ofConnectedTextures:2
 ofWeather:true

@@ -24,7 +24,6 @@ public class PingMod extends ModuleCreator {
         GLRectUtils.drawRect(getX() - 4, getY() - 2, getX() + getWidth() + 4, getY() + getHeight() + 2, new Color(255, 255, 255, 70).getRGB());
 
         this.fr.drawString(getPlayerPing(), getX(), getY(), -1);
-        super.renderDummy();
     }
 
     public String getPlayerPing() {

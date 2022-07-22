@@ -1,20 +1,20 @@
 package tk.simplexclient.mixin.impl.client;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.DefaultResourcePack;
 import net.minecraft.client.resources.data.IMetadataSerializer;
-import optifine.xdelta.Delta;
+import net.minecraft.util.Session;
+import net.minecraft.util.Timer;
 import org.lwjgl.Sys;
+import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.gen.Invoker;
-import tk.simplexclient.SimplexClient;
-import net.minecraft.client.Minecraft;
-import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import tk.simplexclient.SimplexClient;
 import tk.simplexclient.access.AccessMinecraft;
 import tk.simplexclient.event.impl.ClientTickEvent;
-import net.minecraft.util.Timer;
 
 @Mixin(Minecraft.class)
 public abstract class MixinMinecraft implements AccessMinecraft {
@@ -61,6 +61,10 @@ public abstract class MixinMinecraft implements AccessMinecraft {
     @Override
     @Accessor(value = "timer")
     public abstract Timer getTimerSC();
+
+    @Override
+    @Accessor(value = "session")
+    public abstract void setSession(Session session);
 
     @Override
     @Invoker("resize")

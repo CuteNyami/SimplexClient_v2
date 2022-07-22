@@ -1,9 +1,12 @@
 package tk.simplexclient.mixin.impl.client;
 
+import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.gui.GuiIngameMenu;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.MovingObjectPosition;
 import org.spongepowered.asm.mixin.Overwrite;
+import org.spongepowered.asm.mixin.Shadow;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.gui.mod.GuiModMenu;
 import tk.simplexclient.module.ModuleCreator;
@@ -16,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import tk.simplexclient.module.dragging.GuiModuleDrag;
 
 @Mixin(GuiIngame.class)
-public class MixinGuiIngame {
+public abstract class MixinGuiIngame {
 
     private final Minecraft mc = Minecraft.getMinecraft();
 
@@ -36,7 +39,7 @@ public class MixinGuiIngame {
      */
     @Overwrite
     public boolean showCrosshair() {
-        if (mc.currentScreen instanceof GuiModMenu || mc.currentScreen instanceof GuiModuleDrag) {
+        if (mc.currentScreen instanceof GuiModMenu || mc.currentScreen instanceof GuiModuleDrag || mc.currentScreen instanceof GuiIngameMenu) {
             return false;
         } else if (this.mc.gameSettings.showDebugInfo && !this.mc.thePlayer.hasReducedDebug() && !this.mc.gameSettings.reducedDebugInfo) {
             return false;
@@ -48,7 +51,6 @@ public class MixinGuiIngame {
                     BlockPos blockpos = this.mc.objectMouseOver.getBlockPos();
                     return this.mc.theWorld.getTileEntity(blockpos) instanceof IInventory;
                 }
-
                 return false;
             }
         } else {

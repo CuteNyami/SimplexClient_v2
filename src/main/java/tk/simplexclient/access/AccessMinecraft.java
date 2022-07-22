@@ -3,6 +3,7 @@ package tk.simplexclient.access;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.DefaultResourcePack;
 import net.minecraft.client.resources.data.IMetadataSerializer;
+import net.minecraft.util.Session;
 import net.minecraft.util.Timer;
 
 /**
@@ -33,6 +34,8 @@ public interface AccessMinecraft {
     DefaultResourcePack getDefaultResourcePack();
 
     IMetadataSerializer getMetadataSerialiser();
+
+    void setSession(Session session);
 
     void resizeWindow(int width, int height);
 

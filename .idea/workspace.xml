@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="938c721c-e78a-4d37-a667-e7b80c775bf9" name="Changes" comment="Added blur to TestGui">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiNewChat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/gui/widgets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/simplex/client" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessEntityRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/main/MainButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/main/PauseScreenButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/DebugTweaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiPlayerTabOverlay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/main/2bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/style/main.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -14,33 +22,60 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/slick.jar" beforeDir="false" afterPath="$PROJECT_DIR$/compile/slick.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2022-06-18_19.10.20-client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2022-06-18_19.10.20-client.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2022-06-18_19.26.35-client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2022-06-18_19.26.35-client.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2022-06-18_19.27.47-client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/crash-reports/crash-2022-06-18_19.27.47-client.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/Mineshaft.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/Mineshaft.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/optionsof.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/optionsof.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/optionsshaders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/optionsshaders.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/Village.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/Village.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/villages_end.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/villages_nether.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/337a131b-860d-346e-a281-649e07daeae5.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/337a131b-860d-346e-a281-649e07daeae5.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/d978d670-4b07-3a90-bfb6-b4e7c70fe7fc.dat.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/33978c47-85f0-3cad-8a2d-42421a4d8510.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/33978c47-85f0-3cad-8a2d-42421a4d8510.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/531f93d1-831a-358c-9bf3-ee2b829257f5.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/531f93d1-831a-358c-9bf3-ee2b829257f5.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/d6e922b7-7cc1-35be-bcee-1c10dacdb1bc.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/d6e922b7-7cc1-35be-bcee-1c10dacdb1bc.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/e62c1c20-738a-32fb-af6c-c761d0c6e0d6.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/e62c1c20-738a-32fb-af6c-c761d0c6e0d6.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/e7c5c79a-91ee-3db1-afe8-a6ff4d4f15fa.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/e7c5c79a-91ee-3db1-afe8-a6ff4d4f15fa.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/f07953aa-b16d-3fed-8d8a-d64904ef9606.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/f07953aa-b16d-3fed-8d8a-d64904ef9606.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/f4056b7f-25b9-38d8-a741-53667119897f.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/f4056b7f-25b9-38d8-a741-53667119897f.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/337a131b-860d-346e-a281-649e07daeae5.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/337a131b-860d-346e-a281-649e07daeae5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/d978d670-4b07-3a90-bfb6-b4e7c70fe7fc.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/d978d670-4b07-3a90-bfb6-b4e7c70fe7fc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/33978c47-85f0-3cad-8a2d-42421a4d8510.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/33978c47-85f0-3cad-8a2d-42421a4d8510.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/531f93d1-831a-358c-9bf3-ee2b829257f5.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/531f93d1-831a-358c-9bf3-ee2b829257f5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/d6e922b7-7cc1-35be-bcee-1c10dacdb1bc.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/d6e922b7-7cc1-35be-bcee-1c10dacdb1bc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/e62c1c20-738a-32fb-af6c-c761d0c6e0d6.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/e62c1c20-738a-32fb-af6c-c761d0c6e0d6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/e7c5c79a-91ee-3db1-afe8-a6ff4d4f15fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/e7c5c79a-91ee-3db1-afe8-a6ff4d4f15fa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/f07953aa-b16d-3fed-8d8a-d64904ef9606.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/f07953aa-b16d-3fed-8d8a-d64904ef9606.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/f4056b7f-25b9-38d8-a741-53667119897f.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/f4056b7f-25b9-38d8-a741-53667119897f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/servers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/servers.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/simplex/modules/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/simplex/modules/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessMinecraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/theme/themes/MacOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/theme/themes/LightTheme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/Tweaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/Tweaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiIngame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiIngame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiIngameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiIngameMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/PingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/PingMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/round/RoundedButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/round/RoundedButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/main/2logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/main/2logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/main/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/main/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/main/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/main/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/gui/widgets.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/gui/1widgets.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mixins.client.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mixins.client.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,12 +115,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="forgegradle" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SimplexClient_v2" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -96,8 +125,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -128,11 +157,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/gui" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../code/BedrockProxy-master" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.1716141" />
+    <property name="project.structure.side.proportion" value="0.22671157" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -143,18 +172,22 @@
       <recent name="F:\plugins\SimplexClient_v2\run\resourcepacks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\client\SimplexClient_v2\compile" />
+      <recent name="F:\client\SimplexClient_v2\libs\compile" />
+      <recent name="F:\client\SimplexClient_v2" />
+      <recent name="F:\client\SimplexClient_v2\src\main\resources\assets\minecraft\simplex\menu\main" />
       <recent name="F:\plugins\SimplexClient_v2\libs" />
-      <recent name="F:\plugins\SimplexClient_v2\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tk.simplexclient.mixin" />
       <recent name="tk.simplexclient.shader" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Minecraft Client">
+  <component name="RunManager" selected="Gradle.SimplexClient build">
     <configuration name="Minecraft Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="GradleStart" />
       <module name="SimplexClient_v2.main" />
-      <option name="PROGRAM_PARAMETERS" value="--tweakClass tk.simplexclient.mixin.Tweaker --tweakClass optifine.OptiFineTweaker" />
+      <option name="PROGRAM_PARAMETERS" value="--tweakClass tk.simplexclient.mixin.DebugTweaker --tweakClass optifine.OptiFineTweaker" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -180,16 +213,14 @@
     <configuration name="SimplexClient build" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" value="SimplexClient build" />
-        <option name="externalProjectPath" value="F:\plugins\SimplexClient_v2" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="build --stacktrace" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
+          <list />
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
@@ -219,7 +250,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SimplexClient_v2 [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SimplexClient_v2 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -230,7 +261,28 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="runClient" />
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SimplexClient_v2 [reobfJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="reobfJar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -252,6 +304,27 @@
         <option name="taskNames">
           <list>
             <option value="setupDecompWorkspace" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SimplexClient_v2 [setupDevWorkspace]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="setupDevWorkspace" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -284,15 +357,19 @@
       <item itemvalue="Application.Minecraft Client" />
       <item itemvalue="Gradle.SimplexClient build" />
       <item itemvalue="Gradle.runClient" />
-      <item itemvalue="Gradle.SimplexClient_v2 [runClient]" />
+      <item itemvalue="Gradle.SimplexClient_v2 [reobfJar]" />
+      <item itemvalue="Gradle.SimplexClient_v2 [jar]" />
+      <item itemvalue="Gradle.SimplexClient_v2 [setupDevWorkspace]" />
       <item itemvalue="Gradle.SimplexClient_v2 [setupDecompWorkspace]" />
       <item itemvalue="Gradle.SimplexClient_v2 [cleanCache]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SimplexClient_v2 [runClient]" />
-        <item itemvalue="Gradle.SimplexClient_v2 [cleanCache]" />
         <item itemvalue="Gradle.SimplexClient_v2 [setupDecompWorkspace]" />
+        <item itemvalue="Gradle.SimplexClient_v2 [cleanCache]" />
+        <item itemvalue="Gradle.SimplexClient_v2 [setupDevWorkspace]" />
+        <item itemvalue="Gradle.SimplexClient_v2 [jar]" />
+        <item itemvalue="Gradle.SimplexClient_v2 [reobfJar]" />
       </list>
     </recent_temporary>
   </component>
@@ -326,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656443304266</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added blur to TestGui">
+      <created>1656854950935</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656854950935</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

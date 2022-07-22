@@ -66,15 +66,20 @@ dependencies {
     }
 
     compileOnly 'org.projectlombok:lombok:1.18.24'
+
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor "org.spongepowered:mixin:0.7.11-SNAPSHOT"
 
-    testCompileOnly 'org.projectlombok:lombok:1.18.20'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
-    compile('org.spongepowered:mixin:0.7.11-SNAPSHOT')
+    testCompileOnly 'org.projectlombok:lombok:1.18.24'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
 
-    extraLibs fileTree(dir: "libs", include: ['*.jar'])
+    compileOnly('org.spongepowered:mixin:0.7.11-SNAPSHOT')
 
-    //extraLibs 'com.google.code.gson:gson:2.9.0'
+    compileOnly fileTree(dir: "libs", include: ['*.jar'])
+
+    extraLibs fileTree(dir: "compile", include: ['*.jar'])
+
+    compileOnly 'com.google.code.gson:gson:2.9.0'
 
     configurations.implementation.extendsFrom(configurations.extraLibs)
 }
@@ -97,6 +102,9 @@ jar {
     from {
         configurations.extraLibs.collect { it.isDirectory() ? it : zipTree(it) }
     }
+}
+
+jar {
     dependsOn configurations.compile
     from {
         configurations.embed.collect {
@@ -104,12 +112,9 @@ jar {
         }
     }
     exclude 'META-INF/*.RSA', 'META-INF/*.SF', 'META-INF/*.DSA'
-}
-
-jar {
     manifest.attributes(
             "MixinConfigs": 'mixins.client.json',
-            "TweakClass": "me.cutenyami.simplexclient.mixin.Tweaker",
+            "TweakClass": "tk.simplexclient.mixin.Tweaker",
             "TweakOrder": 0,
             "Manifest-Version": 1.0
     )

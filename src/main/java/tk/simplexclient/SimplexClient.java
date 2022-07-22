@@ -20,6 +20,11 @@ import tk.simplexclient.module.ModuleManager;
 import tk.simplexclient.module.impl.*;
 import tk.simplexclient.shader.RoundedShaderRenderer;
 
+import java.io.BufferedReader;
+import java.io.File;
+
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 
 public final class SimplexClient {
@@ -86,6 +91,34 @@ public final class SimplexClient {
 
         EventManager.unregister(new TickListener());
         EventManager.unregister(moduleManager.v1_7Visual);
+    }
+
+    public boolean isDebug() {
+        File client = new File("simplex/client");
+        boolean debug = false;
+        if (client.exists()) {
+            String type = readFile(client);
+            debug = type.equals("debug");
+        }
+        return debug;
+    }
+
+    public String readFile(File file) {
+        String string = null;
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+
+            while (line != null) {
+                sb.append(line);
+                sb.append(System.lineSeparator());
+                line = br.readLine();
+            }
+            string = sb.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return string;
     }
 
     public static void registerKeyBind(KeyBinding key) {

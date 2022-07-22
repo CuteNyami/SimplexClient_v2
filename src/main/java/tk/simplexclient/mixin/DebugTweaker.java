@@ -11,15 +11,14 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Tweaker implements ITweaker {
+public class DebugTweaker implements ITweaker {
 
     private final List<String> arguments = new ArrayList<>();
 
     @Override
     public final void acceptOptions(List<String> args, File gameDir, File assetsDir, String profile) {
-        //this.arguments.addAll(args);
+        this.arguments.addAll(args);
 
-        /*
         if (!args.contains("version") && profile != null) {
             this.arguments.add("--version");
             this.arguments.add(profile);
@@ -34,8 +33,6 @@ public class Tweaker implements ITweaker {
             this.arguments.add("--gameDir");
             this.arguments.add(gameDir.getAbsolutePath());
         }
-
-*/
     }
 
     @Override

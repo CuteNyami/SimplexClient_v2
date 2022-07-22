@@ -47,7 +47,7 @@ public class MixinGuiMainMenu extends GuiScreen {
         int rectX = width / 2 - 105;
         int rectY = height / 2 - 40;
         GLRectUtils.drawRoundedOutline(rectX, rectY, rectX + 220, rectY + 70, 3.0f, 5, new Color(0, 178, 255, 200).getRGB());
-        GLRectUtils.drawRoundedRect(rectX, rectY, rectX + 220, rectY + 70, 3.0f, new Color(0, 0, 0, 158).getRGB());
+        GLRectUtils.drawRoundedRect(rectX, rectY, rectX + 220, rectY + 70, 3.0f, new Color(0, 0, 0, 101).getRGB());
 
         drawScaledLogo((float) width / 2 - 70, (float) height / 2 - 6, 50, 50);
 

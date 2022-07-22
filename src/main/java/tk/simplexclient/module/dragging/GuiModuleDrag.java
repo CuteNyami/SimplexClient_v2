@@ -5,6 +5,7 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.util.ResourceLocation;
 import tk.simplexclient.SimplexClient;
+import tk.simplexclient.access.AccessEntityRenderer;
 import tk.simplexclient.gui.mod.GuiModMenu;
 import tk.simplexclient.module.ModuleCreator;
 import tk.simplexclient.ui.buttons.round.RoundedButton;
@@ -23,7 +24,9 @@ public class GuiModuleDrag extends GuiScreen {
 
     @Override
     public void initGui() {
-        mc.entityRenderer.loadShader(new ResourceLocation("shaders/post/menu_blur.json"));
+        /*
+            ((AccessEntityRenderer) mc.entityRenderer).loadShader(new ResourceLocation("shaders/post/menu_blur.json"));
+         */
         this.buttonList.add(new RoundedButton(0, this.width / 2 - 40, this.height / 2 - 7, 80, 15, "Mods"));
     }
 
