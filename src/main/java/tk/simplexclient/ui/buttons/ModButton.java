@@ -14,8 +14,8 @@ public class ModButton extends GuiButton {
 
     private ModuleCreator module;
 
-    public ModButton(int buttonId, int x, int y, int widthIn, int heightIn, ModuleCreator module) {
-        super(buttonId, x, y, widthIn, heightIn, module.getName().toUpperCase());
+    public ModButton(int x, int y, int widthIn, int heightIn, ModuleCreator module) {
+        super(111111111, x, y, widthIn, heightIn, module.getName().toUpperCase());
         this.module = module;
     }
 
@@ -38,5 +38,14 @@ public class ModButton extends GuiButton {
         GLRectUtils.drawRoundedRect(this.xPosition, this.yPosition, this.xPosition + this.width, this.yPosition + this.height,  2.0F, this.enabled ? (this.hovered ? new Color(0, 0, 0, 100).getRGB() : new Color(30, 30, 30, 100).getRGB()) : new Color(70, 70, 70, 50).getRGB());
         GLRectUtils.drawRoundedRect(this.xPosition, this.yPosition, this.xPosition + this.width, this.yPosition + this.height, 2.0F, a.getRGB());
         SimplexClient.getInstance().getSmoothFont().drawCenteredString(this.displayString, this.xPosition + this.width / 2, this.yPosition + (this.height - 8) / 2, (int) b);
+    }
+
+    public boolean onClick(int mouseX, int mouseY, int mouseButton) {
+        if (hovered) {
+            module.setEnabled(!module.isEnabled());
+            return true;
+        } else {
+            return false;
+        }
     }
 }

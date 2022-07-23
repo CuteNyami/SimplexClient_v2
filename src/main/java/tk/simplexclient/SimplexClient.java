@@ -9,6 +9,7 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.input.Keyboard;
+import org.lwjgl.opengl.Display;
 import tk.simplexclient.event.EventManager;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gui.mod.theme.ThemeManager;
@@ -16,13 +17,13 @@ import tk.simplexclient.gui.mod.theme.themes.LightTheme;
 import tk.simplexclient.gui.utils.SimplexGui;
 import tk.simplexclient.listener.TickListener;
 import tk.simplexclient.module.ModuleConfig;
+import tk.simplexclient.module.ModuleCreator;
 import tk.simplexclient.module.ModuleManager;
 import tk.simplexclient.module.impl.*;
 import tk.simplexclient.shader.RoundedShaderRenderer;
 
 import java.io.BufferedReader;
 import java.io.File;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
@@ -59,6 +60,8 @@ public final class SimplexClient {
         smoothFont = new FontRenderer("smooth", 15.0F);
         roundedShaderRenderer = new RoundedShaderRenderer();
 
+        Display.setTitle("SimplexClient v2 | 1.8.9");
+
         // Module instances
         moduleConfig = new ModuleConfig();
         moduleManager = new ModuleManager();
@@ -67,9 +70,13 @@ public final class SimplexClient {
         moduleManager.registerModules(
                 new FPSModule(),
                 new KeyStrokesModule(),
-                new MemoryMod(),
-                new PingMod(),
-                new TimeMod(),
+                new MemoryModule(),
+                new PingModule(),
+                new TimeModule(),
+                new CoordinatesModule(),
+                new TargetHUDModule(),
+                moduleManager.motionBlur,
+                moduleManager.toggleSprint,
                 moduleManager.itemPhysics,
                 moduleManager.v1_7Visual
         );
@@ -83,6 +90,10 @@ public final class SimplexClient {
         // Events
         EventManager.register(new TickListener());
         EventManager.register(moduleManager.v1_7Visual);
+
+        for (ModuleCreator module : moduleManager.getModules()) {
+            module.onEnable();
+        }
     }
 
     public void stop() {
@@ -91,6 +102,10 @@ public final class SimplexClient {
 
         EventManager.unregister(new TickListener());
         EventManager.unregister(moduleManager.v1_7Visual);
+
+        for (ModuleCreator module : moduleManager.getModules()) {
+            module.onDisable();
+        }
     }
 
     public boolean isDebug() {

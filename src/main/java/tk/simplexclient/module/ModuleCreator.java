@@ -2,8 +2,11 @@ package tk.simplexclient.module;
 
 import lombok.Getter;
 import lombok.Setter;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.ScaledResolution;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.SimplexClient;
+import tk.simplexclient.event.EventManager;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gl.GLRectUtils;
 
@@ -16,22 +19,19 @@ public abstract class ModuleCreator {
 
     private int x, y;
 
-    private final int id;
-
     private boolean enabled;
-
 
     public final FontRenderer fr = new FontRenderer("smooth", 15.0f);
 
-    public ModuleCreator(int id, String name, String description, int x, int y) {
+    public ModuleCreator(String name, String description, int x, int y) {
         this.name = name;
         this.description = description;
-        this.id = id;
 
         try {
-            this.x = SimplexClient.getInstance().getModuleConfig().get(name.toLowerCase() + " x", Integer.class);
-            this.y = SimplexClient.getInstance().getModuleConfig().get(name.toLowerCase() + " y", Integer.class);
-            this.setEnabled(SimplexClient.getInstance().getModuleConfig().get(name.toLowerCase() + " enabled", Boolean.class));
+            Module module = SimplexClient.getInstance().getModuleConfig().get(name.toLowerCase(), Module.class);
+            this.enabled = module.isEnabled();
+            this.x = module.getPos().get(0);
+            this.y = module.getPos().get(1);
         } catch (NullPointerException e) {
             this.x = x;
             this.y = y;
@@ -39,15 +39,15 @@ public abstract class ModuleCreator {
         }
     }
 
-    public ModuleCreator(int id, String name, int x, int y) {
+    public ModuleCreator(String name, int x, int y) {
         this.name = name;
         this.description = null;
-        this.id = id;
 
         try {
-            this.x = SimplexClient.getInstance().getModuleConfig().get(name.toLowerCase() + " x", Integer.class);
-            this.y = SimplexClient.getInstance().getModuleConfig().get(name.toLowerCase() + " y", Integer.class);
-            this.setEnabled(SimplexClient.getInstance().getModuleConfig().get(name.toLowerCase() + " enabled", Boolean.class));
+            Module module = SimplexClient.getInstance().getModuleConfig().get(name.toLowerCase(), Module.class);
+            this.enabled = module.isEnabled();
+            this.x = module.getPos().get(0);
+            this.y = module.getPos().get(1);
         } catch (NullPointerException e) {
             this.x = x;
             this.y = y;
@@ -67,11 +67,22 @@ public abstract class ModuleCreator {
         GL11.glPopMatrix();
     }
 
-    public abstract void render();
+    public void render() {
+    }
 
-    public void renderDummy() {
+    public void renderDummy(int width, int height) {
         render();
     }
+
+    public void onEnable() {
+        EventManager.register(this);
+    }
+
+    public void onDisable() {
+        EventManager.unregister(this);
+    }
+
+    public void toggle() {setEnabled(!enabled);}
 
     public int getWidth() {
         return 0;

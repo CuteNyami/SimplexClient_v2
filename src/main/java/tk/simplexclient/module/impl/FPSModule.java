@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class FPSModule extends ModuleCreator {
     public FPSModule() {
-        super(1, "fps", 100, 100);
+        super("fps", 100, 100);
     }
 
     private final Minecraft mc = Minecraft.getMinecraft();
@@ -21,7 +21,7 @@ public class FPSModule extends ModuleCreator {
     }
 
     @Override
-    public void renderDummy() {
+    public void renderDummy(int width, int height) {
         GL11.glPushMatrix();
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
         GL11.glEnable(GL11.GL_BLEND);

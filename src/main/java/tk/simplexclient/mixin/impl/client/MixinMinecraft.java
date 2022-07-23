@@ -15,6 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.access.AccessMinecraft;
 import tk.simplexclient.event.impl.ClientTickEvent;
+import tk.simplexclient.module.impl.MotionBlur;
 
 @Mixin(Minecraft.class)
 public abstract class MixinMinecraft implements AccessMinecraft {
@@ -34,6 +35,13 @@ public abstract class MixinMinecraft implements AccessMinecraft {
     @Inject(method = "shutdownMinecraftApplet", at = @At("HEAD"))
     public void injectShutdown(CallbackInfo ci) {
         SimplexClient.getInstance().stop();
+    }
+
+    @Inject(method = "runGameLoop", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;updateDisplay()V"))
+    public void createBlur(CallbackInfo ci) {
+        if (SimplexClient.getInstance().getModuleManager().motionBlur.isEnabled()) {
+            MotionBlur.createAccumulation();
+        }
     }
 
     @Inject(method = "runTick", at = @At("TAIL"))

@@ -4,13 +4,11 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
-import net.minecraft.util.Cartesian;
-import net.minecraft.util.ResourceLocation;
+import org.lwjgl.Sys;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.SimplexClient;
-import tk.simplexclient.access.AccessEntityRenderer;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gl.GLRectUtils;
 import tk.simplexclient.module.ModuleCreator;
@@ -21,12 +19,12 @@ import tk.simplexclient.ui.elements.InputField;
 import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
 
 public class GuiModMenu extends GuiScreen {
 
     private final ArrayList<InputField> inputFields = new ArrayList<>();
+
+    private final ArrayList<ModButton> modButtons = new ArrayList<>();
 
     private final FontRenderer smoothFr = SimplexClient.getInstance().getSmoothFont();
 
@@ -89,6 +87,8 @@ public class GuiModMenu extends GuiScreen {
         this.buttonList.add(new BlueButton(123456789, width / 2 + 50, height / 2 + 60, 70, 10, "Reset Positions"));
         this.buttonList.add(imageButton);
 
+        this.modButtons.clear();
+
         for (GuiButton button : buttonList) {
             button.drawButton(mc, mouseX, mouseY);
         }
@@ -98,15 +98,24 @@ public class GuiModMenu extends GuiScreen {
 
         for (ModuleCreator module : SimplexClient.getInstance().getModuleManager().getModules()) {
             if (module.getName().contains(searchField.getText().toLowerCase())) {
-                this.buttonList.add(new ModButton(module.getId(), width / 2 - 20, y - scrollY, 135, 15, module));
+                this.modButtons.add(new ModButton(width / 2 - 20, y - scrollY, 135, 15, module));
                 y += 20;
             }
+        }
+
+        int minScroll = 0;
+        int maxScroll = y - 100;
+
+        if (scrollY < minScroll) scrollY = minScroll;
+        if (scrollY > maxScroll) scrollY = maxScroll;
+
+        for (ModButton button : modButtons) {
+            button.drawButton(mc, mouseX, mouseY);
         }
 
         super.drawScreen(mouseX, mouseY, partialTicks);
 
         GL11.glDisable(GL11.GL_SCISSOR_TEST);
-
     }
 
     @Override
@@ -120,6 +129,9 @@ public class GuiModMenu extends GuiScreen {
     protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
         for (InputField field : inputFields) {
             field.onClick(mouseX, mouseY, mouseButton);
+        }
+        for (ModButton button : modButtons) {
+            button.onClick(mouseX, mouseY, mouseButton);
         }
         super.mouseClicked(mouseX, mouseY, mouseButton);
     }
@@ -136,12 +148,6 @@ public class GuiModMenu extends GuiScreen {
                 }
             }
             SimplexClient.getLogger().info("The mod positions have been reset!");
-        }
-
-        for (ModuleCreator module : SimplexClient.getInstance().getModuleManager().getModules()) {
-            if (button.id == module.getId()) {
-                module.setEnabled(!module.isEnabled());
-            }
         }
         super.actionPerformed(button);
     }
@@ -167,6 +173,12 @@ public class GuiModMenu extends GuiScreen {
                 (int) (((scaledResolution.getScaledHeight() - y) * mc.displayHeight) / scaledResolution.getScaledHeight()),
                 (int) (width * mc.displayWidth / scaledResolution.getScaledWidth()),
                 (int) (height * mc.displayHeight / scaledResolution.getScaledHeight()));
+    }
+
+    public int getMaxPixelsScrolled() {
+        int columns = SimplexClient.getInstance().getModuleManager().getModules().size() / 3;
+        if (SimplexClient.getInstance().getModuleManager().getModules().size() % 3 > 0) columns++;
+        return (columns * 15) + (columns * 20);
     }
 
     private static class BlueButton extends GuiButton {

@@ -18,7 +18,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.access.AccessMinecraft;
-import tk.simplexclient.module.impl.V1_7VisualsMod;
+import tk.simplexclient.module.impl.V1_7Visuals;
 
 /**
  * Sol Client - an open source Minecraft client
@@ -55,7 +55,7 @@ public abstract class MixinV1_7VisualsMod {
         @Inject(method = "func_178103_d", at = @At("RETURN"))
         public void oldBlocking(CallbackInfo callback) {
             if(SimplexClient.getInstance().getModuleManager().v1_7Visual.isEnabled()) {
-                V1_7VisualsMod.oldBlocking();
+                V1_7Visuals.oldBlocking();
             }
         }
 
@@ -63,7 +63,7 @@ public abstract class MixinV1_7VisualsMod {
         public void oldDrinking(AbstractClientPlayer clientPlayer, float partialTicks, CallbackInfo callback) {
             if(SimplexClient.getInstance().getModuleManager().v1_7Visual.isEnabled()) {
                 callback.cancel();
-                V1_7VisualsMod.oldDrinking(itemToRender, clientPlayer, partialTicks);
+                V1_7Visuals.oldDrinking(itemToRender, clientPlayer, partialTicks);
             }
         }
 

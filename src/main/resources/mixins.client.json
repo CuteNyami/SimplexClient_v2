@@ -17,6 +17,7 @@
     "gui.MixinGui",
     "gui.MixinGuiIngameMenu",
     "gui.MixinGuiMainMenu",
+    "gui.MixinGuiMultiplayer",
     "gui.MixinGuiNewChat",
     "gui.MixinGuiPlayerTabOverlay",
     "item.MixinRenderEntityItem",

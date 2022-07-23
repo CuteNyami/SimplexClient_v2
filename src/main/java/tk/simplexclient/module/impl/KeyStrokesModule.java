@@ -17,7 +17,7 @@ public class KeyStrokesModule extends ModuleCreator {
     private int fadeTime = 40;
 
     public KeyStrokesModule() {
-        super(2, "keystrokes", 200, 200);
+        super( "keystrokes", 200, 200);
     }
 
     @Override
@@ -51,7 +51,7 @@ public class KeyStrokesModule extends ModuleCreator {
     }
 
     @Override
-    public void renderDummy() {
+    public void renderDummy(int width, int height) {
         GL11.glPushMatrix();
 
         mode = KeystrokesMode.WASD_JUMP_MOUSE;

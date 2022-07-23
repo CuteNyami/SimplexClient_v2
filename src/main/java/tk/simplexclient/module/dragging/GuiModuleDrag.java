@@ -7,6 +7,7 @@ import net.minecraft.util.ResourceLocation;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.access.AccessEntityRenderer;
 import tk.simplexclient.gui.mod.GuiModMenu;
+import tk.simplexclient.gui.mod.GuiTweaks;
 import tk.simplexclient.module.ModuleCreator;
 import tk.simplexclient.ui.buttons.round.RoundedButton;
 
@@ -28,13 +29,14 @@ public class GuiModuleDrag extends GuiScreen {
             ((AccessEntityRenderer) mc.entityRenderer).loadShader(new ResourceLocation("shaders/post/menu_blur.json"));
          */
         this.buttonList.add(new RoundedButton(0, this.width / 2 - 40, this.height / 2 - 7, 80, 15, "Mods"));
+        this.buttonList.add(new RoundedButton(1, this.width / 2 + 42, this.height / 2 - 7, 15, 15, "..."));
     }
 
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
         for (ModuleCreator m : SimplexClient.getInstance().getModuleManager().getModules()) {
             if (m.isEnabled()) {
-                m.renderDummy();
+                m.renderDummy(this.width, this.height);
             }
         }
         selected.ifPresent(m -> {
@@ -51,6 +53,9 @@ public class GuiModuleDrag extends GuiScreen {
     protected void actionPerformed(GuiButton button) throws IOException {
         if (button.id == 0) {
             mc.displayGuiScreen(new GuiModMenu());
+        }
+        if (button.id == 1) {
+            mc.displayGuiScreen(new GuiTweaks());
         }
         super.actionPerformed(button);
     }

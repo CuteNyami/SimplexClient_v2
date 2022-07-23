@@ -1,7 +1,9 @@
 package tk.simplexclient.module;
 
 import tk.simplexclient.module.impl.ItemPhysics;
-import tk.simplexclient.module.impl.V1_7VisualsMod;
+import tk.simplexclient.module.impl.MotionBlur;
+import tk.simplexclient.module.impl.ToggleSprint;
+import tk.simplexclient.module.impl.V1_7Visuals;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,7 +14,11 @@ public class ModuleManager {
 
     public final ItemPhysics itemPhysics = new ItemPhysics();
 
-    public final V1_7VisualsMod v1_7Visual = new V1_7VisualsMod();
+    public final ToggleSprint toggleSprint = new ToggleSprint();
+
+    public final MotionBlur motionBlur = new MotionBlur();
+
+    public final V1_7Visuals v1_7Visual = new V1_7Visuals();
 
     private final List<ModuleCreator> modules = new ArrayList<>();
 
