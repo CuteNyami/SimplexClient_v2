@@ -30,13 +30,10 @@ public class GuiModMenu extends GuiScreen {
 
     private static final int MOD_Y_INC = 20;
 
-    private final ArrayList<InputField> inputFields = new ArrayList<>();
     private InputField searchField;
     private ImageButton imageButton;
 
     private int scrollY = 0;
-
-    private final FontRenderer smoothFr = SimplexClient.getInstance().getSmoothFont();
 
     @Override
     public void initGui() {
@@ -52,7 +49,6 @@ public class GuiModMenu extends GuiScreen {
         this.inputFields.clear();
         this.inputFields.add(searchField);
     }
-
 
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
@@ -95,18 +91,12 @@ public class GuiModMenu extends GuiScreen {
         int contentHeight = 0;
 
         for (ModuleCreator module : SimplexClient.getInstance().getModuleManager().getModules()) {
-            if (module.getName().contains(searchField.getText().toLowerCase())) {
-                this.modButtons.add(new ModButton(width / 2 - 20, y - scrollY, 135, 15, module));
+            if (module.getName().contains(this.searchField.getText().toLowerCase())) {
+                this.modButtons.add(new ModButton(this.width / 2 - 20, y - this.scrollY, 135, 15, module));
                 contentHeight += MOD_Y_INC;
                 y += MOD_Y_INC;
             }
         }
-
-        int minScroll = 0;
-        int maxScroll = y - 100;
-
-        if (scrollY < minScroll) scrollY = minScroll;
-        if (scrollY > maxScroll) scrollY = maxScroll;
 
         for (ModButton button : modButtons) {
             button.drawButton(mc, mouseX, mouseY);
@@ -118,10 +108,11 @@ public class GuiModMenu extends GuiScreen {
 
         int wheel = Mouse.getDWheel();
 
+        if (!(modButtons.size() > 5)) return;
         if (wheel < 0) {
-            scrollY += 10;
+            scrollY += 3;
         } else if (wheel > 0) {
-            scrollY -= 10;
+            scrollY -= 3;
         }
 
         int minScroll = 0;
@@ -144,7 +135,7 @@ public class GuiModMenu extends GuiScreen {
             field.onClick(mouseX, mouseY, mouseButton);
         }
         for (ModButton button : modButtons) {
-            button.onClick(mouseX, mouseY, mouseButton);
+            button.onClick((mouseX >= button.xPosition && mouseY >= button.yPosition && mouseX < button.xPosition + button.getWidth() && mouseY < button.yPosition + button.getHeight()) && (mouseX >= width / 2 - 100 && mouseY >= height / 2 - 43 && mouseX < width / 2 - 100 + 370 && mouseY < height / 2 - 43 + 100), mouseX, mouseY, mouseButton);
         }
         super.mouseClicked(mouseX, mouseY, mouseButton);
     }

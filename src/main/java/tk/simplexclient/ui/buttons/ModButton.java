@@ -40,12 +40,20 @@ public class ModButton extends GuiButton {
         SimplexClient.getInstance().getSmoothFont().drawCenteredString(this.displayString, this.xPosition + this.width / 2, this.yPosition + (this.height - 8) / 2, (int) b);
     }
 
-    public boolean onClick(int mouseX, int mouseY, int mouseButton) {
+    public boolean onClick(boolean hovered, int mouseX, int mouseY, int mouseButton) {
         if (hovered) {
             module.setEnabled(!module.isEnabled());
             return true;
         } else {
             return false;
         }
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
     }
 }
