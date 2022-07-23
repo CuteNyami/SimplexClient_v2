@@ -48,10 +48,6 @@ public abstract class MixinMinecraft implements AccessMinecraft {
     public void runTick(CallbackInfo ci) {
         ClientTickEvent event = new ClientTickEvent();
         event.call();
-
-        long currentTime = getTime();
-        int deltaTime = (int) (currentTime - lastFrame);
-        lastFrame = currentTime;
     }
 
     @Override
