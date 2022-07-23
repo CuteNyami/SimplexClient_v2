@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="938c721c-e78a-4d37-a667-e7b80c775bf9" name="Changes" comment="ඞ">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessGuiMultiplayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/elements/GuiButtonExt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/elements/GuiSlider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiTweaks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMultiplayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiSlot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinServerListEntryNormal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/Module.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/CoordinatesModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MotionBlur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TargetHUDModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ToggleSprint.java" afterDir="false" />
+    <list default="true" id="938c721c-e78a-4d37-a667-e7b80c775bf9" name="Changes" comment="ඞ amongus">
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -24,26 +12,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/GuiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/GuiUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/listener/TickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/listener/TickListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/mod/MixinV1_7VisualsMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/mod/MixinV1_7VisualsMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/FPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/FPSModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ItemPhysics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ItemPhysics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/KeyStrokesModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/KeyStrokesModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MemoryMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MemoryModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/PingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/PingModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TimeMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TimeModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/V1_7VisualsMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/V1_7Visuals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/ModButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/ModButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/simplex/client" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mixins.client.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mixins.client.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,8 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -130,7 +99,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SimplexClient_v2-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/BetterFps-1.8" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1716141" />
     <property name="project.structure.side.proportion" value="0.22671157" />
@@ -138,29 +107,29 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\client\SimplexClient_v2\libs" />
       <recent name="F:\client\SimplexClient_v2\src\main\resources\assets\minecraft\textures\gui" />
       <recent name="F:\plugins\SimplexClient_v2\src\main\java\tk\simplexclient" />
       <recent name="F:\plugins\SimplexClient_v2\src\main\resources\assets\minecraft\simplex\menu\main" />
       <recent name="F:\plugins\SimplexClient_v2\src\main\java\tk\simplexclient\shader" />
-      <recent name="F:\plugins\SimplexClient_v2\run\resourcepacks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\client\SimplexClient_v2\src\main\java" />
       <recent name="F:\client\SimplexClient_v2\compile" />
       <recent name="F:\client\SimplexClient_v2\libs\compile" />
       <recent name="F:\client\SimplexClient_v2" />
       <recent name="F:\client\SimplexClient_v2\src\main\resources\assets\minecraft\simplex\menu\main" />
-      <recent name="F:\plugins\SimplexClient_v2\libs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tk.simplexclient.mixin" />
       <recent name="tk.simplexclient.shader" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Minecraft Client">
+  <component name="RunManager" selected="Gradle.SimplexClient build">
     <configuration name="Minecraft Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="GradleStart" />
       <module name="SimplexClient_v2.main" />
-      <option name="PROGRAM_PARAMETERS" value="--username CuteNyami --tweakClass tk.simplexclient.mixin.DebugTweaker --tweakClass optifine.OptiFineTweaker" />
+      <option name="PROGRAM_PARAMETERS" value="--username CuteNyami --tweakClass tk.simplexclient.mixin.DebugTweaker --tweakClass optifine.OptiFineTweaker " />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -397,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658522923569</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ඞ">
+      <created>1658588101280</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658588101280</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,7 +398,8 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Added blur to TestGui" />
     <MESSAGE value="ඞ" />
-    <option name="LAST_COMMIT_MESSAGE" value="ඞ" />
+    <MESSAGE value="ඞ amongus" />
+    <option name="LAST_COMMIT_MESSAGE" value="ඞ amongus" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

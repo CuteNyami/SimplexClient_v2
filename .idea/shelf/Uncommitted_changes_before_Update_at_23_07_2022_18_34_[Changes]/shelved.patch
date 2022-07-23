@@ -1,0 +1,1065 @@
+Index: run/saves/New World/stats/f25f601d-4501-33e2-b5d9-0d4e52342d0d.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/f25f601d-4501-33e2-b5d9-0d4e52342d0d.json b/run/saves/New World/stats/f25f601d-4501-33e2-b5d9-0d4e52342d0d.json
+new file mode 100644
+--- /dev/null	(date 1658589843767)
++++ b/run/saves/New World/stats/f25f601d-4501-33e2-b5d9-0d4e52342d0d.json	(date 1658589843767)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":27,"stat.timeSinceDeath":27}
+\ No newline at end of file
+Index: run/saves/New World/stats/f0e019d1-5d03-339b-9d95-1c4fdeb69e95.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/f0e019d1-5d03-339b-9d95-1c4fdeb69e95.json b/run/saves/New World/stats/f0e019d1-5d03-339b-9d95-1c4fdeb69e95.json
+new file mode 100644
+--- /dev/null	(date 1658589843750)
++++ b/run/saves/New World/stats/f0e019d1-5d03-339b-9d95-1c4fdeb69e95.json	(date 1658589843750)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":23,"stat.timeSinceDeath":23,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/f7e77b0e-8c33-3536-90c1-aa6b49a4e946.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/f7e77b0e-8c33-3536-90c1-aa6b49a4e946.json b/run/saves/New World/stats/f7e77b0e-8c33-3536-90c1-aa6b49a4e946.json
+new file mode 100644
+--- /dev/null	(date 1658589843737)
++++ b/run/saves/New World/stats/f7e77b0e-8c33-3536-90c1-aa6b49a4e946.json	(date 1658589843737)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":2064,"stat.walkOneCm":4156,"stat.jump":7,"stat.playOneMinute":493,"stat.crouchOneCm":125,"stat.timeSinceDeath":493,"stat.sprintOneCm":3119,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/f7494cf2-23c9-3033-9230-c4a9565d6251.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/f7494cf2-23c9-3033-9230-c4a9565d6251.json b/run/saves/New World/stats/f7494cf2-23c9-3033-9230-c4a9565d6251.json
+new file mode 100644
+--- /dev/null	(date 1658589843735)
++++ b/run/saves/New World/stats/f7494cf2-23c9-3033-9230-c4a9565d6251.json	(date 1658589843735)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":724,"stat.walkOneCm":5899,"stat.jump":2,"stat.playOneMinute":431,"stat.timeSinceDeath":431,"stat.sprintOneCm":5357,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/fb99d07b-9b6d-3e33-b8da-b8b7c2f42608.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/fb99d07b-9b6d-3e33-b8da-b8b7c2f42608.json b/run/saves/New World/stats/fb99d07b-9b6d-3e33-b8da-b8b7c2f42608.json
+new file mode 100644
+--- /dev/null	(date 1658589843723)
++++ b/run/saves/New World/stats/fb99d07b-9b6d-3e33-b8da-b8b7c2f42608.json	(date 1658589843723)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":47,"stat.timeSinceDeath":47,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/fdd35a29-06a9-343e-abe1-1b90a6820307.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/fdd35a29-06a9-343e-abe1-1b90a6820307.json b/run/saves/New World/stats/fdd35a29-06a9-343e-abe1-1b90a6820307.json
+new file mode 100644
+--- /dev/null	(date 1658589843693)
++++ b/run/saves/New World/stats/fdd35a29-06a9-343e-abe1-1b90a6820307.json	(date 1658589843693)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":32,"stat.timeSinceDeath":32}
+\ No newline at end of file
+Index: run/saves/New World/stats/fe736038-102e-365b-a97e-eabc472944ec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/fe736038-102e-365b-a97e-eabc472944ec.json b/run/saves/New World/stats/fe736038-102e-365b-a97e-eabc472944ec.json
+new file mode 100644
+--- /dev/null	(date 1658589844009)
++++ b/run/saves/New World/stats/fe736038-102e-365b-a97e-eabc472944ec.json	(date 1658589844009)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":40,"stat.timeSinceDeath":40,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: src/main/resources/mixins.client.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"required\": true,\r\n  \"compatibilityLevel\": \"JAVA_8\",\r\n  \"verbose\": true,\r\n  \"package\": \"tk.simplexclient.mixin.impl\",\r\n  \"refmap\": \"mixins.client.refmap.json\",\r\n  \"target\": \"@env(DEFAULT)\",\r\n  \"mixins\": [\r\n    \"client.MixinEntityLivingBase\",\r\n    \"client.MixinEntityPlayerSP\",\r\n    \"client.MixinEntityRenderer\",\r\n    \"client.MixinGuiConnecting\",\r\n    \"client.MixinGuiDisconnected\",\r\n    \"client.MixinGuiIngame\",\r\n    \"client.MixinItemRenderer\",\r\n    \"client.MixinMinecraft\",\r\n    \"gui.MixinGui\",\r\n    \"gui.MixinGuiIngameMenu\",\r\n    \"gui.MixinGuiMainMenu\",\r\n    \"gui.MixinGuiMultiplayer\",\r\n    \"gui.MixinGuiNewChat\",\r\n    \"gui.MixinGuiPlayerTabOverlay\",\r\n    \"item.MixinRenderEntityItem\",\r\n    \"mod.MixinV1_7VisualsMod$MixinEntityRenderer\",\r\n    \"mod.MixinV1_7VisualsMod$MixinItemRenderer\",\r\n    \"mod.MixinV1_7VisualsMod$MixinLayerArmorBase\"\r\n  ],\r\n  \"injectors\": {\r\n    \"defaultRequire\": 1\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/mixins.client.json b/src/main/resources/mixins.client.json
+--- a/src/main/resources/mixins.client.json	(revision 135fa26cb808b0e54cbb727e2179afe3774efcd8)
++++ b/src/main/resources/mixins.client.json	(date 1658592120443)
+@@ -17,9 +17,6 @@
+     "gui.MixinGui",
+     "gui.MixinGuiIngameMenu",
+     "gui.MixinGuiMainMenu",
+-    "gui.MixinGuiMultiplayer",
+-    "gui.MixinGuiNewChat",
+-    "gui.MixinGuiPlayerTabOverlay",
+     "item.MixinRenderEntityItem",
+     "mod.MixinV1_7VisualsMod$MixinEntityRenderer",
+     "mod.MixinV1_7VisualsMod$MixinItemRenderer",
+Index: run/saves/New World/stats/062aacfa-27f8-3a16-95b1-e980c0c72c9e.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/062aacfa-27f8-3a16-95b1-e980c0c72c9e.json b/run/saves/New World/stats/062aacfa-27f8-3a16-95b1-e980c0c72c9e.json
+new file mode 100644
+--- /dev/null	(date 1658589843937)
++++ b/run/saves/New World/stats/062aacfa-27f8-3a16-95b1-e980c0c72c9e.json	(date 1658589843937)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":2015,"stat.playOneMinute":67,"stat.timeSinceDeath":67,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/0b5a2d2c-03aa-39ec-afcb-3af64e25eb27.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/0b5a2d2c-03aa-39ec-afcb-3af64e25eb27.json b/run/saves/New World/stats/0b5a2d2c-03aa-39ec-afcb-3af64e25eb27.json
+new file mode 100644
+--- /dev/null	(date 1658589843914)
++++ b/run/saves/New World/stats/0b5a2d2c-03aa-39ec-afcb-3af64e25eb27.json	(date 1658589843914)
+@@ -0,0 +1,1 @@
++{"stat.walkOneCm":3496,"stat.jump":1,"stat.playOneMinute":344,"stat.timeSinceDeath":344,"stat.sprintOneCm":1263,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/08b67744-0be2-3e10-bbbd-71a464b4b0c1.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/08b67744-0be2-3e10-bbbd-71a464b4b0c1.json b/run/saves/New World/stats/08b67744-0be2-3e10-bbbd-71a464b4b0c1.json
+new file mode 100644
+--- /dev/null	(date 1658589843905)
++++ b/run/saves/New World/stats/08b67744-0be2-3e10-bbbd-71a464b4b0c1.json	(date 1658589843905)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":36,"stat.timeSinceDeath":36,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/16352087-2dde-32f0-819a-77046d6a13d3.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/16352087-2dde-32f0-819a-77046d6a13d3.json b/run/saves/New World/stats/16352087-2dde-32f0-819a-77046d6a13d3.json
+new file mode 100644
+--- /dev/null	(date 1658589843873)
++++ b/run/saves/New World/stats/16352087-2dde-32f0-819a-77046d6a13d3.json	(date 1658589843873)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":20,"stat.timeSinceDeath":20,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/1455153c-1276-3617-8489-c22f3316fb17.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/1455153c-1276-3617-8489-c22f3316fb17.json b/run/saves/New World/stats/1455153c-1276-3617-8489-c22f3316fb17.json
+new file mode 100644
+--- /dev/null	(date 1658589843862)
++++ b/run/saves/New World/stats/1455153c-1276-3617-8489-c22f3316fb17.json	(date 1658589843862)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":25,"stat.timeSinceDeath":25}
+\ No newline at end of file
+Index: run/saves/New World/stats/19e1dbac-54cc-34fa-99b8-c2a0812b14c1.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/19e1dbac-54cc-34fa-99b8-c2a0812b14c1.json b/run/saves/New World/stats/19e1dbac-54cc-34fa-99b8-c2a0812b14c1.json
+new file mode 100644
+--- /dev/null	(date 1658589843851)
++++ b/run/saves/New World/stats/19e1dbac-54cc-34fa-99b8-c2a0812b14c1.json	(date 1658589843851)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":59,"stat.timeSinceDeath":59,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/1e3c9076-6029-36c6-8475-dd38d2030d5f.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/1e3c9076-6029-36c6-8475-dd38d2030d5f.json b/run/saves/New World/stats/1e3c9076-6029-36c6-8475-dd38d2030d5f.json
+new file mode 100644
+--- /dev/null	(date 1658589843824)
++++ b/run/saves/New World/stats/1e3c9076-6029-36c6-8475-dd38d2030d5f.json	(date 1658589843824)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":52,"stat.timeSinceDeath":52,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/4de10e95-2f24-3513-b65d-4a73193172f6.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/4de10e95-2f24-3513-b65d-4a73193172f6.json b/run/saves/New World/stats/4de10e95-2f24-3513-b65d-4a73193172f6.json
+new file mode 100644
+--- /dev/null	(date 1658589843978)
++++ b/run/saves/New World/stats/4de10e95-2f24-3513-b65d-4a73193172f6.json	(date 1658589843978)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":23,"stat.timeSinceDeath":23}
+\ No newline at end of file
+Index: run/saves/New World/stats/4ed99654-4a5a-39dd-9f7c-459b50aa79a5.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/4ed99654-4a5a-39dd-9f7c-459b50aa79a5.json b/run/saves/New World/stats/4ed99654-4a5a-39dd-9f7c-459b50aa79a5.json
+new file mode 100644
+--- /dev/null	(date 1658589843948)
++++ b/run/saves/New World/stats/4ed99654-4a5a-39dd-9f7c-459b50aa79a5.json	(date 1658589843948)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":57,"stat.playOneMinute":61,"stat.timeSinceDeath":61,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/50e3702d-f577-3e44-8b3c-fb2dc8cfae65.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/50e3702d-f577-3e44-8b3c-fb2dc8cfae65.json b/run/saves/New World/stats/50e3702d-f577-3e44-8b3c-fb2dc8cfae65.json
+new file mode 100644
+--- /dev/null	(date 1658589843938)
++++ b/run/saves/New World/stats/50e3702d-f577-3e44-8b3c-fb2dc8cfae65.json	(date 1658589843938)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":1298,"stat.walkOneCm":737,"stat.jump":5,"stat.playOneMinute":178,"stat.timeSinceDeath":178,"stat.sprintOneCm":268,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/50e1ab02-92db-38bb-86bf-431939b828b5.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/50e1ab02-92db-38bb-86bf-431939b828b5.json b/run/saves/New World/stats/50e1ab02-92db-38bb-86bf-431939b828b5.json
+new file mode 100644
+--- /dev/null	(date 1658589843924)
++++ b/run/saves/New World/stats/50e1ab02-92db-38bb-86bf-431939b828b5.json	(date 1658589843924)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":1080,"stat.walkOneCm":3024,"stat.jump":3,"stat.playOneMinute":264,"stat.timeSinceDeath":264,"stat.sprintOneCm":2287,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/5648fab5-fa61-330e-8fa7-aea962bdfd7c.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/5648fab5-fa61-330e-8fa7-aea962bdfd7c.json b/run/saves/New World/stats/5648fab5-fa61-330e-8fa7-aea962bdfd7c.json
+new file mode 100644
+--- /dev/null	(date 1658589843904)
++++ b/run/saves/New World/stats/5648fab5-fa61-330e-8fa7-aea962bdfd7c.json	(date 1658589843904)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":37,"stat.timeSinceDeath":37,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/62902853-7a10-3bb0-a496-11410998cbd4.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/62902853-7a10-3bb0-a496-11410998cbd4.json b/run/saves/New World/stats/62902853-7a10-3bb0-a496-11410998cbd4.json
+new file mode 100644
+--- /dev/null	(date 1658589843892)
++++ b/run/saves/New World/stats/62902853-7a10-3bb0-a496-11410998cbd4.json	(date 1658589843892)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":4620,"stat.playOneMinute":118,"stat.timeSinceDeath":118,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/613fffc1-d252-35dc-8bd1-c9c1b7febbb1.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/613fffc1-d252-35dc-8bd1-c9c1b7febbb1.json b/run/saves/New World/stats/613fffc1-d252-35dc-8bd1-c9c1b7febbb1.json
+new file mode 100644
+--- /dev/null	(date 1658589843882)
++++ b/run/saves/New World/stats/613fffc1-d252-35dc-8bd1-c9c1b7febbb1.json	(date 1658589843882)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":1211,"stat.playOneMinute":110,"stat.timeSinceDeath":110,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/66157e7a-53e0-3299-9208-7674efd706f9.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/66157e7a-53e0-3299-9208-7674efd706f9.json b/run/saves/New World/stats/66157e7a-53e0-3299-9208-7674efd706f9.json
+new file mode 100644
+--- /dev/null	(date 1658589843872)
++++ b/run/saves/New World/stats/66157e7a-53e0-3299-9208-7674efd706f9.json	(date 1658589843872)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":49,"stat.timeSinceDeath":49,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/67e4079e-4cf5-3669-9343-c8d0c03a90f2.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/67e4079e-4cf5-3669-9343-c8d0c03a90f2.json b/run/saves/New World/stats/67e4079e-4cf5-3669-9343-c8d0c03a90f2.json
+new file mode 100644
+--- /dev/null	(date 1658589843834)
++++ b/run/saves/New World/stats/67e4079e-4cf5-3669-9343-c8d0c03a90f2.json	(date 1658589843834)
+@@ -0,0 +1,1 @@
++{"stat.walkOneCm":5484,"stat.jump":1,"stat.playOneMinute":467,"achievement.openInventory":1,"stat.timeSinceDeath":467,"stat.sprintOneCm":2044,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/73181018-6474-36f0-8722-c7fb6befd317.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/73181018-6474-36f0-8722-c7fb6befd317.json b/run/saves/New World/stats/73181018-6474-36f0-8722-c7fb6befd317.json
+new file mode 100644
+--- /dev/null	(date 1658589843825)
++++ b/run/saves/New World/stats/73181018-6474-36f0-8722-c7fb6befd317.json	(date 1658589843825)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":18,"stat.timeSinceDeath":18,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/6f7d35ad-9152-3823-9277-b683a91158a3.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/6f7d35ad-9152-3823-9277-b683a91158a3.json b/run/saves/New World/stats/6f7d35ad-9152-3823-9277-b683a91158a3.json
+new file mode 100644
+--- /dev/null	(date 1658589843815)
++++ b/run/saves/New World/stats/6f7d35ad-9152-3823-9277-b683a91158a3.json	(date 1658589843815)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":21,"stat.timeSinceDeath":21}
+\ No newline at end of file
+Index: run/saves/New World/stats/23caebef-63a5-39b8-9ae3-6dfce0636b5f.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/23caebef-63a5-39b8-9ae3-6dfce0636b5f.json b/run/saves/New World/stats/23caebef-63a5-39b8-9ae3-6dfce0636b5f.json
+new file mode 100644
+--- /dev/null	(date 1658589843806)
++++ b/run/saves/New World/stats/23caebef-63a5-39b8-9ae3-6dfce0636b5f.json	(date 1658589843806)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":9500,"stat.walkOneCm":4249,"stat.jump":15,"stat.playOneMinute":917,"stat.damageDealt":135,"stat.timeSinceDeath":917,"stat.sprintOneCm":2920,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/2797ecaf-07ab-3788-a2f8-6002cfc50e1d.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/2797ecaf-07ab-3788-a2f8-6002cfc50e1d.json b/run/saves/New World/stats/2797ecaf-07ab-3788-a2f8-6002cfc50e1d.json
+new file mode 100644
+--- /dev/null	(date 1658589843794)
++++ b/run/saves/New World/stats/2797ecaf-07ab-3788-a2f8-6002cfc50e1d.json	(date 1658589843794)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":8082,"stat.playOneMinute":367,"stat.timeSinceDeath":367,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/2659329e-1c65-3850-9659-d27fc655aa3c.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/2659329e-1c65-3850-9659-d27fc655aa3c.json b/run/saves/New World/stats/2659329e-1c65-3850-9659-d27fc655aa3c.json
+new file mode 100644
+--- /dev/null	(date 1658589843777)
++++ b/run/saves/New World/stats/2659329e-1c65-3850-9659-d27fc655aa3c.json	(date 1658589843777)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":64,"stat.leaveGame":1,"stat.timeSinceDeath":64,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/2c9d87c8-64e7-3ca8-861e-e4a9ef3d93bc.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/2c9d87c8-64e7-3ca8-861e-e4a9ef3d93bc.json b/run/saves/New World/stats/2c9d87c8-64e7-3ca8-861e-e4a9ef3d93bc.json
+new file mode 100644
+--- /dev/null	(date 1658589843766)
++++ b/run/saves/New World/stats/2c9d87c8-64e7-3ca8-861e-e4a9ef3d93bc.json	(date 1658589843766)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":17,"stat.timeSinceDeath":17}
+\ No newline at end of file
+Index: run/saves/New World/stats/2a68c4a4-c1ba-3396-a626-ac7041e25da5.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/2a68c4a4-c1ba-3396-a626-ac7041e25da5.json b/run/saves/New World/stats/2a68c4a4-c1ba-3396-a626-ac7041e25da5.json
+new file mode 100644
+--- /dev/null	(date 1658589843763)
++++ b/run/saves/New World/stats/2a68c4a4-c1ba-3396-a626-ac7041e25da5.json	(date 1658589843763)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":653,"stat.walkOneCm":2575,"stat.jump":2,"stat.playOneMinute":284,"stat.timeSinceDeath":284,"stat.sprintOneCm":1416,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/2ec36810-f0f3-3c4c-b9b5-ef9a4a85598d.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/2ec36810-f0f3-3c4c-b9b5-ef9a4a85598d.json b/run/saves/New World/stats/2ec36810-f0f3-3c4c-b9b5-ef9a4a85598d.json
+new file mode 100644
+--- /dev/null	(date 1658589843738)
++++ b/run/saves/New World/stats/2ec36810-f0f3-3c4c-b9b5-ef9a4a85598d.json	(date 1658589843738)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":24,"stat.timeSinceDeath":24}
+\ No newline at end of file
+Index: run/saves/New World/stats/303505c1-798d-3df3-ab8d-6c701f3fe36a.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/303505c1-798d-3df3-ab8d-6c701f3fe36a.json b/run/saves/New World/stats/303505c1-798d-3df3-ab8d-6c701f3fe36a.json
+new file mode 100644
+--- /dev/null	(date 1658589843703)
++++ b/run/saves/New World/stats/303505c1-798d-3df3-ab8d-6c701f3fe36a.json	(date 1658589843703)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":21,"stat.timeSinceDeath":21,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/3e3cdda1-3fb1-331c-b583-7387437040de.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/3e3cdda1-3fb1-331c-b583-7387437040de.json b/run/saves/New World/stats/3e3cdda1-3fb1-331c-b583-7387437040de.json
+new file mode 100644
+--- /dev/null	(date 1658589844016)
++++ b/run/saves/New World/stats/3e3cdda1-3fb1-331c-b583-7387437040de.json	(date 1658589844016)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":551,"stat.walkOneCm":1674,"stat.jump":2,"stat.playOneMinute":135,"stat.timeSinceDeath":135,"stat.sprintOneCm":1463,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/3b4c06df-8aac-35fe-b01d-5804351603ec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/3b4c06df-8aac-35fe-b01d-5804351603ec.json b/run/saves/New World/stats/3b4c06df-8aac-35fe-b01d-5804351603ec.json
+new file mode 100644
+--- /dev/null	(date 1658589844007)
++++ b/run/saves/New World/stats/3b4c06df-8aac-35fe-b01d-5804351603ec.json	(date 1658589844007)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":26,"stat.timeSinceDeath":26,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/4805b7f8-997e-33ab-826d-ca981b97526b.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/4805b7f8-997e-33ab-826d-ca981b97526b.json b/run/saves/New World/stats/4805b7f8-997e-33ab-826d-ca981b97526b.json
+new file mode 100644
+--- /dev/null	(date 1658589843996)
++++ b/run/saves/New World/stats/4805b7f8-997e-33ab-826d-ca981b97526b.json	(date 1658589843996)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":1003,"stat.walkOneCm":2970,"stat.jump":5,"stat.playOneMinute":283,"stat.timeSinceDeath":283,"stat.sprintOneCm":885,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/d3d45e58-b5d9-369a-ac43-347ac47e2b17.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/d3d45e58-b5d9-369a-ac43-347ac47e2b17.json b/run/saves/New World/stats/d3d45e58-b5d9-369a-ac43-347ac47e2b17.json
+new file mode 100644
+--- /dev/null	(date 1658589843960)
++++ b/run/saves/New World/stats/d3d45e58-b5d9-369a-ac43-347ac47e2b17.json	(date 1658589843960)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":25,"stat.timeSinceDeath":25,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/d3aa0338-14e5-3fd8-aca9-5e19667fa0b6.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/d3aa0338-14e5-3fd8-aca9-5e19667fa0b6.json b/run/saves/New World/stats/d3aa0338-14e5-3fd8-aca9-5e19667fa0b6.json
+new file mode 100644
+--- /dev/null	(date 1658589843949)
++++ b/run/saves/New World/stats/d3aa0338-14e5-3fd8-aca9-5e19667fa0b6.json	(date 1658589843949)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":24,"stat.timeSinceDeath":24,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/dbef6173-b792-3041-821b-b11445f44ee8.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/dbef6173-b792-3041-821b-b11445f44ee8.json b/run/saves/New World/stats/dbef6173-b792-3041-821b-b11445f44ee8.json
+new file mode 100644
+--- /dev/null	(date 1658589843936)
++++ b/run/saves/New World/stats/dbef6173-b792-3041-821b-b11445f44ee8.json	(date 1658589843936)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":836,"stat.walkOneCm":109,"stat.jump":2,"stat.playOneMinute":121,"stat.timeSinceDeath":121,"stat.sprintOneCm":99,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/d7cff5a0-f2a0-3727-aca6-d996fc42f55a.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/d7cff5a0-f2a0-3727-aca6-d996fc42f55a.json b/run/saves/New World/stats/d7cff5a0-f2a0-3727-aca6-d996fc42f55a.json
+new file mode 100644
+--- /dev/null	(date 1658589843926)
++++ b/run/saves/New World/stats/d7cff5a0-f2a0-3727-aca6-d996fc42f55a.json	(date 1658589843926)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":42,"stat.timeSinceDeath":42,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/def15adf-07af-3672-a35b-fe69f139863f.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/def15adf-07af-3672-a35b-fe69f139863f.json b/run/saves/New World/stats/def15adf-07af-3672-a35b-fe69f139863f.json
+new file mode 100644
+--- /dev/null	(date 1658589843916)
++++ b/run/saves/New World/stats/def15adf-07af-3672-a35b-fe69f139863f.json	(date 1658589843916)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":13718,"stat.walkOneCm":5903,"stat.jump":4,"stat.playOneMinute":1284,"stat.timeSinceDeath":1284,"stat.sprintOneCm":411,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/dc5bf89f-805c-3c6b-8f75-15e42fa5be8f.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/dc5bf89f-805c-3c6b-8f75-15e42fa5be8f.json b/run/saves/New World/stats/dc5bf89f-805c-3c6b-8f75-15e42fa5be8f.json
+new file mode 100644
+--- /dev/null	(date 1658589843911)
++++ b/run/saves/New World/stats/dc5bf89f-805c-3c6b-8f75-15e42fa5be8f.json	(date 1658589843911)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":43,"stat.timeSinceDeath":43}
+\ No newline at end of file
+Index: run/saves/New World/stats/dfa57433-6d23-31fd-a282-bdca1175e553.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/dfa57433-6d23-31fd-a282-bdca1175e553.json b/run/saves/New World/stats/dfa57433-6d23-31fd-a282-bdca1175e553.json
+new file mode 100644
+--- /dev/null	(date 1658589843901)
++++ b/run/saves/New World/stats/dfa57433-6d23-31fd-a282-bdca1175e553.json	(date 1658589843901)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":9681,"stat.playOneMinute":225,"stat.timeSinceDeath":225,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/df8174ec-bca9-3a1b-ba60-043f16a73d79.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/df8174ec-bca9-3a1b-ba60-043f16a73d79.json b/run/saves/New World/stats/df8174ec-bca9-3a1b-ba60-043f16a73d79.json
+new file mode 100644
+--- /dev/null	(date 1658589843883)
++++ b/run/saves/New World/stats/df8174ec-bca9-3a1b-ba60-043f16a73d79.json	(date 1658589843883)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":3566,"stat.walkOneCm":5609,"stat.jump":10,"stat.playOneMinute":595,"stat.timeSinceDeath":595,"stat.sprintOneCm":3528,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/e248ad6f-48ae-34b1-a009-03f2794f8f73.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/e248ad6f-48ae-34b1-a009-03f2794f8f73.json b/run/saves/New World/stats/e248ad6f-48ae-34b1-a009-03f2794f8f73.json
+new file mode 100644
+--- /dev/null	(date 1658589843870)
++++ b/run/saves/New World/stats/e248ad6f-48ae-34b1-a009-03f2794f8f73.json	(date 1658589843870)
+@@ -0,0 +1,1 @@
++{"stat.walkOneCm":1572,"stat.playOneMinute":154,"stat.timeSinceDeath":154,"stat.sprintOneCm":953,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/dfcad48a-e020-38be-9232-c84cb8bb8cf2.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/dfcad48a-e020-38be-9232-c84cb8bb8cf2.json b/run/saves/New World/stats/dfcad48a-e020-38be-9232-c84cb8bb8cf2.json
+new file mode 100644
+--- /dev/null	(date 1658589843861)
++++ b/run/saves/New World/stats/dfcad48a-e020-38be-9232-c84cb8bb8cf2.json	(date 1658589843861)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":28,"stat.timeSinceDeath":28,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/e5f3c748-0ea0-3a62-b5e9-4fef46853cc3.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/e5f3c748-0ea0-3a62-b5e9-4fef46853cc3.json b/run/saves/New World/stats/e5f3c748-0ea0-3a62-b5e9-4fef46853cc3.json
+new file mode 100644
+--- /dev/null	(date 1658589843852)
++++ b/run/saves/New World/stats/e5f3c748-0ea0-3a62-b5e9-4fef46853cc3.json	(date 1658589843852)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":4161,"stat.walkOneCm":7397,"stat.jump":15,"stat.playOneMinute":673,"stat.timeSinceDeath":673,"stat.sprintOneCm":2191,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/e56ec8e1-c640-36ab-8281-ae4d44216993.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/e56ec8e1-c640-36ab-8281-ae4d44216993.json b/run/saves/New World/stats/e56ec8e1-c640-36ab-8281-ae4d44216993.json
+new file mode 100644
+--- /dev/null	(date 1658589843835)
++++ b/run/saves/New World/stats/e56ec8e1-c640-36ab-8281-ae4d44216993.json	(date 1658589843835)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":13664,"stat.playOneMinute":215,"stat.timeSinceDeath":215,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/eac293da-7d7d-3c6a-94e5-fba80de0212f.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/eac293da-7d7d-3c6a-94e5-fba80de0212f.json b/run/saves/New World/stats/eac293da-7d7d-3c6a-94e5-fba80de0212f.json
+new file mode 100644
+--- /dev/null	(date 1658589843826)
++++ b/run/saves/New World/stats/eac293da-7d7d-3c6a-94e5-fba80de0212f.json	(date 1658589843826)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":76,"stat.timeSinceDeath":76,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/ea1dedcc-65ad-3e4c-bece-937c54b0cb65.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/ea1dedcc-65ad-3e4c-bece-937c54b0cb65.json b/run/saves/New World/stats/ea1dedcc-65ad-3e4c-bece-937c54b0cb65.json
+new file mode 100644
+--- /dev/null	(date 1658589843817)
++++ b/run/saves/New World/stats/ea1dedcc-65ad-3e4c-bece-937c54b0cb65.json	(date 1658589843817)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":12,"stat.timeSinceDeath":12}
+\ No newline at end of file
+Index: run/saves/New World/stats/7a3400be-e31a-307d-9fe4-43aac536397b.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/7a3400be-e31a-307d-9fe4-43aac536397b.json b/run/saves/New World/stats/7a3400be-e31a-307d-9fe4-43aac536397b.json
+new file mode 100644
+--- /dev/null	(date 1658589843807)
++++ b/run/saves/New World/stats/7a3400be-e31a-307d-9fe4-43aac536397b.json	(date 1658589843807)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":36,"stat.timeSinceDeath":36,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/75998694-2bae-3280-972d-d76ffee01fa1.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/75998694-2bae-3280-972d-d76ffee01fa1.json b/run/saves/New World/stats/75998694-2bae-3280-972d-d76ffee01fa1.json
+new file mode 100644
+--- /dev/null	(date 1658589843796)
++++ b/run/saves/New World/stats/75998694-2bae-3280-972d-d76ffee01fa1.json	(date 1658589843796)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":18,"stat.timeSinceDeath":18,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/7c2fb32a-48f4-3632-92b4-de6db3581064.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/7c2fb32a-48f4-3632-92b4-de6db3581064.json b/run/saves/New World/stats/7c2fb32a-48f4-3632-92b4-de6db3581064.json
+new file mode 100644
+--- /dev/null	(date 1658589843787)
++++ b/run/saves/New World/stats/7c2fb32a-48f4-3632-92b4-de6db3581064.json	(date 1658589843787)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":47,"stat.timeSinceDeath":47,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/8c2b619e-5319-3b2d-81aa-a99343a6c408.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/8c2b619e-5319-3b2d-81aa-a99343a6c408.json b/run/saves/New World/stats/8c2b619e-5319-3b2d-81aa-a99343a6c408.json
+new file mode 100644
+--- /dev/null	(date 1658589843769)
++++ b/run/saves/New World/stats/8c2b619e-5319-3b2d-81aa-a99343a6c408.json	(date 1658589843769)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":20,"stat.timeSinceDeath":20}
+\ No newline at end of file
+Index: run/saves/New World/stats/811b757c-1be5-33cf-864a-fb91beb14990.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/811b757c-1be5-33cf-864a-fb91beb14990.json b/run/saves/New World/stats/811b757c-1be5-33cf-864a-fb91beb14990.json
+new file mode 100644
+--- /dev/null	(date 1658589843754)
++++ b/run/saves/New World/stats/811b757c-1be5-33cf-864a-fb91beb14990.json	(date 1658589843754)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":25386,"stat.walkOneCm":8314,"stat.jump":33,"stat.playOneMinute":3038,"achievement.openInventory":2,"stat.killEntity.Slime":17,"stat.damageDealt":1705,"stat.timeSinceDeath":3038,"stat.useItem.minecraft.dirt":2,"stat.sprintOneCm":3883,"stat.mobKills":17,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]},"stat.useItem.minecraft.diamond_sword":20}
+\ No newline at end of file
+Index: run/saves/New World/stats/8fc96dcb-3302-37b6-b952-8c31edd90f80.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/8fc96dcb-3302-37b6-b952-8c31edd90f80.json b/run/saves/New World/stats/8fc96dcb-3302-37b6-b952-8c31edd90f80.json
+new file mode 100644
+--- /dev/null	(date 1658589843727)
++++ b/run/saves/New World/stats/8fc96dcb-3302-37b6-b952-8c31edd90f80.json	(date 1658589843727)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":10241,"stat.walkOneCm":1822,"stat.jump":14,"stat.playOneMinute":726,"stat.timeSinceDeath":726,"stat.sprintOneCm":1288,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/a808da89-2014-3b52-8ec8-9f9283f06338.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/a808da89-2014-3b52-8ec8-9f9283f06338.json b/run/saves/New World/stats/a808da89-2014-3b52-8ec8-9f9283f06338.json
+new file mode 100644
+--- /dev/null	(date 1658589843715)
++++ b/run/saves/New World/stats/a808da89-2014-3b52-8ec8-9f9283f06338.json	(date 1658589843715)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":39,"stat.timeSinceDeath":39,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/a126324d-4d5f-37d1-a7c2-428b903619ef.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/a126324d-4d5f-37d1-a7c2-428b903619ef.json b/run/saves/New World/stats/a126324d-4d5f-37d1-a7c2-428b903619ef.json
+new file mode 100644
+--- /dev/null	(date 1658589843704)
++++ b/run/saves/New World/stats/a126324d-4d5f-37d1-a7c2-428b903619ef.json	(date 1658589843704)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":3761,"stat.walkOneCm":1515,"stat.jump":3,"stat.playOneMinute":223,"stat.timeSinceDeath":223,"stat.sprintOneCm":1209,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/b5b2ff24-9e23-373f-97d2-19884357bdea.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/b5b2ff24-9e23-373f-97d2-19884357bdea.json b/run/saves/New World/stats/b5b2ff24-9e23-373f-97d2-19884357bdea.json
+new file mode 100644
+--- /dev/null	(date 1658589843692)
++++ b/run/saves/New World/stats/b5b2ff24-9e23-373f-97d2-19884357bdea.json	(date 1658589843692)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":797,"stat.playOneMinute":78,"stat.timeSinceDeath":78,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/acd62baf-1f62-3e9e-a7f5-5e27309e35be.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/acd62baf-1f62-3e9e-a7f5-5e27309e35be.json b/run/saves/New World/stats/acd62baf-1f62-3e9e-a7f5-5e27309e35be.json
+new file mode 100644
+--- /dev/null	(date 1658589843683)
++++ b/run/saves/New World/stats/acd62baf-1f62-3e9e-a7f5-5e27309e35be.json	(date 1658589843683)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":34,"stat.timeSinceDeath":34,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/babe9e7f-35b2-34ef-82f9-4869d34a0755.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/babe9e7f-35b2-34ef-82f9-4869d34a0755.json b/run/saves/New World/stats/babe9e7f-35b2-34ef-82f9-4869d34a0755.json
+new file mode 100644
+--- /dev/null	(date 1658589844017)
++++ b/run/saves/New World/stats/babe9e7f-35b2-34ef-82f9-4869d34a0755.json	(date 1658589844017)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":20,"stat.timeSinceDeath":20,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: run/saves/New World/stats/b5e415c2-d8ef-3eff-a3b7-e89aed71ee14.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/b5e415c2-d8ef-3eff-a3b7-e89aed71ee14.json b/run/saves/New World/stats/b5e415c2-d8ef-3eff-a3b7-e89aed71ee14.json
+new file mode 100644
+--- /dev/null	(date 1658589844006)
++++ b/run/saves/New World/stats/b5e415c2-d8ef-3eff-a3b7-e89aed71ee14.json	(date 1658589844006)
+@@ -0,0 +1,1 @@
++{"stat.flyOneCm":11404,"stat.walkOneCm":1666,"stat.jump":7,"stat.playOneMinute":295,"stat.killEntity.Slime":1,"stat.damageDealt":45,"stat.timeSinceDeath":295,"stat.sprintOneCm":404,"stat.mobKills":1,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"938c721c-e78a-4d37-a667-e7b80c775bf9\" name=\"Changes\" comment=\"ඞ\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessGuiMultiplayer.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/elements/GuiButtonExt.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/elements/GuiSlider.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiTweaks.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMultiplayer.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiSlot.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinServerListEntryNormal.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/Module.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/CoordinatesModule.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MotionBlur.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TargetHUDModule.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ToggleSprint.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/GuiUtils.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/GuiUtils.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/listener/TickListener.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/listener/TickListener.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/mod/MixinV1_7VisualsMod.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/mod/MixinV1_7VisualsMod.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleConfig.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleConfig.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleCreator.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleCreator.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleManager.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/FPSModule.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/FPSModule.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ItemPhysics.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ItemPhysics.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/KeyStrokesModule.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/KeyStrokesModule.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MemoryMod.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MemoryModule.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/PingMod.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/PingModule.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TimeMod.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TimeModule.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/V1_7VisualsMod.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/V1_7Visuals.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/ModButton.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/ModButton.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/mixins.client.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/mixins.client.json\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <task path=\"F:\\plugins\\SimplexClient_v2\">\r\n          <activation />\r\n        </task>\r\n        <task path=\"$PROJECT_DIR$\">\r\n          <activation />\r\n        </task>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"SimplexClient_v2\" type=\"f1a62948:ProjectNode\" />\r\n              </path>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"SimplexClient_v2\" type=\"f1a62948:ProjectNode\" />\r\n                <item name=\"Tasks\" type=\"e4a08cd1:TasksNode\" />\r\n              </path>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"SimplexClient_v2\" type=\"f1a62948:ProjectNode\" />\r\n                <item name=\"Tasks\" type=\"e4a08cd1:TasksNode\" />\r\n                <item name=\"forgegradle\" type=\"c8890929:TasksNode$1\" />\r\n              </path>\r\n            </expand>\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Enum\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiTweaks.java\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"29USJWhNGuUJlazMYpRVXr5jYP3\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$USER_HOME$/Downloads/SimplexClient_v2-master\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.1716141\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.22671157\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.keymap\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"F:\\client\\SimplexClient_v2\\src\\main\\resources\\assets\\minecraft\\textures\\gui\" />\r\n      <recent name=\"F:\\plugins\\SimplexClient_v2\\src\\main\\java\\tk\\simplexclient\" />\r\n      <recent name=\"F:\\plugins\\SimplexClient_v2\\src\\main\\resources\\assets\\minecraft\\simplex\\menu\\main\" />\r\n      <recent name=\"F:\\plugins\\SimplexClient_v2\\src\\main\\java\\tk\\simplexclient\\shader\" />\r\n      <recent name=\"F:\\plugins\\SimplexClient_v2\\run\\resourcepacks\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"F:\\client\\SimplexClient_v2\\compile\" />\r\n      <recent name=\"F:\\client\\SimplexClient_v2\\libs\\compile\" />\r\n      <recent name=\"F:\\client\\SimplexClient_v2\" />\r\n      <recent name=\"F:\\client\\SimplexClient_v2\\src\\main\\resources\\assets\\minecraft\\simplex\\menu\\main\" />\r\n      <recent name=\"F:\\plugins\\SimplexClient_v2\\libs\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"tk.simplexclient.mixin\" />\r\n      <recent name=\"tk.simplexclient.shader\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.Minecraft Client\">\r\n    <configuration name=\"Minecraft Client\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"GradleStart\" />\r\n      <module name=\"SimplexClient_v2.main\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"--username CuteNyami --tweakClass tk.simplexclient.mixin.DebugTweaker --tweakClass optifine.OptiFineTweaker\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/run\" />\r\n      <RunnerSettings RunnerId=\"Run\" />\r\n      <ConfigurationWrapper RunnerId=\"Run\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"false\" factoryName=\"Application\" name=\"Minecraft Client\" type=\"Application\">\r\n      <extension enabled=\"false\" name=\"coverage\" runner=\"idea\" sample_coverage=\"true\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"GradleStart\" />\r\n      <option name=\"VM_PARAMETERS\" value=\"\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"--tweakClass me.cutenyami.simplexclient.mixin.Tweaker\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"file://$PROJECT_DIR$/run\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"\" />\r\n      <option name=\"ENABLE_SWING_INSPECTOR\" value=\"false\" />\r\n      <option name=\"ENV_VARIABLES\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\r\n      <module name=\"SimplexClient_v2\" />\r\n      <RunnerSettings RunnerId=\"Run\" />\r\n      <ConfigurationWrapper RunnerId=\"Run\" />\r\n    </configuration>\r\n    <configuration name=\"SimplexClient build\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" value=\"SimplexClient build\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" value=\"build --stacktrace\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list />\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"SimplexClient_v2 [cleanCache]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\"cleanCache\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"SimplexClient_v2 [jar]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\"jar\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"SimplexClient_v2 [reobfJar]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\"reobfJar\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"SimplexClient_v2 [setupDecompWorkspace]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\"setupDecompWorkspace\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"SimplexClient_v2 [setupDevWorkspace]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\"setupDevWorkspace\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"runClient\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" value=\"runClient\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list />\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Application.Minecraft Client\" />\r\n      <item itemvalue=\"Gradle.SimplexClient build\" />\r\n      <item itemvalue=\"Gradle.runClient\" />\r\n      <item itemvalue=\"Gradle.SimplexClient_v2 [reobfJar]\" />\r\n      <item itemvalue=\"Gradle.SimplexClient_v2 [jar]\" />\r\n      <item itemvalue=\"Gradle.SimplexClient_v2 [setupDevWorkspace]\" />\r\n      <item itemvalue=\"Gradle.SimplexClient_v2 [setupDecompWorkspace]\" />\r\n      <item itemvalue=\"Gradle.SimplexClient_v2 [cleanCache]\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Gradle.SimplexClient_v2 [setupDecompWorkspace]\" />\r\n        <item itemvalue=\"Gradle.SimplexClient_v2 [cleanCache]\" />\r\n        <item itemvalue=\"Gradle.SimplexClient_v2 [setupDevWorkspace]\" />\r\n        <item itemvalue=\"Gradle.SimplexClient_v2 [jar]\" />\r\n        <item itemvalue=\"Gradle.SimplexClient_v2 [reobfJar]\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"938c721c-e78a-4d37-a667-e7b80c775bf9\" name=\"Changes\" comment=\"\" />\r\n      <created>1653166099855</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1653166099855</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Fixed some stuff\">\r\n      <created>1653682202693</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1653682202693</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Init\">\r\n      <created>1654422376611</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654422376611</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Added blur to TestGui\">\r\n      <created>1656443304266</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1656443304266</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Added blur to TestGui\">\r\n      <created>1656854950935</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1656854950935</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"ඞ\">\r\n      <created>1658522564502</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1658522564502</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"ඞ\">\r\n      <created>1658522923569</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1658522923569</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n    </ignored-roots>\r\n    <MESSAGE value=\"First commit\" />\r\n    <MESSAGE value=\"Fixed some stuff\" />\r\n    <MESSAGE value=\"Init\" />\r\n    <MESSAGE value=\"Added blur to TestGui\" />\r\n    <MESSAGE value=\"ඞ\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"ඞ\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/SimplexClient_v2$Minecraft_Client.ic\" NAME=\"Minecraft Client Coverage Results\" MODIFIED=\"1655558062929\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 135fa26cb808b0e54cbb727e2179afe3774efcd8)
++++ b/.idea/workspace.xml	(date 1658593594029)
+@@ -5,18 +5,128 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="938c721c-e78a-4d37-a667-e7b80c775bf9" name="Changes" comment="ඞ">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessGuiMultiplayer.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/elements/GuiButtonExt.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/elements/GuiSlider.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiTweaks.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMultiplayer.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiSlot.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinServerListEntryNormal.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/Module.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/CoordinatesModule.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MotionBlur.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TargetHUDModule.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ToggleSprint.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/data/Village.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/22fa5c62-1593-3376-ba15-517f68f16a46.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/23caebef-63a5-39b8-9ae3-6dfce0636b5f.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/2659329e-1c65-3850-9659-d27fc655aa3c.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/2797ecaf-07ab-3788-a2f8-6002cfc50e1d.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/2a68c4a4-c1ba-3396-a626-ac7041e25da5.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/2c9d87c8-64e7-3ca8-861e-e4a9ef3d93bc.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/2e2bad62-fd9f-3bb5-a89e-b314a4f30e73.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/2ec36810-f0f3-3c4c-b9b5-ef9a4a85598d.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/303505c1-798d-3df3-ab8d-6c701f3fe36a.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/377f1ac0-6050-32e3-9d68-daf21c3caf7c.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/37815b4b-a277-3e88-89c9-687629f7c447.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/37fb5f1a-f986-3b16-8135-e7bdb177538f.dat" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-2.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.2.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.1.-1.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.1.-2.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.1.0.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.1.1.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.1.2.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.2.-1.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.2.-2.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.2.0.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.2.1.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.2.2.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.3.0.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.3.1.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.3.2.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.4.0.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.4.1.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/region/r.4.2.mca" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/00bb7f76-47ca-3891-96fe-03177d2fac78.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/062aacfa-27f8-3a16-95b1-e980c0c72c9e.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/08b67744-0be2-3e10-bbbd-71a464b4b0c1.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/0b5a2d2c-03aa-39ec-afcb-3af64e25eb27.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/0c8f54b5-758c-3933-9675-7dfb411a82a2.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/0ef55c79-9bc5-371f-96a7-29e4485d0c04.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/1455153c-1276-3617-8489-c22f3316fb17.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/16352087-2dde-32f0-819a-77046d6a13d3.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/181bbcbe-77b5-3b29-b98c-87ba0992cbd8.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/19e1dbac-54cc-34fa-99b8-c2a0812b14c1.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/1b5803ef-dab8-3673-85ae-9a9160028e1f.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/1e3c9076-6029-36c6-8475-dd38d2030d5f.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/22fa5c62-1593-3376-ba15-517f68f16a46.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/23caebef-63a5-39b8-9ae3-6dfce0636b5f.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/2659329e-1c65-3850-9659-d27fc655aa3c.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/2797ecaf-07ab-3788-a2f8-6002cfc50e1d.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/2a68c4a4-c1ba-3396-a626-ac7041e25da5.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/2c9d87c8-64e7-3ca8-861e-e4a9ef3d93bc.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/2e2bad62-fd9f-3bb5-a89e-b314a4f30e73.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/2ec36810-f0f3-3c4c-b9b5-ef9a4a85598d.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/303505c1-798d-3df3-ab8d-6c701f3fe36a.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/377f1ac0-6050-32e3-9d68-daf21c3caf7c.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/37815b4b-a277-3e88-89c9-687629f7c447.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/37fb5f1a-f986-3b16-8135-e7bdb177538f.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/3b4c06df-8aac-35fe-b01d-5804351603ec.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/3e3cdda1-3fb1-331c-b583-7387437040de.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/41196538-4c2b-371d-b141-0e51ad033fac.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/4805b7f8-997e-33ab-826d-ca981b97526b.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/4ac636a7-c339-3f88-8804-04d8e971bf80.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/4de10e95-2f24-3513-b65d-4a73193172f6.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/4ed99654-4a5a-39dd-9f7c-459b50aa79a5.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/4ef2c8ae-f327-362c-9965-7aefe13435d8.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/50e1ab02-92db-38bb-86bf-431939b828b5.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/50e3702d-f577-3e44-8b3c-fb2dc8cfae65.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/5648fab5-fa61-330e-8fa7-aea962bdfd7c.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/5a8b675a-352f-385b-94f4-369e3f70aa83.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/613fffc1-d252-35dc-8bd1-c9c1b7febbb1.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/62902853-7a10-3bb0-a496-11410998cbd4.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/6421d26c-b813-3e76-bed7-39f6f8e7da7e.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/66157e7a-53e0-3299-9208-7674efd706f9.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/67e4079e-4cf5-3669-9343-c8d0c03a90f2.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/68723020-3c7d-332b-9007-b1f8c7a00304.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/6f7d35ad-9152-3823-9277-b683a91158a3.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/73181018-6474-36f0-8722-c7fb6befd317.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/75998694-2bae-3280-972d-d76ffee01fa1.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/7a3400be-e31a-307d-9fe4-43aac536397b.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/7beaed24-0a62-3f97-b968-4d6f3b3f19c7.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/7c2fb32a-48f4-3632-92b4-de6db3581064.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/811b757c-1be5-33cf-864a-fb91beb14990.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/8c2b619e-5319-3b2d-81aa-a99343a6c408.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/8fc96dcb-3302-37b6-b952-8c31edd90f80.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/a0803941-42b2-30d8-878b-d5bba587b8ae.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/a126324d-4d5f-37d1-a7c2-428b903619ef.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/a808da89-2014-3b52-8ec8-9f9283f06338.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/acd62baf-1f62-3e9e-a7f5-5e27309e35be.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/b5b2ff24-9e23-373f-97d2-19884357bdea.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/b5e415c2-d8ef-3eff-a3b7-e89aed71ee14.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/babe9e7f-35b2-34ef-82f9-4869d34a0755.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/baf009ad-51b3-3461-8544-778cef1ada08.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/c843d906-43ab-3137-9682-b42949d12a2f.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/ccf0c278-c21f-3ec3-a87c-05202673a5dd.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/d1b650bf-5f9c-37d3-a469-4d66d1968f90.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/d3aa0338-14e5-3fd8-aca9-5e19667fa0b6.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/d3d45e58-b5d9-369a-ac43-347ac47e2b17.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/d7cff5a0-f2a0-3727-aca6-d996fc42f55a.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/dbef6173-b792-3041-821b-b11445f44ee8.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/dc5bf89f-805c-3c6b-8f75-15e42fa5be8f.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/def15adf-07af-3672-a35b-fe69f139863f.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/df8174ec-bca9-3a1b-ba60-043f16a73d79.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/dfa57433-6d23-31fd-a282-bdca1175e553.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/dfcad48a-e020-38be-9232-c84cb8bb8cf2.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/e248ad6f-48ae-34b1-a009-03f2794f8f73.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/e56ec8e1-c640-36ab-8281-ae4d44216993.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/e5f3c748-0ea0-3a62-b5e9-4fef46853cc3.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/ea1dedcc-65ad-3e4c-bece-937c54b0cb65.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/eac293da-7d7d-3c6a-94e5-fba80de0212f.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/eb3e37b3-0c87-3026-b460-637c38fd4fdd.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/ee37bc44-eeb3-3a18-8bd0-93b5769d5697.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/eee10812-13cd-3f90-b77f-2195c9c5b71e.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/efc72414-2867-3716-86bc-fef5a53d913b.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/f0e019d1-5d03-339b-9d95-1c4fdeb69e95.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/f25f601d-4501-33e2-b5d9-0d4e52342d0d.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/f7494cf2-23c9-3033-9230-c4a9565d6251.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/f7e77b0e-8c33-3536-90c1-aa6b49a4e946.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/f835675c-e0ba-394b-82c9-8aaebeea0b9f.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/fb99d07b-9b6d-3e33-b8da-b8b7c2f42608.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/fcd8643a-136f-38b6-9c1f-4f5463ba5d9d.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/fdd35a29-06a9-343e-abe1-1b90a6820307.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/saves/New World/stats/fe736038-102e-365b-a97e-eabc472944ec.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/run/screenshots/2022-07-23_01.23.36.png" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+@@ -24,26 +134,6 @@
+       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/GuiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/GuiUtils.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/listener/TickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/listener/TickListener.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/mod/MixinV1_7VisualsMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/mod/MixinV1_7VisualsMod.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleConfig.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleCreator.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleManager.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/FPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/FPSModule.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ItemPhysics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ItemPhysics.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/KeyStrokesModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/KeyStrokesModule.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MemoryMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MemoryModule.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/PingMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/PingModule.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TimeMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TimeModule.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/V1_7VisualsMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/V1_7Visuals.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/ModButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/ModButton.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/resources/mixins.client.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mixins.client.json" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -93,8 +183,8 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="Enum" />
+         <option value="Interface" />
++        <option value="Enum" />
+         <option value="Class" />
+       </list>
+     </option>
+@@ -130,7 +220,7 @@
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SimplexClient_v2-master" />
++    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/BetterFps-1.8" />
+     <property name="project.structure.last.edited" value="Modules" />
+     <property name="project.structure.proportion" value="0.1716141" />
+     <property name="project.structure.side.proportion" value="0.22671157" />
+@@ -138,29 +228,29 @@
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="F:\client\SimplexClient_v2\libs" />
+       <recent name="F:\client\SimplexClient_v2\src\main\resources\assets\minecraft\textures\gui" />
+       <recent name="F:\plugins\SimplexClient_v2\src\main\java\tk\simplexclient" />
+       <recent name="F:\plugins\SimplexClient_v2\src\main\resources\assets\minecraft\simplex\menu\main" />
+       <recent name="F:\plugins\SimplexClient_v2\src\main\java\tk\simplexclient\shader" />
+-      <recent name="F:\plugins\SimplexClient_v2\run\resourcepacks" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
++      <recent name="F:\client\SimplexClient_v2\src\main\java" />
+       <recent name="F:\client\SimplexClient_v2\compile" />
+       <recent name="F:\client\SimplexClient_v2\libs\compile" />
+       <recent name="F:\client\SimplexClient_v2" />
+       <recent name="F:\client\SimplexClient_v2\src\main\resources\assets\minecraft\simplex\menu\main" />
+-      <recent name="F:\plugins\SimplexClient_v2\libs" />
+     </key>
+     <key name="CopyClassDialog.RECENTS_KEY">
+       <recent name="tk.simplexclient.mixin" />
+       <recent name="tk.simplexclient.shader" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Application.Minecraft Client">
++  <component name="RunManager" selected="Gradle.SimplexClient build">
+     <configuration name="Minecraft Client" type="Application" factoryName="Application">
+       <option name="MAIN_CLASS_NAME" value="GradleStart" />
+       <module name="SimplexClient_v2.main" />
+-      <option name="PROGRAM_PARAMETERS" value="--username CuteNyami --tweakClass tk.simplexclient.mixin.DebugTweaker --tweakClass optifine.OptiFineTweaker" />
++      <option name="PROGRAM_PARAMETERS" value="--username CuteNyami --tweakClass tk.simplexclient.mixin.DebugTweaker --tweakClass optifine.OptiFineTweaker " />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+       <RunnerSettings RunnerId="Run" />
+       <ConfigurationWrapper RunnerId="Run" />
+@@ -397,7 +487,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1658522923569</updated>
+     </task>
+-    <option name="localTasksCounter" value="7" />
++    <task id="LOCAL-00007" summary="ඞ">
++      <created>1658588101280</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1658588101280</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+Index: run/saves/New World/stats/baf009ad-51b3-3461-8544-778cef1ada08.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/saves/New World/stats/baf009ad-51b3-3461-8544-778cef1ada08.json b/run/saves/New World/stats/baf009ad-51b3-3461-8544-778cef1ada08.json
+new file mode 100644
+--- /dev/null	(date 1658589843987)
++++ b/run/saves/New World/stats/baf009ad-51b3-3461-8544-778cef1ada08.json	(date 1658589843987)
+@@ -0,0 +1,1 @@
++{"stat.playOneMinute":22,"stat.timeSinceDeath":22,"achievement.exploreAllBiomes":{"value":0,"progress":["Plains"]}}
+\ No newline at end of file
+diff --git a/run/saves/New World/stats/ee37bc44-eeb3-3a18-8bd0-93b5769d5697.json b/run/saves/New World/stats/ee37bc44-eeb3-3a18-8bd0-93b5769d5697.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/eb3e37b3-0c87-3026-b460-637c38fd4fdd.json b/run/saves/New World/stats/eb3e37b3-0c87-3026-b460-637c38fd4fdd.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/efc72414-2867-3716-86bc-fef5a53d913b.json b/run/saves/New World/stats/efc72414-2867-3716-86bc-fef5a53d913b.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/eee10812-13cd-3f90-b77f-2195c9c5b71e.json b/run/saves/New World/stats/eee10812-13cd-3f90-b77f-2195c9c5b71e.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/f835675c-e0ba-394b-82c9-8aaebeea0b9f.json b/run/saves/New World/stats/f835675c-e0ba-394b-82c9-8aaebeea0b9f.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/fcd8643a-136f-38b6-9c1f-4f5463ba5d9d.json b/run/saves/New World/stats/fcd8643a-136f-38b6-9c1f-4f5463ba5d9d.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/00bb7f76-47ca-3891-96fe-03177d2fac78.json b/run/saves/New World/stats/00bb7f76-47ca-3891-96fe-03177d2fac78.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/0ef55c79-9bc5-371f-96a7-29e4485d0c04.json b/run/saves/New World/stats/0ef55c79-9bc5-371f-96a7-29e4485d0c04.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/0c8f54b5-758c-3933-9675-7dfb411a82a2.json b/run/saves/New World/stats/0c8f54b5-758c-3933-9675-7dfb411a82a2.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/181bbcbe-77b5-3b29-b98c-87ba0992cbd8.json b/run/saves/New World/stats/181bbcbe-77b5-3b29-b98c-87ba0992cbd8.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/1b5803ef-dab8-3673-85ae-9a9160028e1f.json b/run/saves/New World/stats/1b5803ef-dab8-3673-85ae-9a9160028e1f.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/4ac636a7-c339-3f88-8804-04d8e971bf80.json b/run/saves/New World/stats/4ac636a7-c339-3f88-8804-04d8e971bf80.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/4ef2c8ae-f327-362c-9965-7aefe13435d8.json b/run/saves/New World/stats/4ef2c8ae-f327-362c-9965-7aefe13435d8.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/5a8b675a-352f-385b-94f4-369e3f70aa83.json b/run/saves/New World/stats/5a8b675a-352f-385b-94f4-369e3f70aa83.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/6421d26c-b813-3e76-bed7-39f6f8e7da7e.json b/run/saves/New World/stats/6421d26c-b813-3e76-bed7-39f6f8e7da7e.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/68723020-3c7d-332b-9007-b1f8c7a00304.json b/run/saves/New World/stats/68723020-3c7d-332b-9007-b1f8c7a00304.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/22fa5c62-1593-3376-ba15-517f68f16a46.json b/run/saves/New World/stats/22fa5c62-1593-3376-ba15-517f68f16a46.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/2e2bad62-fd9f-3bb5-a89e-b314a4f30e73.json b/run/saves/New World/stats/2e2bad62-fd9f-3bb5-a89e-b314a4f30e73.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/377f1ac0-6050-32e3-9d68-daf21c3caf7c.json b/run/saves/New World/stats/377f1ac0-6050-32e3-9d68-daf21c3caf7c.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/37fb5f1a-f986-3b16-8135-e7bdb177538f.json b/run/saves/New World/stats/37fb5f1a-f986-3b16-8135-e7bdb177538f.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/37815b4b-a277-3e88-89c9-687629f7c447.json b/run/saves/New World/stats/37815b4b-a277-3e88-89c9-687629f7c447.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/41196538-4c2b-371d-b141-0e51ad033fac.json b/run/saves/New World/stats/41196538-4c2b-371d-b141-0e51ad033fac.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/d1b650bf-5f9c-37d3-a469-4d66d1968f90.json b/run/saves/New World/stats/d1b650bf-5f9c-37d3-a469-4d66d1968f90.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/ccf0c278-c21f-3ec3-a87c-05202673a5dd.json b/run/saves/New World/stats/ccf0c278-c21f-3ec3-a87c-05202673a5dd.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/7beaed24-0a62-3f97-b968-4d6f3b3f19c7.json b/run/saves/New World/stats/7beaed24-0a62-3f97-b968-4d6f3b3f19c7.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/a0803941-42b2-30d8-878b-d5bba587b8ae.json b/run/saves/New World/stats/a0803941-42b2-30d8-878b-d5bba587b8ae.json
+new file mode 100644
+diff --git a/run/saves/New World/stats/c843d906-43ab-3137-9682-b42949d12a2f.json b/run/saves/New World/stats/c843d906-43ab-3137-9682-b42949d12a2f.json
+new file mode 100644
