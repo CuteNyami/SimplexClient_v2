@@ -65,7 +65,6 @@ public class RoundedShaderRenderer {
 
 
         if (glGetShaderi(shader, GL_COMPILE_STATUS) == 0) {
-            System.out.println(glGetShaderInfoLog(shader, 4096));
             throw new IllegalStateException("Shader failed to compile! : " + shaderType);
         }
 

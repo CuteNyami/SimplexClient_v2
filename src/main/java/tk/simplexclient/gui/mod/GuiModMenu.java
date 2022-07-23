@@ -28,11 +28,15 @@ public class GuiModMenu extends GuiScreen {
 
     private final FontRenderer smoothFr = SimplexClient.getInstance().getSmoothFont();
 
+    private static final int MOD_Y_INC = 20;
+
+    private final ArrayList<InputField> inputFields = new ArrayList<>();
     private InputField searchField;
+    private ImageButton imageButton;
 
     private int scrollY = 0;
 
-    private ImageButton imageButton;
+    private final FontRenderer smoothFr = SimplexClient.getInstance().getSmoothFont();
 
     @Override
     public void initGui() {
@@ -75,14 +79,6 @@ public class GuiModMenu extends GuiScreen {
 
         int y = height / 2 - 40;
 
-        int wheel = Mouse.getDWheel();
-
-        if (wheel < 0) {
-            scrollY += 3;
-        } else if (wheel > 0) {
-            scrollY -= 3;
-        }
-
         this.buttonList.clear();
         this.buttonList.add(new BlueButton(123456789, width / 2 + 50, height / 2 + 60, 70, 10, "Reset Positions"));
         this.buttonList.add(imageButton);
@@ -96,10 +92,13 @@ public class GuiModMenu extends GuiScreen {
         GL11.glEnable(GL11.GL_SCISSOR_TEST);
         glScissor((double) width / 2 - 100, (double) height / 2 - 43, 370, 100);
 
+        int contentHeight = 0;
+
         for (ModuleCreator module : SimplexClient.getInstance().getModuleManager().getModules()) {
             if (module.getName().contains(searchField.getText().toLowerCase())) {
                 this.modButtons.add(new ModButton(width / 2 - 20, y - scrollY, 135, 15, module));
-                y += 20;
+                contentHeight += MOD_Y_INC;
+                y += MOD_Y_INC;
             }
         }
 
@@ -116,6 +115,20 @@ public class GuiModMenu extends GuiScreen {
         super.drawScreen(mouseX, mouseY, partialTicks);
 
         GL11.glDisable(GL11.GL_SCISSOR_TEST);
+
+        int wheel = Mouse.getDWheel();
+
+        if (wheel < 0) {
+            scrollY += 10;
+        } else if (wheel > 0) {
+            scrollY -= 10;
+        }
+
+        int minScroll = 0;
+        int maxScroll = contentHeight - 100;
+
+        if (scrollY < minScroll) scrollY = minScroll;
+        if (scrollY > maxScroll) scrollY = maxScroll;
     }
 
     @Override
