@@ -42,6 +42,7 @@ public class ModButton extends GuiButton {
 
     public boolean onClick(boolean hovered, int mouseX, int mouseY, int mouseButton) {
         if (hovered) {
+            playPressSound(Minecraft.getMinecraft().getSoundHandler());
             module.setEnabled(!module.isEnabled());
             return true;
         } else {

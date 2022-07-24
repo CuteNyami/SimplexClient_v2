@@ -2,15 +2,18 @@ package tk.simplexclient.module;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.SneakyThrows;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.ScaledResolution;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.event.EventManager;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gl.GLRectUtils;
+import tk.simplexclient.gui.mod.GuiModSettings;
+import tk.simplexclient.module.settings.Option;
 
 import java.awt.*;
+import java.lang.reflect.Field;
 
 @Getter @Setter
 public abstract class ModuleCreator {
@@ -83,6 +86,38 @@ public abstract class ModuleCreator {
     }
 
     public void toggle() {setEnabled(!enabled);}
+
+    @SneakyThrows
+    public double getValDouble(String field) {
+        Field field1 = this.getClass().getDeclaredField(field);
+        if (!(Minecraft.getMinecraft().currentScreen instanceof GuiModSettings)) {
+            return SimplexClient.getInstance().getSettingsBuilder().getSliderValue(this, field1);
+        } else {
+            double val = 0.0;
+            Option optionAnnotation = field1.getAnnotation(Option.class);
+            if (optionAnnotation != null) {
+                field1.setAccessible(true);
+                val = SimplexClient.getInstance().getSettingsBuilder().getSliderMap().get(field1).getValue();
+            }
+            return val;
+        }
+    }
+
+    @SneakyThrows
+    public boolean getValBoolean(String field) {
+        Field field1 = this.getClass().getDeclaredField(field);
+        if (!(Minecraft.getMinecraft().currentScreen instanceof GuiModSettings)) {
+            return SimplexClient.getInstance().getSettingsBuilder().getToggleValue(this, field1);
+        } else {
+            boolean val = false;
+            Option optionAnnotation = field1.getAnnotation(Option.class);
+            if (optionAnnotation != null) {
+                field1.setAccessible(true);
+                val = SimplexClient.getInstance().getSettingsBuilder().getToggleMap().get(field1).isToggled();
+            }
+            return val;
+        }
+    }
 
     public int getWidth() {
         return 0;

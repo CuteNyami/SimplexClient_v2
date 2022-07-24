@@ -20,6 +20,7 @@ import tk.simplexclient.module.ModuleConfig;
 import tk.simplexclient.module.ModuleCreator;
 import tk.simplexclient.module.ModuleManager;
 import tk.simplexclient.module.impl.*;
+import tk.simplexclient.module.settings.SettingsManager;
 import tk.simplexclient.shader.RoundedShaderRenderer;
 
 import java.io.BufferedReader;
@@ -47,17 +48,20 @@ public final class SimplexClient {
 
     @Getter private FontRenderer smoothFont;
 
+    @Getter private SettingsManager settingsBuilder;
+
     public KeyBinding CLICK_GUI = new KeyBinding("Open the Settings GUI", Keyboard.KEY_RSHIFT, "SimplexClient");
     public KeyBinding TEST_GUI = new KeyBinding("Just a gui to test some things", Keyboard.KEY_0, "SimplexClient");
 
     public void init() {
-
+        //SplashProgress.setProgress(1, "Client - Initialising Client");
     }
 
     public void start() {
+        //SplashProgress.setProgress(7, "Client - Starting Client");
+        smoothFont = new FontRenderer("smooth", 15.0F);
         instance = this;
         gui = new SimplexGui();
-        smoothFont = new FontRenderer("smooth", 15.0F);
         roundedShaderRenderer = new RoundedShaderRenderer();
 
         Display.setTitle("SimplexClient v2 | 1.8.9");
@@ -75,11 +79,19 @@ public final class SimplexClient {
                 new TimeModule(),
                 new CoordinatesModule(),
                 new TargetHUDModule(),
+                new ArmorStatusModule(),
+                //new ServerDisplayModule(),
                 moduleManager.motionBlur,
                 moduleManager.toggleSprint,
                 moduleManager.itemPhysics,
                 moduleManager.v1_7Visual
         );
+
+        settingsBuilder = new SettingsManager();
+
+        for (ModuleCreator moduleCreator : moduleManager.getModules()) {
+            settingsBuilder.setup(moduleCreator);
+        }
 
         // Keybindings
         registerKeyBind(CLICK_GUI);

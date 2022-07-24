@@ -2,9 +2,13 @@ package tk.simplexclient.gui.elements;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
+import tk.simplexclient.SimplexClient;
 import tk.simplexclient.gl.GLRectUtils;
+import tk.simplexclient.module.ModuleCreator;
 
 import java.awt.*;
+import java.lang.reflect.Field;
+import java.util.Arrays;
 
 /**
  * This class is blatantly stolen from iChunUtils with permission.
@@ -23,7 +27,7 @@ public class GuiSlider extends GuiButtonExt {
      * Is this slider control being dragged.
      */
     public boolean dragging = false;
-    public boolean showDecimal = true;
+    public boolean showDecimal = false;
 
     public double minValue = 0.0D;
     public double maxValue = 5.0D;
@@ -35,12 +39,19 @@ public class GuiSlider extends GuiButtonExt {
 
     public boolean drawString = true;
 
+    public Field field;
+
     public GuiSlider(int id, int xPos, int yPos, int width, int height, String prefix, String suf, double minVal, double maxVal, double currentVal, boolean showDec, boolean drawStr) {
-        this(id, xPos, yPos, width, height, prefix, suf, minVal, maxVal, currentVal, showDec, drawStr, null);
+        this(id, xPos, yPos, width, height, prefix, suf, minVal, maxVal, currentVal, showDec, drawStr, null, null);
     }
 
-    public GuiSlider(int id, int xPos, int yPos, int width, int height, String prefix, String suf, double minVal, double maxVal, double currentVal, boolean showDec, boolean drawStr, ISlider par) {
+    public GuiSlider(int id, int xPos, int yPos, int width, int height, String prefix, String suf, double minVal, double maxVal, double currentVal, boolean showDec, boolean drawStr, Field field) {
+        this(id, xPos, yPos, width, height, prefix, suf, minVal, maxVal, currentVal, showDec, drawStr, null, field);
+    }
+
+    public GuiSlider(int id, int xPos, int yPos, int width, int height, String prefix, String suf, double minVal, double maxVal, double currentVal, boolean showDec, boolean drawStr, ISlider par, Field field) {
         super(id, xPos, yPos, width, height, prefix);
+        this.field = field;
         minValue = minVal;
         maxValue = maxVal;
         sliderValue = (currentVal - minValue) / (maxValue - minValue);
@@ -58,7 +69,8 @@ public class GuiSlider extends GuiButtonExt {
             precision = 0;
         }
 
-        displayString = dispString + val + suffix;
+        //displayString = dispString + val + suffix;
+        displayString = dispString + suffix;
 
         drawString = drawStr;
         if (!drawString) {
@@ -67,7 +79,7 @@ public class GuiSlider extends GuiButtonExt {
     }
 
     public GuiSlider(int id, int xPos, int yPos, String displayStr, double minVal, double maxVal, double currentVal, ISlider par) {
-        this(id, xPos, yPos, 150, 20, displayStr, "", minVal, maxVal, currentVal, true, true, par);
+        this(id, xPos, yPos, 150, 20, displayStr, "", minVal, maxVal, currentVal, true, true, par, null);
     }
 
     /**
@@ -124,6 +136,22 @@ public class GuiSlider extends GuiButtonExt {
 
         String val;
 
+        // code for module settings
+        if (field != null && field.getType() == int.class) {
+            for (ModuleCreator module : SimplexClient.getInstance().getModuleManager().getModules()) {
+                Class<?> clazz = module.getClass();
+                if (Arrays.asList(clazz.getDeclaredFields()).contains(field)) {
+                    try {
+                        field.setAccessible(true);
+                        field.setInt(module, (int) getValue());
+                    } catch (IllegalAccessException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
+        /*
         if (showDecimal) {
             val = Double.toString(sliderValue * (maxValue - minValue) + minValue);
 
@@ -145,6 +173,8 @@ public class GuiSlider extends GuiButtonExt {
         if (drawString) {
             displayString = dispString + val + suffix;
         }
+
+         */
 
         if (parent != null) {
             parent.onChangeSliderValue(this);

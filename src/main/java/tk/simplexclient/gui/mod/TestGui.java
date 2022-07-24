@@ -3,9 +3,11 @@ package tk.simplexclient.gui.mod;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.util.ResourceLocation;
+import tk.simplexclient.SimplexClient;
 import tk.simplexclient.gui.mod.theme.Theme;
 import tk.simplexclient.gui.mod.theme.ThemeManager;
 import tk.simplexclient.gui.mod.theme.Themes;
+import tk.simplexclient.module.ModuleCreator;
 import tk.simplexclient.shader.RoundedShaderRenderer;
 
 import java.io.IOException;

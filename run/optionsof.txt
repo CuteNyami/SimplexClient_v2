@@ -58,7 +58,7 @@ ofEmissiveTextures:true
 ofLazyChunkLoading:true
 ofRenderRegions:false
 ofSmartAnimations:false
-ofDynamicFov:true
+ofDynamicFov:false
 ofAlternateBlocks:true
 ofDynamicLights:3
 ofScreenshotSize:1
@@ -67,6 +67,6 @@ ofCustomGuis:true
 ofShowGlErrors:true
 ofFullscreenMode:Default
 ofFastMath:false
-ofFastRender:false
+ofFastRender:true
 ofTranslucentBlocks:0
 key_of.key.zoom:46

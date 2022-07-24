@@ -5,6 +5,7 @@ import net.minecraft.client.gui.Gui;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.gl.GLRectUtils;
 import tk.simplexclient.module.ModuleCreator;
+import tk.simplexclient.module.settings.Option;
 
 import java.awt.*;
 
@@ -15,6 +16,9 @@ public class CoordinatesModule extends ModuleCreator {
     public CoordinatesModule() {
         super("coordinates", 130, 130);
     }
+
+    @Option(text = "Test2 Slider", min = 1, max = 100)
+    private int test = 50;
 
     @Override
     public void render() {

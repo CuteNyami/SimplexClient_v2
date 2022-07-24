@@ -14,17 +14,15 @@ public class MixinGuiPlayerTabOverlay {
 
     @Redirect(method = "renderPlayerlist", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiPlayerTabOverlay;drawPing(IIILnet/minecraft/client/network/NetworkPlayerInfo;)V"))
     public void writePing(GuiPlayerTabOverlay instance, int p_175245_1_, int p_175245_2_, int p_175245_3_, NetworkPlayerInfo networkPlayerInfoIn) {
-        int pingStringWidth = (int) SimplexClient.getInstance().getSmoothFont().getWidth("1000");
         int pingColor = new Color(0,0,0).getRGB();
 
-        //networkPlayerInfoIn.getResponseTime() + ""
-
-        int textX = p_175245_1_ + p_175245_2_ - pingStringWidth - 1;
+        int pingStringWidth = (int) SimplexClient.getInstance().getSmoothFont().getWidth(String.valueOf(networkPlayerInfoIn.getResponseTime()));
+        int textX = p_175245_1_ + p_175245_2_ - pingStringWidth;
 
         if(networkPlayerInfoIn.getResponseTime() < 150) pingColor = new Color(68, 183, 69).getRGB();
         if(networkPlayerInfoIn.getResponseTime() >= 150) pingColor = new Color(0, 112, 0).getRGB();
         if(networkPlayerInfoIn.getResponseTime() > 299) pingColor = new Color(221, 67, 67).getRGB();
 
-        SimplexClient.getInstance().getSmoothFont().drawStringWithShadow("1000", textX, p_175245_3_, pingColor);
+        SimplexClient.getInstance().getSmoothFont().drawString(String.valueOf(networkPlayerInfoIn.getResponseTime()), p_175245_2_ + p_175245_1_ - SimplexClient.getInstance().getSmoothFont().getStringWidth(String.valueOf(networkPlayerInfoIn.getResponseTime())) - 1, p_175245_3_, pingColor);
     }
 }

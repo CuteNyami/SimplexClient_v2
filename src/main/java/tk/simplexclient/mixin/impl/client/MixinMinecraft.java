@@ -14,6 +14,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.access.AccessMinecraft;
+import tk.simplexclient.animations.Delta;
 import tk.simplexclient.event.impl.ClientTickEvent;
 import tk.simplexclient.module.impl.MotionBlur;
 
@@ -22,14 +23,56 @@ public abstract class MixinMinecraft implements AccessMinecraft {
 
     private long lastFrame = getTime();
 
-    @Inject(method = "startGame", at = @At(value = "HEAD"))
-    public void init(CallbackInfo ci) {
-        new SimplexClient().init();
+    /*
+    @Inject(method = "startGame", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/texture/TextureMap;setBlurMipmapDirect(ZZ)V"))
+    public void modelManagerProgress(CallbackInfo ci) {
+        SplashProgress.setProgress(2, "Minecraft - ModelManager");
     }
+
+    @Inject(method = "startGame", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/entity/RenderItem;<init>(Lnet/minecraft/client/renderer/texture/TextureManager;Lnet/minecraft/client/resources/model/ModelManager;)V"))
+    public void renderItemProgress(CallbackInfo ci) {
+        SplashProgress.setProgress(3, "Minecraft - RenderItem");
+    }
+
+    @Inject(method = "startGame", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/entity/RenderManager;<init>(Lnet/minecraft/client/renderer/texture/TextureManager;Lnet/minecraft/client/renderer/entity/RenderItem;)V"))
+    public void renderManagerProgress(CallbackInfo ci) {
+        SplashProgress.setProgress(4, "Minecraft - RenderManager");
+    }
+
+    @Inject(method = "startGame", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/RenderGlobal;<init>(Lnet/minecraft/client/Minecraft;)V"))
+    public void renderGlobal(CallbackInfo ci) {
+        SplashProgress.setProgress(6, "Minecraft - RenderGlobal");
+    }
+
+    @Inject(method = "startGame", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/BlockRendererDispatcher;<init>(Lnet/minecraft/client/renderer/BlockModelShapes;Lnet/minecraft/client/settings/GameSettings;)V"))
+    public void blockRenderDispatcherProgress(CallbackInfo ci) {
+        SplashProgress.setProgress(5, "Minecraft - BlockRenderDispatcher");
+    }
+    */
 
     @Inject(method = "startGame", at = @At("RETURN"))
     public void injectStartGame(CallbackInfo ci) {
         new SimplexClient().start();
+    }
+
+    /**
+     * @author CuteNyami
+     * @reason idk
+     */
+    /*
+    @Overwrite
+    private void drawSplashScreen(TextureManager textureManagerInstance) {
+        new SimplexClient().init();
+        SplashProgress.draw(textureManagerInstance);
+    }
+
+     */
+    @Inject(method = "runGameLoop", at = @At("HEAD"))
+    public void delta(CallbackInfo ci) {
+        long currentTime = getTime();
+        int deltaTime = (int) (currentTime - lastFrame);
+        lastFrame = currentTime;
+        Delta.DELTATIME = deltaTime;
     }
 
     @Inject(method = "shutdownMinecraftApplet", at = @At("HEAD"))

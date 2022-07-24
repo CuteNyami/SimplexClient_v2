@@ -49,7 +49,7 @@ public class GuiButtonExt extends GuiButton {
             if (strWidth > width - 6 && strWidth > ellipsisWidth)
                 buttonText = mc.fontRendererObj.trimStringToWidth(buttonText, width - 6 - ellipsisWidth).trim() + "...";
 
-            SimplexClient.getInstance().getSmoothFont().drawCenteredString(buttonText, this.xPosition + this.width / 2 - 29, this.yPosition + (this.height - 35) / 2, color);
+            SimplexClient.getInstance().getSmoothFont().drawCenteredString(buttonText, this.xPosition + this.width / 2 - 29, this.yPosition + (this.height - 35) / 2, -1);
         }
     }
 }

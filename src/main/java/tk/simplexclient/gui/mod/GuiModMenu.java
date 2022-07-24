@@ -1,16 +1,19 @@
 package tk.simplexclient.gui.mod;
 
+import lombok.Getter;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
-import org.lwjgl.Sys;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.util.ResourceLocation;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gl.GLRectUtils;
+import tk.simplexclient.gui.utils.GuiUtils;
 import tk.simplexclient.module.ModuleCreator;
 import tk.simplexclient.ui.buttons.ModButton;
 import tk.simplexclient.ui.buttons.round.ImageButton;
@@ -92,7 +95,10 @@ public class GuiModMenu extends GuiScreen {
 
         for (ModuleCreator module : SimplexClient.getInstance().getModuleManager().getModules()) {
             if (module.getName().contains(this.searchField.getText().toLowerCase())) {
-                this.modButtons.add(new ModButton(this.width / 2 - 20, y - this.scrollY, 135, 15, module));
+                this.modButtons.add(new ModButton(this.width / 2 - 20, y - this.scrollY, 120, 15, module));
+                if (SimplexClient.getInstance().getSettingsBuilder().getModsWithSettings().contains(module)) {
+                    this.buttonList.add(new SettingsButton(this.width / 2 + 100, y - this.scrollY, 15, 15, 10, module));
+                }
                 contentHeight += MOD_Y_INC;
                 y += MOD_Y_INC;
             }
@@ -137,6 +143,12 @@ public class GuiModMenu extends GuiScreen {
         for (ModButton button : modButtons) {
             button.onClick((mouseX >= button.xPosition && mouseY >= button.yPosition && mouseX < button.xPosition + button.getWidth() && mouseY < button.yPosition + button.getHeight()) && (mouseX >= width / 2 - 100 && mouseY >= height / 2 - 43 && mouseX < width / 2 - 100 + 370 && mouseY < height / 2 - 43 + 100), mouseX, mouseY, mouseButton);
         }
+        for (GuiButton button : buttonList) {
+            if (button instanceof SettingsButton) {
+                SettingsButton settingsButton = (SettingsButton) button;
+                settingsButton.onClick(mouseX, mouseY, mouseButton);
+            }
+        }
         super.mouseClicked(mouseX, mouseY, mouseButton);
     }
 
@@ -179,10 +191,47 @@ public class GuiModMenu extends GuiScreen {
                 (int) (height * mc.displayHeight / scaledResolution.getScaledHeight()));
     }
 
-    public int getMaxPixelsScrolled() {
-        int columns = SimplexClient.getInstance().getModuleManager().getModules().size() / 3;
-        if (SimplexClient.getInstance().getModuleManager().getModules().size() % 3 > 0) columns++;
-        return (columns * 15) + (columns * 20);
+    private static class SettingsButton extends GuiButton {
+
+        @Getter
+        private final int iconSize;
+
+        @Getter
+        private final ModuleCreator module;
+
+        public SettingsButton(int x, int y, int width, int height, int iconSize, ModuleCreator module) {
+            super(500, x, y, width, height, "");
+            this.iconSize = iconSize;
+            this.module = module;
+        }
+
+        @Override
+        public void drawButton(Minecraft mc, int mouseX, int mouseY) {
+            mc.getTextureManager().bindTexture(new ResourceLocation("simplex/icons/options.png"));
+
+            int b = 10;
+            if (iconSize != 0) {
+                b = iconSize;
+            }
+            GlStateManager.enableBlend();
+
+            GuiUtils.setGlColor(new Color(255, 255, 255, 255).getRGB());
+            GuiUtils.drawScaledCustomSizeModalRect(this.xPosition + (float) (this.width - b) / 2, this.yPosition + (float) (this.height - b) / 2, 0f, 0f, b, b, b, b, b, b);
+        }
+
+        public void onClick(int mouseX, int mouseY, int mouseButton) {
+            if ((mouseX >= xPosition && mouseY >= yPosition && mouseX < xPosition + getWidth() && mouseY < yPosition + getHeight())) {
+                Minecraft.getMinecraft().displayGuiScreen(new GuiModSettings(module));
+            }
+        }
+
+        public int getWidth() {
+            return width;
+        }
+
+        public int getHeight() {
+            return height;
+        }
     }
 
     private static class BlueButton extends GuiButton {

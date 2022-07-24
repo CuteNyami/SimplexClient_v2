@@ -6,7 +6,7 @@ import tk.simplexclient.module.impl.ToggleSprint;
 import tk.simplexclient.module.impl.V1_7Visuals;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,7 +23,7 @@ public class ModuleManager {
     private final List<ModuleCreator> modules = new ArrayList<>();
 
     public void registerModules(ModuleCreator... modules) {
-        Collections.addAll(this.modules, modules);
+        this.modules.addAll(Arrays.asList(modules));
     }
 
     public List<ModuleCreator> getModules() {
