@@ -85,6 +85,7 @@ public final class SimplexClient {
                 new TargetHUDModule(),
                 new ArmorStatusModule(),
                 //new ServerDisplayModule(),
+                moduleManager.tntTimer,
                 moduleManager.motionBlur,
                 moduleManager.toggleSprint,
                 moduleManager.itemPhysics,
@@ -99,7 +100,6 @@ public final class SimplexClient {
 
         // Keybindings
         registerKeyBind(CLICK_GUI);
-        registerKeyBind(TEST_GUI);
 
         ThemeManager.registerTheme(new LightTheme());
 

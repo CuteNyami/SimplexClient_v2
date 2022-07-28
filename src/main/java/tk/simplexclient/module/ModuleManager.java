@@ -1,9 +1,6 @@
 package tk.simplexclient.module;
 
-import tk.simplexclient.module.impl.ItemPhysics;
-import tk.simplexclient.module.impl.MotionBlur;
-import tk.simplexclient.module.impl.ToggleSprint;
-import tk.simplexclient.module.impl.V1_7Visuals;
+import tk.simplexclient.module.impl.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,6 +14,8 @@ public class ModuleManager {
     public final ToggleSprint toggleSprint = new ToggleSprint();
 
     public final MotionBlur motionBlur = new MotionBlur();
+
+    public final TNTTimer tntTimer = new TNTTimer();
 
     public final V1_7Visuals v1_7Visual = new V1_7Visuals();
 
