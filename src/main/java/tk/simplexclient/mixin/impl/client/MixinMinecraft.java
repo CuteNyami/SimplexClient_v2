@@ -1,12 +1,14 @@
 package tk.simplexclient.mixin.impl.client;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.client.resources.DefaultResourcePack;
 import net.minecraft.client.resources.data.IMetadataSerializer;
 import net.minecraft.util.Session;
 import net.minecraft.util.Timer;
 import org.lwjgl.Sys;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.gen.Invoker;
 import org.spongepowered.asm.mixin.injection.At;
@@ -16,12 +18,15 @@ import tk.simplexclient.SimplexClient;
 import tk.simplexclient.access.AccessMinecraft;
 import tk.simplexclient.animations.Delta;
 import tk.simplexclient.event.impl.ClientTickEvent;
+import tk.simplexclient.gui.main.SplashProgress;
 import tk.simplexclient.module.impl.MotionBlur;
 
 @Mixin(Minecraft.class)
 public abstract class MixinMinecraft implements AccessMinecraft {
 
     private long lastFrame = getTime();
+
+    private final ClientTickEvent event = new ClientTickEvent();
 
     /*
     @Inject(method = "startGame", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/texture/TextureMap;setBlurMipmapDirect(ZZ)V"))
@@ -48,7 +53,8 @@ public abstract class MixinMinecraft implements AccessMinecraft {
     public void blockRenderDispatcherProgress(CallbackInfo ci) {
         SplashProgress.setProgress(5, "Minecraft - BlockRenderDispatcher");
     }
-    */
+
+     */
 
     @Inject(method = "startGame", at = @At("RETURN"))
     public void injectStartGame(CallbackInfo ci) {
@@ -67,6 +73,7 @@ public abstract class MixinMinecraft implements AccessMinecraft {
     }
 
      */
+
     @Inject(method = "runGameLoop", at = @At("HEAD"))
     public void delta(CallbackInfo ci) {
         long currentTime = getTime();
@@ -89,7 +96,6 @@ public abstract class MixinMinecraft implements AccessMinecraft {
 
     @Inject(method = "runTick", at = @At("TAIL"))
     public void runTick(CallbackInfo ci) {
-        ClientTickEvent event = new ClientTickEvent();
         event.call();
     }
 

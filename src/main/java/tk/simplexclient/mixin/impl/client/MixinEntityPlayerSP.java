@@ -10,9 +10,10 @@ import tk.simplexclient.event.impl.EventUpdate;
 @Mixin(EntityPlayerSP.class)
 public class MixinEntityPlayerSP {
 
+    private final EventUpdate event = new EventUpdate();
+
     @Inject(method = "onUpdate", at = @At("HEAD"))
     public void onUpdate(CallbackInfo ci) {
-        EventUpdate event = new EventUpdate();
         event.call();
     }
 

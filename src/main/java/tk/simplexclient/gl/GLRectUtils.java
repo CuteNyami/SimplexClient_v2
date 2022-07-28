@@ -1,5 +1,6 @@
 package tk.simplexclient.gl;
 
+import net.minecraft.util.ResourceLocation;
 import tk.simplexclient.font.FontUtils;
 import tk.simplexclient.gui.utils.GuiUtils;
 import tk.simplexclient.math.MathUtil;
@@ -18,6 +19,8 @@ import java.awt.*;
  * @author Unknown
  */
 public class GLRectUtils extends FontUtils {
+
+    private static boolean lineAA;
 
     public static void drawModalRectWithCustomSizedTexture(int x, int y, float u, float v, int width, int height, float textureWidth, float textureHeight) {
         float f = 1.0F / textureWidth;
@@ -111,10 +114,7 @@ public class GLRectUtils extends FontUtils {
 
     /**
      * Render a rounded rectangle
-     *
-     * @deprecated use {@link RoundedShaderRenderer#drawRound}.
      */
-    @Deprecated
     public static void drawRoundedRect(final float nameInt1, final float nameInt2, final float nameInt3, final float nameInt4, final float radius, final int color) {
         final float f1 = (color >> 24 & 0xFF) / 255.0f;
         final float f2 = (color >> 16 & 0xFF) / 255.0f;
@@ -197,6 +197,45 @@ public class GLRectUtils extends FontUtils {
         GlStateManager.popMatrix();
     }
 
+    public static void drawShadow(float x, float y, float width, float height) {
+        drawTexturedRect(x - 4, y - 4, 4, 4, "panel_top_left");
+        drawTexturedRect(x - 4, y + height, 4, 4, "panel_bottom_left");
+        drawTexturedRect(x + width, y + height, 4, 4, "panel_bottom_right");
+        drawTexturedRect(x + width, y - 4, 4, 4, "panel_top_right");
+        drawTexturedRect(x - 4, y, 4, height, "panel_left");
+        drawTexturedRect(x + width, y, 4, height, "panel_right");
+        drawTexturedRect(x, y - 4, width, 4, "panel_top");
+        drawTexturedRect(x, y + height, width, 4, "panel_bottom");
+    }
+
+    public static void drawTexturedRect(float x, float y, float width, float height, String image) {
+        GL11.glPushMatrix();
+        final boolean enableBlend = GL11.glIsEnabled(GL11.GL_BLEND);
+        final boolean disableAlpha = !GL11.glIsEnabled(GL11.GL_ALPHA_TEST);
+        if (!enableBlend) GL11.glEnable(GL11.GL_BLEND);
+        if (!disableAlpha) GL11.glDisable(GL11.GL_ALPHA_TEST);
+        mc.getTextureManager().bindTexture(new ResourceLocation("simplex/shadow/" + image + ".png"));
+        GlStateManager.color(1F, 1F, 1F, 1F);
+        drawModalRectWithCustomSizedTexture(x, y, 0, 0, width, height, width, height);
+        if (!enableBlend) GL11.glDisable(GL11.GL_BLEND);
+        if (!disableAlpha) GL11.glEnable(GL11.GL_ALPHA_TEST);
+        GL11.glPopMatrix();
+    }
+
+    public static void drawModalRectWithCustomSizedTexture(float x, float y, float u, float v, float width, float height, float textureWidth, float textureHeight)
+    {
+        float f = 1.0F / textureWidth;
+        float f1 = 1.0F / textureHeight;
+        Tessellator tessellator = Tessellator.getInstance();
+        WorldRenderer worldrenderer = tessellator.getWorldRenderer();
+        worldrenderer.begin(7, DefaultVertexFormats.POSITION_TEX);
+        worldrenderer.pos(x, (y + height), 0.0D).tex((u * f), ((v + height) * f1)).endVertex();
+        worldrenderer.pos((x + width), (y + height), 0.0D).tex(((u + width) * f), ((v + height) * f1)).endVertex();
+        worldrenderer.pos((x + width), y, 0.0D).tex(((u + width) * f), (v * f1)).endVertex();
+        worldrenderer.pos(x, y, 0.0D).tex((u * f), (v * f1)).endVertex();
+        tessellator.draw();
+    }
+
     public static void drawRoundedOutline(final int x, final int y, final int x2, final int y2, final float radius, final float width, final int color) {
         GuiUtils.setGlColor(color);
         drawRoundedOutline(x, y, x2, y2, radius, width);
@@ -205,6 +244,58 @@ public class GLRectUtils extends FontUtils {
     public static void drawRoundedOutline(final float x, final float y, final float x2, final float y2, final float radius, final float width, final int color) {
         GuiUtils.setGlColor(color);
         drawRoundedOutline(x, y, x2, y2, radius, width);
+    }
+
+    public static void drawSmoothRoundedRect(float x, float y, float x1, float y1, float radius, int color) {
+        GL11.glPushAttrib(0);
+        GL11.glScaled(0.5D, 0.5D, 0.5D);
+        x *= 2.0D;
+        y *= 2.0D;
+        x1 *= 2.0D;
+        y1 *= 2.0D;
+        GL11.glEnable(GL11.GL_BLEND);
+        GL11.glDisable(GL11.GL_TEXTURE_2D);
+        GL11.glEnable(GL11.GL_LINE_SMOOTH);
+        setColor(color);
+        GL11.glEnable(GL11.GL_LINE_SMOOTH);
+        GL11.glBegin(GL11.GL_POLYGON);
+        int i;
+        for (i = 0; i <= 90; i += 3)
+            GL11.glVertex2d(x + radius + Math.sin(i * Math.PI / 180.0D) * radius * -1.0D, y + radius + Math.cos(i * Math.PI / 180.0D) * radius * -1.0D);
+        for (i = 90; i <= 180; i += 3)
+            GL11.glVertex2d(x + radius + Math.sin(i * Math.PI / 180.0D) * radius * -1.0D, y1 - radius + Math.cos(i * Math.PI / 180.0D) * radius * -1.0D);
+        for (i = 0; i <= 90; i += 3)
+            GL11.glVertex2d(x1 - radius + Math.sin(i * Math.PI / 180.0D) * radius, y1 - radius + Math.cos(i * Math.PI / 180.0D) * radius);
+        for (i = 90; i <= 180; i += 3)
+            GL11.glVertex2d(x1 - radius + Math.sin(i * Math.PI / 180.0D) * radius, y + radius + Math.cos(i * Math.PI / 180.0D) * radius);
+        GL11.glEnd();
+        GL11.glBegin(GL11.GL_LINE_LOOP);
+        for (i = 0; i <= 90; i += 3)
+            GL11.glVertex2d(x + radius + Math.sin(i * Math.PI / 180.0D) * radius * -1.0D, y + radius + Math.cos(i * Math.PI / 180.0D) * radius * -1.0D);
+        for (i = 90; i <= 180; i += 3)
+            GL11.glVertex2d(x + radius + Math.sin(i * Math.PI / 180.0D) * radius * -1.0D, y1 - radius + Math.cos(i * Math.PI / 180.0D) * radius * -1.0D);
+        for (i = 0; i <= 90; i += 3)
+            GL11.glVertex2d(x1 - radius + Math.sin(i * Math.PI / 180.0D) * radius, y1 - radius + Math.cos(i * Math.PI / 180.0D) * radius);
+        for (i = 90; i <= 180; i += 3)
+            GL11.glVertex2d(x1 - radius + Math.sin(i * Math.PI / 180.0D) * radius, y + radius + Math.cos(i * Math.PI / 180.0D) * radius);
+        GL11.glEnd();
+        GL11.glEnable(GL11.GL_TEXTURE_2D);
+        GL11.glDisable(GL11.GL_BLEND);
+        GL11.glDisable(GL11.GL_LINE_SMOOTH);
+        GL11.glDisable(GL11.GL_LINE_SMOOTH);
+        GL11.glEnable(GL11.GL_TEXTURE_2D);
+        GL11.glScaled(2.0D, 2.0D, 2.0D);
+        GL11.glPopAttrib();
+        GL11.glLineWidth(1);
+        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+    }
+
+    public static void setColor(int color) {
+        float a = (color >> 24 & 0xFF) / 255.0F;
+        float r = (color >> 16 & 0xFF) / 255.0F;
+        float g = (color >> 8 & 0xFF) / 255.0F;
+        float b = (color & 0xFF) / 255.0F;
+        GL11.glColor4f(r, g, b, a);
     }
 
     private static void drawRoundedOutline(final float x, final float y, final float x2, final float y2, final float radius, final float width) {

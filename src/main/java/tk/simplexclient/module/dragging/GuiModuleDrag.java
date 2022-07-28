@@ -3,9 +3,11 @@ package tk.simplexclient.module.dragging;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.util.ResourceLocation;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.access.AccessEntityRenderer;
+import tk.simplexclient.gui.ModMenu;
 import tk.simplexclient.gui.mod.GuiModMenu;
 import tk.simplexclient.gui.mod.GuiTweaks;
 import tk.simplexclient.module.ModuleCreator;
@@ -23,8 +25,11 @@ public class GuiModuleDrag extends GuiScreen {
     private int prevX;
     private int prevY;
 
+    private ScaledResolution res = new ScaledResolution(mc);
+
     @Override
     public void initGui() {
+        res = new ScaledResolution(mc);
         /*
             ((AccessEntityRenderer) mc.entityRenderer).loadShader(new ResourceLocation("shaders/post/menu_blur.json"));
          */
@@ -40,9 +45,9 @@ public class GuiModuleDrag extends GuiScreen {
             }
         }
         selected.ifPresent(m -> {
-            m.setX(mouseX + m.getX() - prevX);
-            m.setY(mouseY + m.getY() - prevY);
-
+           // m.setPos(mouseX + m.x - prevX, mouseY + m.getY() - prevY);
+            m.setX(mouseX + m.x - prevX);
+            m.setY(mouseY + m.y - prevY);
             prevX = mouseX;
             prevY = mouseY;
         });
@@ -52,7 +57,7 @@ public class GuiModuleDrag extends GuiScreen {
     @Override
     protected void actionPerformed(GuiButton button) throws IOException {
         if (button.id == 0) {
-            mc.displayGuiScreen(new GuiModMenu());
+            mc.displayGuiScreen(new ModMenu());
         }
         if (button.id == 1) {
             mc.displayGuiScreen(new GuiTweaks());
@@ -93,7 +98,6 @@ public class GuiModuleDrag extends GuiScreen {
 
     @Override
     public void onGuiClosed() {
-        mc.entityRenderer.stopUseShader();
         SimplexClient.getInstance().getModuleConfig().saveModuleConfig();
     }
 }

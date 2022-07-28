@@ -72,7 +72,7 @@ public abstract class MixinGuiSlot {
             this.mouseX = mouseXIn;
             this.mouseY = mouseYIn;
             //this.drawBackground();
-            this.mc.getTextureManager().bindTexture(new ResourceLocation("simplex/menu/main/bg.png"));
+            this.mc.getTextureManager().bindTexture(new ResourceLocation("simplex/menu/main/10bg.png"));
             Gui.drawModalRectWithCustomSizedTexture(-21 / 90, -1 / 90, 0.0f, 0.0f, this.width + 20, this.height + 20, (float)(this.width + 21), (float)(this.height + 20));
             int i = this.getScrollBarX();
             int j = i + 6;

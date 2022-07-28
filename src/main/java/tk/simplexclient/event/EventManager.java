@@ -48,7 +48,6 @@ public class EventManager {
             }
         } else {
             EventManager.REGISTRY_MAP.put((Class<? extends Event>) clazz, new ArrayHelper<Data>() {
-
                 {
                     this.add(methodData);
                 }

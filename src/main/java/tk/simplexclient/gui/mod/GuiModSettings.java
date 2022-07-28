@@ -1,20 +1,27 @@
 package tk.simplexclient.gui.mod;
 
 import lombok.Getter;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.ScaledResolution;
 import tk.simplexclient.SimplexClient;
+import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gl.GLRectUtils;
+import tk.simplexclient.gui.ModMenu;
 import tk.simplexclient.gui.elements.GuiSlider;
+import tk.simplexclient.gui.elements.ToggleBoxButton;
 import tk.simplexclient.gui.elements.ToggleButton;
 import tk.simplexclient.module.ModuleCreator;
 import tk.simplexclient.module.settings.Option;
 import tk.simplexclient.module.settings.SettingsManager;
+import tk.simplexclient.shader.RoundedShaderRenderer;
 import tk.simplexclient.ui.buttons.round.ImageButton;
 
 import java.awt.*;
 import java.io.IOException;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 
 public class GuiModSettings extends GuiScreen {
 
@@ -27,8 +34,14 @@ public class GuiModSettings extends GuiScreen {
         this.module = module;
     }
 
+    private FontRenderer fontRenderer;
+
+    private ScaledResolution sr;
+
     @Override
     public void initGui() {
+        sr = new ScaledResolution(Minecraft.getMinecraft());
+        fontRenderer = new FontRenderer("smooth", 20.0F);
         builder = SimplexClient.getInstance().getSettingsBuilder();
 
         builder.getSliderMap().clear();
@@ -50,7 +63,7 @@ public class GuiModSettings extends GuiScreen {
                     builder.getSliderList().add(slider);
                 }
                 if (field.getType() == boolean.class) {
-                    ToggleButton toggleButton = new ToggleButton(this.width / 2 - 115, (this.height / 2 - 50) + y, 10, optionAnnotation.text(), builder.getToggleValue(module, field));
+                    ToggleBoxButton toggleButton = new ToggleBoxButton(this.width / 2 - 115, (this.height / 2 - 50) + y, 10, optionAnnotation.text(), builder.getToggleValue(module, field));
                     builder.getToggleMap().put(field, toggleButton);
                     builder.getToggleList().add(toggleButton);
                 }
@@ -62,19 +75,29 @@ public class GuiModSettings extends GuiScreen {
 
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
-        GLRectUtils.drawRect((float) width / 2 - 125, (float) height / 2 - 75, (float) (width / 2 - 125) + 250, (float) (height / 2 - 75) + 150, new Color(0, 0, 0, 140).getRGB());
-        GLRectUtils.drawRoundedOutline((float) width / 2 - 125, (float) height / 2 - 75, (float) (width / 2 - 125) + 250, (float) (height / 2 - 75) + 150, 1.5F, 3.0F, new Color(255, 255, 255, 140).getRGB());
+        float bgX = (float) this.width / 2;
+        float bgY = (float) this.height / 2;
+        float bgWidth = 200;
+        float bgHeight = 150;
 
-        GLRectUtils.drawRect((float) width / 2 - 125, (float) height / 2 - 60, (float) (width / 2 - 125) + 250, (float) (height / 2 - 60) + 1.5F, new Color(255, 255, 255, 140).getRGB());
-        SimplexClient.getInstance().getSmoothFont().drawString(module.getName().toLowerCase() + " Settings", width / 2 - 113, height / 2 - 72, -1);
+        /* Mod Menu Background */
+        RoundedShaderRenderer.getInstance().drawRound(sr, bgX - (bgWidth / 2), bgY - (bgHeight / 2), bgWidth, bgHeight, 5F, new Color(40, 40, 40));
+        RoundedShaderRenderer.getInstance().drawRound(sr, bgX - 75 - ((bgWidth - 150) / 2), bgY - (bgHeight / 2), bgWidth - 150, bgHeight, 5, new Color(30, 30, 30));
+        RoundedShaderRenderer.getInstance().drawRound(sr, bgX - 55 - ((bgWidth - 190) / 2), bgY - (bgHeight / 2), bgWidth - 190, bgHeight, 0, new Color(30, 30, 30));
+        RoundedShaderRenderer.getInstance().drawRound(sr, bgX + 60 - (bgWidth / 2), bgY + 10 - (bgHeight / 2), bgWidth - 70, bgHeight - 20, 5F, new Color(30, 30, 30));
 
+        fontRenderer.drawString("Simplex", this.width / 2 - 92, this.height / 2 - 69, new Color(170, 170, 170).getRGB());
+
+        /*
         for (GuiSlider slider : builder.getSliderList()) {
             slider.drawButton(mc, mouseX, mouseY);
         }
 
-        for (ToggleButton toggle : builder.getToggleList()) {
+        for (ToggleBoxButton toggle : builder.getToggleList()) {
             toggle.drawButton(mc, mouseX, mouseY);
         }
+
+         */
 
         super.drawScreen(mouseX, mouseY, partialTicks);
     }
@@ -84,7 +107,7 @@ public class GuiModSettings extends GuiScreen {
         for (GuiSlider slider : builder.getSliderList()) {
             slider.mousePressed(mc, mouseX, mouseY);
         }
-        for (ToggleButton toggle : builder.getToggleList()) {
+        for (ToggleBoxButton toggle : builder.getToggleList()) {
             toggle.onClick();
         }
         super.mouseClicked(mouseX, mouseY, mouseButton);

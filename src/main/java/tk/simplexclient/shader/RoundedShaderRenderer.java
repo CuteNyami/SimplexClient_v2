@@ -36,8 +36,11 @@ public class RoundedShaderRenderer {
                 throw new RuntimeException(e);
             }
 
+            GlStateManager.pushMatrix();
             glAttachShader(program, fragID);
             glAttachShader(program, vertexID);
+
+            GlStateManager.popMatrix();
 
             glLinkProgram(program); //link program
             int status = glGetProgrami(program, GL_LINK_STATUS);
@@ -60,9 +63,11 @@ public class RoundedShaderRenderer {
 
     static int createShader(InputStream inputStream, int shaderType) {
         int shader = glCreateShader(shaderType);
+        GlStateManager.pushMatrix();
         glShaderSource(shader, readInputStream(inputStream));
         glCompileShader(shader);
 
+        GlStateManager.popMatrix();
 
         if (glGetShaderi(shader, GL_COMPILE_STATUS) == 0) {
             throw new IllegalStateException("Shader failed to compile! : " + shaderType);
@@ -89,13 +94,15 @@ public class RoundedShaderRenderer {
     /**
      * Render a rounded rectangle with a shader
      */
-    public void drawRound(float x, float y, float width, float height, float radius, Color color) {
+    public void drawRound(ScaledResolution sr, float x, float y, float width, float height, float radius, Color color) {
+        GlStateManager.pushMatrix();
         GlStateManager.resetColor();
         GlStateManager.enableBlend();
+        GlStateManager.disableCull();
+        GlStateManager.enableColorMaterial();
         GlStateManager.blendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
         getInstance().load();
 
-        ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
         getInstance().setUniformFloat("loc", x * sr.getScaleFactor(),
                 (Minecraft.getMinecraft().displayHeight - (height * sr.getScaleFactor())) - (y * sr.getScaleFactor()));
         getInstance().setUniformFloat("size", width * sr.getScaleFactor(), height * sr.getScaleFactor());
@@ -114,6 +121,10 @@ public class RoundedShaderRenderer {
         glEnd();
         getInstance().unload();
         GlStateManager.disableBlend();
+        GlStateManager.enableCull();
+        GlStateManager.disableColorMaterial();
+        GlStateManager.popMatrix();
+        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
 

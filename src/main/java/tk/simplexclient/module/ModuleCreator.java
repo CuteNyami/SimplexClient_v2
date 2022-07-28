@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.SneakyThrows;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.ScaledResolution;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.event.EventManager;
@@ -15,16 +16,16 @@ import tk.simplexclient.module.settings.Option;
 import java.awt.*;
 import java.lang.reflect.Field;
 
-@Getter @Setter
+@Setter
 public abstract class ModuleCreator {
 
-    private String name, description;
+    @Getter private String name, description;
 
-    private int x, y;
+    public int x, y;
 
-    private boolean enabled;
+    @Getter private boolean enabled;
 
-    public final FontRenderer fr = new FontRenderer("smooth", 15.0f);
+    @Getter public final FontRenderer fr = new FontRenderer("smooth", 15.0f);
 
     public ModuleCreator(String name, String description, int x, int y) {
         this.name = name;
@@ -71,6 +72,7 @@ public abstract class ModuleCreator {
     }
 
     public void render() {
+
     }
 
     public void renderDummy(int width, int height) {
@@ -95,7 +97,7 @@ public abstract class ModuleCreator {
         } else {
             double val = 0.0;
             Option optionAnnotation = field1.getAnnotation(Option.class);
-            if (optionAnnotation != null) {
+            if (optionAnnotation != null && SimplexClient.getInstance().getSettingsBuilder().getSliderMap().containsKey(field1)) {
                 field1.setAccessible(true);
                 val = SimplexClient.getInstance().getSettingsBuilder().getSliderMap().get(field1).getValue();
             }
@@ -111,7 +113,7 @@ public abstract class ModuleCreator {
         } else {
             boolean val = false;
             Option optionAnnotation = field1.getAnnotation(Option.class);
-            if (optionAnnotation != null) {
+            if (optionAnnotation != null && field1.getType() == boolean.class && SimplexClient.getInstance().getSettingsBuilder().getToggleMap().containsKey(field1)) {
                 field1.setAccessible(true);
                 val = SimplexClient.getInstance().getSettingsBuilder().getToggleMap().get(field1).isToggled();
             }
@@ -127,4 +129,24 @@ public abstract class ModuleCreator {
         return 0;
     }
 
+
+    public int getX() {
+        //ScaledResolution res = new ScaledResolution(Minecraft.getMinecraft());
+        return x;
+    }
+
+    public int getY() {
+       // ScaledResolution res = new ScaledResolution(Minecraft.getMinecraft());
+        return y;
+    }
+
+    public void setX(int x) {
+       // ScaledResolution res = new ScaledResolution(Minecraft.getMinecraft());
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        //ScaledResolution res = new ScaledResolution(Minecraft.getMinecraft());
+        this.y = y;
+    }
 }

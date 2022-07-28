@@ -2,96 +2,111 @@ package tk.simplexclient.gui.elements;
 
 import lombok.Getter;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.Gui;
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.WorldRenderer;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+import net.minecraft.client.audio.PositionedSoundRecord;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
-import tk.simplexclient.SimplexClient;
-import tk.simplexclient.animations.Animate;
-import tk.simplexclient.animations.Easing;
-import tk.simplexclient.shader.RoundedShaderRenderer;
+import tk.simplexclient.module.ModuleCreator;
 
 import java.awt.*;
 
-import static tk.simplexclient.gui.utils.GuiUtils.drawHollowRect;
-
-public class ToggleButton extends GuiButton {
+public class ToggleButton {
 
     @Getter
-    boolean allowDraw;
+    private final int xPosition, yPosition, width, height;
 
     @Getter
-    boolean toggled;
+    private boolean toggled;
 
-    Color off = new Color (0xFFbdbdbd);
-    Color on = new Color (0xFF00FF00);
-    Color c = new Color (0xFFFFFFFF);
+    @Getter
+    private final ModuleCreator module;
 
-    Animate anim = new Animate();
+    @Getter
+    public boolean hovered;
 
-    public ToggleButton(int x, int y, int size, String buttonText, boolean toggled) {
-        super(555, x, y, size, size, buttonText);
+    public ToggleButton(int xPosition, int yPosition, int width, int height, boolean toggled, ModuleCreator module) {
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
+        this.width = width;
+        this.height = height;
         this.toggled = toggled;
+        this.module = module;
     }
 
-
-    @Override
     public void drawButton(Minecraft mc, int mouseX, int mouseY) {
-        hovered = enabled && visible && mouseX >= this.xPosition && mouseY >= this.yPosition && mouseX < this.xPosition + this.width && mouseY < this.yPosition + this.height;
+        hovered = mouseX >= this.xPosition && mouseY >= this.yPosition && mouseX < this.xPosition + this.width && mouseY < this.yPosition + this.height;
+        int color = new Color(169, 169, 169).getRGB();
+        if (hovered) {
+            color = new Color(136, 136, 136).getRGB();
+            if (toggled) {
+                color = new Color(0, 209, 159).getRGB();
+            }
+        }
+        if (toggled) {
+            color = new Color(0, 186, 143).getRGB();
+        }
 
-
-        //drawRoundedRect(this.xPosition, this.yPosition, 10, 10, 3, new Color(49, 49, 49));
-
-        Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation("simplex/icons/checkbox.png"));
-        Gui.drawModalRectWithCustomSizedTexture(xPosition, yPosition, width - 4, height - 3, width - 4, height - 3, width - 4, height - 3);
-
-        SimplexClient.getInstance().getSmoothFont().drawString(displayString, xPosition + 30, yPosition, -1);
+        drawSmoothRoundedRect(xPosition, yPosition, xPosition + width, yPosition + height, 9, color);
+        drawSmoothRoundedRect(toggled ? xPosition + 11 : xPosition + 1, yPosition + 1, (toggled ? xPosition + 11 : xPosition + 1) + height - 2, yPosition + 1 + height - 2, 7, new Color(30, 30, 30).getRGB());
     }
 
     public void onClick() {
         if (hovered) {
+            Minecraft.getMinecraft().getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation("gui.button.press"), 1.0F));
             toggled = !toggled;
+            module.setEnabled(toggled);
         }
     }
 
-    private void drawRoundedRect(int x, int y, int width, int height, int cornerRadius, Color color) {
-        drawRect(x, y + cornerRadius, x + cornerRadius, y + height - cornerRadius, color.getRGB());
-        drawRect(x + cornerRadius, y, x + width - cornerRadius, y + height, color.getRGB());
-        drawRect(x + width - cornerRadius, y + cornerRadius, x + width, y + height - cornerRadius, color.getRGB());
-        drawArc(x + cornerRadius, y + cornerRadius, cornerRadius, 0, 90, color);
-        drawArc(x + width - cornerRadius, y + cornerRadius, cornerRadius, 270, 360, color);
-        drawArc(x + width - cornerRadius, y + height - cornerRadius, cornerRadius, 180, 270, color);
-        drawArc(x + cornerRadius, y + height - cornerRadius, cornerRadius, 90, 180, color);
+    public static void drawSmoothRoundedRect(float x, float y, float x1, float y1, float radius, int color) {
+        GL11.glPushAttrib(0);
+        GL11.glScaled(0.5D, 0.5D, 0.5D);
+        x *= 2.0D;
+        y *= 2.0D;
+        x1 *= 2.0D;
+        y1 *= 2.0D;
+        GL11.glEnable(GL11.GL_BLEND);
+        GL11.glDisable(GL11.GL_TEXTURE_2D);
+        GL11.glEnable(GL11.GL_LINE_SMOOTH);
+        setColor(color);
+        GL11.glEnable(GL11.GL_LINE_SMOOTH);
+        GL11.glBegin(GL11.GL_POLYGON);
+        int i;
+        for (i = 0; i <= 90; i += 3)
+            GL11.glVertex2d(x + radius + Math.sin(i * Math.PI / 180.0D) * radius * -1.0D, y + radius + Math.cos(i * Math.PI / 180.0D) * radius * -1.0D);
+        for (i = 90; i <= 180; i += 3)
+            GL11.glVertex2d(x + radius + Math.sin(i * Math.PI / 180.0D) * radius * -1.0D, y1 - radius + Math.cos(i * Math.PI / 180.0D) * radius * -1.0D);
+        for (i = 0; i <= 90; i += 3)
+            GL11.glVertex2d(x1 - radius + Math.sin(i * Math.PI / 180.0D) * radius, y1 - radius + Math.cos(i * Math.PI / 180.0D) * radius);
+        for (i = 90; i <= 180; i += 3)
+            GL11.glVertex2d(x1 - radius + Math.sin(i * Math.PI / 180.0D) * radius, y + radius + Math.cos(i * Math.PI / 180.0D) * radius);
+        GL11.glEnd();
+        GL11.glBegin(GL11.GL_LINE_LOOP);
+        for (i = 0; i <= 90; i += 3)
+            GL11.glVertex2d(x + radius + Math.sin(i * Math.PI / 180.0D) * radius * -1.0D, y + radius + Math.cos(i * Math.PI / 180.0D) * radius * -1.0D);
+        for (i = 90; i <= 180; i += 3)
+            GL11.glVertex2d(x + radius + Math.sin(i * Math.PI / 180.0D) * radius * -1.0D, y1 - radius + Math.cos(i * Math.PI / 180.0D) * radius * -1.0D);
+        for (i = 0; i <= 90; i += 3)
+            GL11.glVertex2d(x1 - radius + Math.sin(i * Math.PI / 180.0D) * radius, y1 - radius + Math.cos(i * Math.PI / 180.0D) * radius);
+        for (i = 90; i <= 180; i += 3)
+            GL11.glVertex2d(x1 - radius + Math.sin(i * Math.PI / 180.0D) * radius, y + radius + Math.cos(i * Math.PI / 180.0D) * radius);
+        GL11.glEnd();
+        GL11.glEnable(GL11.GL_TEXTURE_2D);
+        GL11.glDisable(GL11.GL_BLEND);
+        GL11.glDisable(GL11.GL_LINE_SMOOTH);
+        GL11.glDisable(GL11.GL_LINE_SMOOTH);
+        GL11.glEnable(GL11.GL_TEXTURE_2D);
+        GL11.glScaled(2.0D, 2.0D, 2.0D);
+        GL11.glPopAttrib();
+        GL11.glLineWidth(1);
+        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
-    private void drawArc(int x, int y, int radius, int startAngle, int endAngle, Color color) {
-        GL11.glPushMatrix();
-        GL11.glEnable(3042);
-        GL11.glDisable(3553);
-        GL11.glBlendFunc(770, 771);
-        GL11.glColor4f((float) color.getRed() / 255, (float) color.getGreen() / 255, (float) color.getBlue() / 255, (float) color.getAlpha() / 255);
-
-        WorldRenderer worldRenderer = Tessellator.getInstance().getWorldRenderer();
-
-        worldRenderer.begin(6, DefaultVertexFormats.POSITION);
-        worldRenderer.pos(x, y, 0).endVertex();
-
-        for (int i = (int) (startAngle / 360.0 * 100); i <= (int) (endAngle / 360.0 * 100); i++) {
-            double angle = (Math.PI * 2 * i / 100) + Math.toRadians(180);
-            worldRenderer.pos(x + Math.sin(angle) * radius, y + Math.cos(angle) * radius, 0).endVertex();
-        }
-
-        Tessellator.getInstance().draw();
-
-        GL11.glEnable(3553);
-        GL11.glDisable(3042);
-        GL11.glPopMatrix();
-    }
-
-    private void drawCircle(int x, int y, int width, int height, Color color) {
-        this.drawArc(x + width / 2, y + height / 2, width / 2, 0, 360, color);
+    public static void setColor(int color) {
+        float a = (color >> 24 & 0xFF) / 255.0F;
+        float r = (color >> 16 & 0xFF) / 255.0F;
+        float g = (color >> 8 & 0xFF) / 255.0F;
+        float b = (color & 0xFF) / 255.0F;
+        GL11.glColor4f(r, g, b, a);
     }
 }

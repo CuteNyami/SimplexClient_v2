@@ -3,7 +3,7 @@ package tk.simplexclient.module.settings;
 import lombok.Getter;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.gui.elements.GuiSlider;
-import tk.simplexclient.gui.elements.ToggleButton;
+import tk.simplexclient.gui.elements.ToggleBoxButton;
 import tk.simplexclient.module.ModuleCreator;
 
 import java.lang.reflect.Field;
@@ -22,10 +22,10 @@ public class SettingsManager {
     private final ArrayList<GuiSlider> sliderList = new ArrayList<>();
 
     @Getter
-    private final HashMap<Field, ToggleButton> toggleMap = new HashMap<>();
+    private final HashMap<Field, ToggleBoxButton> toggleMap = new HashMap<>();
 
     @Getter
-    private final ArrayList<ToggleButton> toggleList = new ArrayList<>();
+    private final ArrayList<ToggleBoxButton> toggleList = new ArrayList<>();
 
     @Getter
     private final ArrayList<ModuleCreator> modsWithSettings = new ArrayList<>();

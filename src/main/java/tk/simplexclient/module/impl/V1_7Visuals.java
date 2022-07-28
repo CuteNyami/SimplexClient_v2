@@ -40,12 +40,7 @@ public class V1_7Visuals extends ModuleCreator implements Listener {
     private final Minecraft mc = Minecraft.getMinecraft();
 
     public V1_7Visuals() {
-        super("1.7-visuals", 120, 120);
-    }
-
-    @Override
-    public void render() {
-
+        super("1.7-visuals", 0, 0);
     }
 
     @EventTarget

@@ -12,4 +12,8 @@ public abstract class MixinEntityRenderer implements AccessEntityRenderer {
     @Override
     @Invoker("loadShader")
     public abstract void loadShader(ResourceLocation resourceLocationIn);
+
+    @Override
+    @Invoker("stopUseShader")
+    public abstract void stopUseShader();
 }

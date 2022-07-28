@@ -35,8 +35,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 
 @SuppressWarnings("all")
-public class FontRenderer
-{
+public class FontRenderer {
     private static final Pattern COLOR_CODE_PATTERN;
     public final int FONT_HEIGHT = 9;
     private final int[] colorCodes;
@@ -46,9 +45,10 @@ public class FontRenderer
     private int prevScaleFactor;
     private final String name;
     private final float size;
+    private final ColorEffect colorEffect = new ColorEffect(Color.WHITE);
 
     public FontRenderer(final String fontName, final float fontSize) {
-        this.colorCodes = new int[] { 0, 170, 43520, 43690, 11141120, 11141290, 16755200, 11184810, 5592405, 5592575, 5635925, 5636095, 16733525, 16733695, 16777045, 16777215 };
+        this.colorCodes = new int[]{0, 170, 43520, 43690, 11141120, 11141290, 16755200, 11184810, 5592405, 5592575, 5635925, 5636095, 16733525, 16733695, 16777045, 16777215};
         this.cachedStringWidth = new HashMap<String, Float>();
         this.prevScaleFactor = new ScaledResolution(Minecraft.getMinecraft()).getScaleFactor();
         this.name = fontName;
@@ -59,8 +59,7 @@ public class FontRenderer
             (this.unicodeFont = new UnicodeFont(this.getFontByName(fontName).deriveFont(fontSize * this.prevScaleFactor / 2.0f))).addAsciiGlyphs();
             this.unicodeFont.getEffects().add(new ColorEffect(Color.WHITE));
             this.unicodeFont.loadGlyphs();
-        }
-        catch (FontFormatException | IOException | SlickException e) {
+        } catch (FontFormatException | IOException | SlickException e) {
             e.printStackTrace();
         }
         this.antiAliasingFactor = resolution.getScaleFactor();
@@ -87,7 +86,7 @@ public class FontRenderer
 
     public void drawStringScaled(final String text, final int givenX, final int givenY, final int color, final double givenScale) {
         GL11.glPushMatrix();
-        GL11.glTranslated((double)givenX, (double)givenY, 0.0);
+        GL11.glTranslated((double) givenX, (double) givenY, 0.0);
         GL11.glScaled(givenScale, givenScale, givenScale);
         this.drawString(text, 0, 0, color);
         GL11.glPopMatrix();
@@ -95,30 +94,35 @@ public class FontRenderer
 
     public void drawStringScaled(final String text, final float givenX, final float givenY, final int color, final double givenScale) {
         GL11.glPushMatrix();
-        GL11.glTranslated((double)givenX, (double)givenY, 0.0);
+        GL11.glTranslated((double) givenX, (double) givenY, 0.0);
         GL11.glScaled(givenScale, givenScale, givenScale);
         this.drawString(text, 0, 0, color);
         GL11.glPopMatrix();
     }
 
     public int drawString(final String text, final int x, final int y, final int color) {
-        return this.drawString(text, x, (float)y, color);
+        return this.drawString(text, x, (float) y, color);
     }
 
     public int drawString(final String text, float x, float y, final int color) {
         if (text == null) {
             return 0;
         }
-        final ScaledResolution resolution = new ScaledResolution(Minecraft.getMinecraft());
+        ScaledResolution resolution = null;
+
+        if (resolution == null) {
+            resolution = new ScaledResolution(Minecraft.getMinecraft());
+        }
+
         try {
             if (resolution.getScaleFactor() != this.prevScaleFactor) {
                 this.prevScaleFactor = resolution.getScaleFactor();
-                (this.unicodeFont = new UnicodeFont(this.getFontByName(this.name).deriveFont(this.size * this.prevScaleFactor / 2.0f))).addAsciiGlyphs();
-                this.unicodeFont.getEffects().add(new ColorEffect(Color.WHITE));
+                this.unicodeFont = new UnicodeFont(this.getFontByName(this.name).deriveFont(this.size * this.prevScaleFactor / 2.0f));
+                this.unicodeFont.addAsciiGlyphs();
+                this.unicodeFont.getEffects().add(colorEffect);
                 this.unicodeFont.loadGlyphs();
             }
-        }
-        catch (FontFormatException | IOException | SlickException e) {
+        } catch (FontFormatException | IOException | SlickException e) {
             e.printStackTrace();
         }
         this.antiAliasingFactor = resolution.getScaleFactor();
@@ -166,8 +170,7 @@ public class FontRenderer
                         if (colorChar == 'r') {
                             currentColor = color;
                         }
-                    }
-                    else {
+                    } else {
                         currentColor = this.colorCodes[codeIndex];
                     }
                     index += 2;
@@ -177,7 +180,7 @@ public class FontRenderer
         GlStateManager.color(1.0f, 1.0f, 1.0f, 1.0f);
         GlStateManager.bindTexture(0);
         GlStateManager.popMatrix();
-        return (int)x;
+        return (int) x;
     }
 
     public int drawStringWithShadow(final String text, final float x, final float y, final int color) {
@@ -186,12 +189,12 @@ public class FontRenderer
     }
 
     public void drawCenteredString(final String text, final float x, final float y, final int color) {
-        this.drawString(text, x - ((int)this.getWidth(text) >> 1), y, color);
+        this.drawString(text, x - ((int) this.getWidth(text) >> 1), y, color);
     }
 
     public void drawCenteredTextScaled(final String text, final int givenX, final int givenY, final int color, final double givenScale) {
         GL11.glPushMatrix();
-        GL11.glTranslated((double)givenX, (double)givenY, 0.0);
+        GL11.glTranslated((double) givenX, (double) givenY, 0.0);
         GL11.glScaled(givenScale, givenScale, givenScale);
         this.drawCenteredString(text, 0.0f, 0.0f, color);
         GL11.glPopMatrix();
@@ -230,7 +233,7 @@ public class FontRenderer
         final String[] splitText = text.split(" ");
         StringBuilder currentString = new StringBuilder();
         for (final String word : splitText) {
-            final String potential = (Object)currentString + " " + word;
+            final String potential = (Object) currentString + " " + word;
             if (this.getWidth(potential) >= wrapWidth) {
                 lines.add(currentString.toString());
                 currentString = new StringBuilder();
@@ -261,16 +264,13 @@ public class FontRenderer
                     if (c0 == 'r' || c0 == 'R') {
                         flag2 = false;
                     }
-                }
-                else {
+                } else {
                     flag2 = true;
                 }
-            }
-            else if (i2 < 0.0f) {
+            } else if (i2 < 0.0f) {
                 flag = true;
-            }
-            else {
-                i += (int)i2;
+            } else {
+                i += (int) i2;
                 if (flag2) {
                     ++i;
                 }
@@ -280,44 +280,33 @@ public class FontRenderer
             }
             if (reverse) {
                 stringbuilder.insert(0, c0);
-            }
-            else {
+            } else {
                 stringbuilder.append(c0);
             }
         }
         return stringbuilder.toString();
     }
 
-    public int getStringWidth(String text)
-    {
-        if (text == null)
-        {
+    public int getStringWidth(String text) {
+        if (text == null) {
             return 0;
-        }
-        else
-        {
+        } else {
             float f = 0.0F;
             boolean flag = false;
 
-            for (int i = 0; i < text.length(); ++i)
-            {
+            for (int i = 0; i < text.length(); ++i) {
                 char c0 = text.charAt(i);
                 float f1 = this.getCharWidth(c0);
 
-                if (f1 < 0.0F && i < text.length() - 1)
-                {
+                if (f1 < 0.0F && i < text.length() - 1) {
                     ++i;
                     c0 = text.charAt(i);
 
-                    if (c0 != 108 && c0 != 76)
-                    {
-                        if (c0 == 114 || c0 == 82)
-                        {
+                    if (c0 != 108 && c0 != 76) {
+                        if (c0 == 114 || c0 == 82) {
                             flag = false;
                         }
-                    }
-                    else
-                    {
+                    } else {
                         flag = true;
                     }
 
@@ -327,7 +316,7 @@ public class FontRenderer
                 f += f1;
             }
 
-            return (int)f;
+            return (int) f;
         }
     }
 

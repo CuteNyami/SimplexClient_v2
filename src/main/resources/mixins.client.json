@@ -8,12 +8,12 @@
   "mixins": [
     "client.MixinEntityLivingBase",
     "client.MixinEntityPlayerSP",
-    "client.MixinEntityRenderer",
     "client.MixinGuiConnecting",
     "client.MixinGuiDisconnected",
     "client.MixinGuiIngame",
     "client.MixinItemRenderer",
     "client.MixinMinecraft",
+    "client.MixinRenderTNTPrimed",
     "gui.MixinGui",
     "gui.MixinGuiIngameMenu",
     "gui.MixinGuiMainMenu",

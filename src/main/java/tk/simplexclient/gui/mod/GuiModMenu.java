@@ -42,9 +42,7 @@ public class GuiModMenu extends GuiScreen {
     public void initGui() {
         Keyboard.enableRepeatEvents(true);
 
-        /*
-            ((AccessEntityRenderer) mc.entityRenderer).loadShader(new ResourceLocation("shaders/post/menu_blur.json"));
-         */
+            //((AccessEntityRenderer) mc.entityRenderer).loadShader(new ResourceLocation("shaders/post/menu_blur.json"));
 
         searchField = new InputField(width / 2 - 20, height / 2 - 55, 60, 20, false, "", "", 30, InputField.InputFlavor.MOD_PROFILE_NAME);
         imageButton = new ImageButton(0, width / 2 + 110, height / 2 - 72, 10, 10, 5, "close");

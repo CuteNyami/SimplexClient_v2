@@ -3,7 +3,9 @@ package tk.simplexclient;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import lombok.Getter;
+import lombok.Setter;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.settings.KeyBinding;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.logging.log4j.LogManager;
@@ -19,7 +21,7 @@ import tk.simplexclient.listener.TickListener;
 import tk.simplexclient.module.ModuleConfig;
 import tk.simplexclient.module.ModuleCreator;
 import tk.simplexclient.module.ModuleManager;
-import tk.simplexclient.module.impl.*;
+import tk.simplexclient.module.impl.hud.*;
 import tk.simplexclient.module.settings.SettingsManager;
 import tk.simplexclient.shader.RoundedShaderRenderer;
 
@@ -49,6 +51,8 @@ public final class SimplexClient {
     @Getter private FontRenderer smoothFont;
 
     @Getter private SettingsManager settingsBuilder;
+
+    @Getter @Setter private ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
 
     public KeyBinding CLICK_GUI = new KeyBinding("Open the Settings GUI", Keyboard.KEY_RSHIFT, "SimplexClient");
     public KeyBinding TEST_GUI = new KeyBinding("Just a gui to test some things", Keyboard.KEY_0, "SimplexClient");

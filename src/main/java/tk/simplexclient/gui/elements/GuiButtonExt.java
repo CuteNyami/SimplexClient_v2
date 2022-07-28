@@ -30,7 +30,7 @@ public class GuiButtonExt extends GuiButton {
             this.hovered = mouseX >= this.xPosition && mouseY >= this.yPosition && mouseX < this.xPosition + this.width && mouseY < this.yPosition + this.height;
             int k = this.getHoverState(this.hovered);
             //GuiUtils.drawContinuousTexturedBox(buttonTextures, this.xPosition, this.yPosition, 0, 46 + k * 20, this.width, this.height, 200, 20, 2, 3, 2, 2, this.zLevel);
-            Gui.drawRect(this.xPosition, this.yPosition + 5, this.xPosition + this.width, this.yPosition + 10, new Color(31, 31, 31).getRGB());
+            Gui.drawRect(this.xPosition, this.yPosition + 5, this.xPosition + this.width, this.yPosition + 10, new Color(40, 40, 40).getRGB());
             this.mouseDragged(mc, mouseX, mouseY);
             int color = 14737632;
 

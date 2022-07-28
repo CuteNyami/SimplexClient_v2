@@ -6,4 +6,6 @@ public interface AccessEntityRenderer {
 
     void loadShader(ResourceLocation resourceLocationIn);
 
+    void stopUseShader();
+
 }

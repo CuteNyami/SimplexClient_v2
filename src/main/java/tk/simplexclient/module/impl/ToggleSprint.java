@@ -19,7 +19,7 @@ public class ToggleSprint extends ModuleCreator {
     private String text = "";
 
     public ToggleSprint() {
-        super("togglesprint", 145, 120);
+        super("togglesprint", 0, 0);
     }
 
     @EventTarget
@@ -48,21 +48,19 @@ public class ToggleSprint extends ModuleCreator {
 
     @Override
     public void render() {
-        if (sprintingToggled || mc.thePlayer.isSprinting()) fr.drawString(text, getX(), getY(), -1);
+        if (sprintingToggled || mc.thePlayer.isSprinting()) {
+            GLRectUtils.drawRect(getX() - 4, getY() - 2, getX() + getWidth() + 4, getY() + getHeight() + 2, new Color(0, 0, 0, 140).getRGB());
+            GLRectUtils.drawShadow(getX() - 4, getY() - 2, getWidth() + 8, getHeight() + 4);
+            fr.drawString(text, getX(), (getY() + getHeight() / 2) - (fr.FONT_HEIGHT / 2 + 1), -1);
+        }
     }
 
     @Override
-    public void renderDummy(int width, int height) {
-        GL11.glPushMatrix();
-        GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
-        GL11.glEnable(GL11.GL_BLEND);
-
+    public void renderDummy(int mouseX, int mouseY) {
         GLRectUtils.drawRectOutline(getX() - 4, getY() - 2, getX() + getWidth() + 4, getY() + getHeight() + 2, 0.25f, new Color(0, 0, 0, 160).getRGB());
         GLRectUtils.drawRect(getX() - 4, getY() - 2, getX() + getWidth() + 4, getY() + getHeight() + 2, new Color(255, 255, 255, 70).getRGB());
-
-        GL11.glDisable(GL11.GL_BLEND);
-        GL11.glPopMatrix();
-        fr.drawString("[Sprinting (Toggled)]", getX(), getY(), -1);
+        GLRectUtils.drawShadow(getX() - 4, getY() - 2, getWidth() + 8, getHeight() + 4);
+        fr.drawString("[Sprinting (Toggled)]", getX(), (getY() + getHeight() / 2) - (fr.FONT_HEIGHT / 2 + 1), -1);
     }
 
     @Override
