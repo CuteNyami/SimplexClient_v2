@@ -1,5 +1,6 @@
 package tk.simplexclient.mixin.impl.client;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.Tessellator;
@@ -22,29 +23,25 @@ import java.awt.*;
 import java.text.DecimalFormat;
 
 @Mixin(RenderTNTPrimed.class)
-public class MixinRenderTNTPrimed extends Render<EntityTNTPrimed> {
+public class MixinRenderTNTPrimed {
 
     private final DecimalFormat timeFormatter = new DecimalFormat("0.0");
-
-    public MixinRenderTNTPrimed(RenderManager renderManager) {
-        super(renderManager);
-    }
 
     @Inject(method = "doRender(Lnet/minecraft/entity/item/EntityTNTPrimed;DDDFF)V", at = @At("HEAD"))
     public void doRender(EntityTNTPrimed entity, double x, double y, double z, float entityYaw, float partialTicks, CallbackInfo ci) {
         if (SimplexClient.getInstance().getModuleManager().tntTimer.isEnabled()) {
             int fuseTimer = entity.fuse;
-            double distance = entity.getDistanceSqToEntity(getRenderManager().livingPlayer);
+            double distance = entity.getDistanceSqToEntity(Minecraft.getMinecraft().getRenderManager().livingPlayer);
             if (fuseTimer < 1 || distance > 4096) return;
 
             String time = this.timeFormatter.format((fuseTimer - partialTicks) / 20);
-            FontRenderer fontrenderer = this.getFontRendererFromRenderManager();
+            FontRenderer fontrenderer = Minecraft.getMinecraft().getRenderManager().getFontRenderer();
 
             GlStateManager.pushMatrix();
             GL11.glTranslatef((float) (x + 0.0), (float) (y + entity.height + 0.5), (float) z);
             GL11.glNormal3f(0.0F, 1.0F, 0.0F);
-            GlStateManager.rotate(-this.renderManager.playerViewY, 0.0F, 1.0F, 0.0F);
-            GlStateManager.rotate(this.renderManager.playerViewX, 1.0F, 0.0F, 0.0F);
+            GlStateManager.rotate(-Minecraft.getMinecraft().getRenderManager().playerViewY, 0.0F, 1.0F, 0.0F);
+            GlStateManager.rotate(Minecraft.getMinecraft().getRenderManager().playerViewX, 1.0F, 0.0F, 0.0F);
             GlStateManager.scale(-0.02666667F, -0.02666667F, 0.02666667F);
             GlStateManager.translate(0.0F, 9.374999F, 0.0F);
             GlStateManager.disableLighting();
@@ -71,10 +68,5 @@ public class MixinRenderTNTPrimed extends Render<EntityTNTPrimed> {
             GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
             GlStateManager.popMatrix();
         }
-    }
-
-    @Override
-    public ResourceLocation getEntityTexture(EntityTNTPrimed entityTNTPrimed) {
-        return TextureMap.locationBlocksTexture;
     }
 }

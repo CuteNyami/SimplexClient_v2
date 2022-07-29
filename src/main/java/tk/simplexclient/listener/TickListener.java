@@ -22,9 +22,6 @@ public class TickListener implements Listener {
         if (SimplexClient.getInstance().CLICK_GUI.isPressed()) {
             mc.displayGuiScreen(new GuiModuleDrag());
         }
-        if (SimplexClient.getInstance().TEST_GUI.isPressed()) {
-            mc.displayGuiScreen(new TestGui());
-        }
     }
 
     @EventTarget
