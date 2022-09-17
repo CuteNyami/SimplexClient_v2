@@ -31,8 +31,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
 
+@Getter @Setter
 public final class SimplexClient {
 
+    /**
+    Not deleting for getter bc @Getter at class work for non-static fields
+    */
+    
     @Getter private static SimplexClient instance;
 
     // Client Logger
@@ -42,17 +47,16 @@ public final class SimplexClient {
 
     public static final Gson GSON = new GsonBuilder().setPrettyPrinting().serializeNulls().create();
 
-    @Getter private SimplexGui gui;
+    private SimplexGui gui;
 
-    @Getter private ModuleManager moduleManager;
+    private ModuleManager moduleManager;
 
-    @Getter private ModuleConfig moduleConfig;
+    private ModuleConfig moduleConfig;
+    private FontRenderer smoothFont;
 
-    @Getter private FontRenderer smoothFont;
+    private SettingsManager settingsBuilder;
 
-    @Getter private SettingsManager settingsBuilder;
-
-    @Getter @Setter private ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
+    private ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
 
     public KeyBinding CLICK_GUI = new KeyBinding("Open the Settings GUI", Keyboard.KEY_RSHIFT, "SimplexClient");
     public KeyBinding TEST_GUI = new KeyBinding("Just a gui to test some things", Keyboard.KEY_0, "SimplexClient");
