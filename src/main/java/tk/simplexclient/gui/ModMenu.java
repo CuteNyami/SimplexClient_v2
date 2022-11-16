@@ -5,10 +5,11 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.*;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.SimplexClient;
+import tk.simplexclient.animations.*;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gui.elements.ToggleButton;
 import tk.simplexclient.gui.mod.GuiModSettings;
@@ -25,22 +26,35 @@ public class ModMenu extends GuiScreen {
 
     private static final int MOD_Y_INC = 20;
 
-    private int scrollY = 0, grabStartY = -1, grabScrollY;
+    private int grabStartY = -1, grabScrollY;
+    private float animScroll, scrollY = 0;
 
     private final ArrayList<ModButton> modButtons = new ArrayList<>();
 
     private final ArrayList<ToggleButton> modToggleButtons = new ArrayList<>();
 
     private ScaledResolution sr;
+    private float target, current;
 
     @Override
     public void initGui() {
         sr = new ScaledResolution(Minecraft.getMinecraft());
         fontRenderer = new FontRenderer("smooth", 20.0F);
+        target = 1f;
     }
 
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+
+        // I prefer clear gl that glstatemanager
+        GL11.glPushMatrix();
+        if(animScroll != scrollY) {
+            this.scrollY += (animScroll - scrollY) / 20.0 * (Delta.DELTATIME * 0.1f);
+        }
+        if(current != target) {
+            this.current += (target - current) / 20.0 * (Delta.DELTATIME * 0.1f);
+        }
+
 
         /* Mod Menu Background Values */
         //float bgX = (float) this.width / 2 - 35;
@@ -48,6 +62,14 @@ public class ModMenu extends GuiScreen {
         float bgY = (float) this.height / 2;
         float bgWidth = 200;
         float bgHeight = 150;
+
+        float x = bgX - (bgWidth / 2);
+        float y = bgY - (bgHeight / 2);
+
+        GL11.glTranslated((x + (x + bgWidth)) / 2, (y + (y + bgHeight)) / 2, 0.0);
+
+        GL11.glScaled(current, current, 0.0);
+        GL11.glTranslated(-(x + (x + bgWidth)) / 2, -(y + (y + bgHeight)) / 2, 0.0);
 
         /* Mod Menu Background */
         //RoundedShaderRenderer.getInstance().drawRound(sr,bgX - (bgWidth / 2), bgY - (bgHeight / 2), bgWidth, bgHeight, 5F, new Color(40, 40, 40));
@@ -62,7 +84,7 @@ public class ModMenu extends GuiScreen {
         fontRenderer.drawString("Simplex", this.width / 2 - 92, this.height / 2 - 69, new Color(170, 170, 170).getRGB());
         //fontRenderer.drawString("Profiles", this.width / 2 + 90, this.height / 2 - 69, new Color(170, 170, 170).getRGB());
 
-        int y = height / 2 - 65;
+        int y1 = height / 2 - 65;
 
         int contentHeight = 0;
 
@@ -70,16 +92,17 @@ public class ModMenu extends GuiScreen {
         this.modToggleButtons.clear();
 
         GL11.glEnable(GL11.GL_SCISSOR_TEST);
-        glScissor((double) width / 2 - 135, (double) height / 2 - 67, 370, 137);
+        glScissor((double) width / 2 - 135, (double) height / 2 - 67 * (current * 0.9), 370, (67 * (current * 0.9)) * 2);
 
         for (ModuleCreator module : SimplexClient.getInstance().getModuleManager().getModules()) {
-            this.modButtons.add(new ModButton(this.width / 2 - 33, y - this.scrollY, 120, 15, 5F,
-                    new Color(30, 30, 30),
-                    new Color(25, 25, 25),
-                    module));
-            this.modToggleButtons.add(new ToggleButton(this.width / 2 + 62, y + 3 - this.scrollY, 20, 9, module.isEnabled(), module));
+            this.modButtons.add(new ModButton(this.width / 2f - 33, (y1 - this.scrollY), 120, 15, 5F,
+                                              new Color(30, 30, 30),
+                                              new Color(25, 25, 25),
+                                              module));
+            this.modToggleButtons.add(new ToggleButton(this.width / 2f + 62,
+                                                       (y1 + 3 - this.scrollY), 20, 9, module.isEnabled(), module));
             contentHeight += MOD_Y_INC;
-            y += MOD_Y_INC;
+            y1 += MOD_Y_INC;
         }
 
         for (ModButton button : modButtons) {
@@ -97,27 +120,42 @@ public class ModMenu extends GuiScreen {
         int wheel = Mouse.getDWheel();
 
         if (grabStartY != -1) {
-            scrollY = grabScrollY - (mouseY - grabStartY);
+            animScroll = grabScrollY - (mouseY - grabStartY);
         }
 
         if (!(modButtons.size() > 5)) return;
         if (wheel < 0) {
-            scrollY += 3;
+            animScroll += 20;
         } else if (wheel > 0) {
-            scrollY -= 3;
+            animScroll -= 20;
         }
 
         int minScroll = 0;
         int maxScroll = contentHeight - 137;
 
-        if (scrollY < minScroll) scrollY = minScroll;
-        if (scrollY > maxScroll) scrollY = maxScroll;
+
+        scrollY = MathHelper.clamp_float(scrollY, minScroll, maxScroll);
+        animScroll= MathHelper.clamp_float(animScroll, minScroll, maxScroll);
+        GL11.glPopMatrix();
+        if(target == 0 && current < 0.01) {
+            mc.displayGuiScreen(null);
+        }
+    }
+
+    @Override protected void keyTyped(char typedChar, int keyCode) throws IOException {
+        if(keyCode == 1 /* ESC */) {
+            if(target == 0) {
+                mc.displayGuiScreen(null);
+            }
+            target = 0.f;
+
+        }
     }
 
     @Override
     protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
         grabStartY = mouseY;
-        grabScrollY = scrollY;
+        grabScrollY = (int) scrollY;
 
         for (ToggleButton button : modToggleButtons) {
             button.onClick();
@@ -142,8 +180,12 @@ public class ModMenu extends GuiScreen {
     }
 
     private void glScissor(double x, double y, double width, double height) {
-
+        x -= 5;
+        y -= 9;
+        width += 5;
+        height += 15;
         y += height;
+
 
         ScaledResolution scaledResolution = new ScaledResolution(Minecraft.getMinecraft());
 
@@ -158,7 +200,7 @@ public class ModMenu extends GuiScreen {
     private static class ModButton {
 
         @Getter
-        private final int x, y, width, height;
+        private final float x, y, width, height;
 
         @Getter
         private final float radius;
@@ -174,7 +216,7 @@ public class ModMenu extends GuiScreen {
         @Getter
         private boolean isHovered;
 
-        private ModButton(int x, int y, int width, int height, float radius, Color normal, Color hovered, ModuleCreator module) {
+        private ModButton(float x, float y, float width, float height, float radius, Color normal, Color hovered, ModuleCreator module) {
             this.x = x;
             this.y = y;
             this.width = width;

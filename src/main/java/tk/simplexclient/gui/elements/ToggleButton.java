@@ -13,7 +13,7 @@ import java.awt.*;
 public class ToggleButton {
 
     @Getter
-    private final int xPosition, yPosition, width, height;
+    private final float xPosition, yPosition, width, height;
 
     @Getter
     private boolean toggled;
@@ -24,7 +24,7 @@ public class ToggleButton {
     @Getter
     public boolean hovered;
 
-    public ToggleButton(int xPosition, int yPosition, int width, int height, boolean toggled, ModuleCreator module) {
+    public ToggleButton(float xPosition, float yPosition, float width, float height, boolean toggled, ModuleCreator module) {
         this.xPosition = xPosition;
         this.yPosition = yPosition;
         this.width = width;

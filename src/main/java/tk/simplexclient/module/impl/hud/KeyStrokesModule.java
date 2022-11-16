@@ -5,6 +5,7 @@ import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.settings.KeyBinding;
 import org.lwjgl.opengl.GL11;
+import tk.simplexclient.animations.*;
 import tk.simplexclient.gl.GLRectUtils;
 import tk.simplexclient.math.MathUtil;
 import tk.simplexclient.module.ModuleCreator;
@@ -15,7 +16,7 @@ public class KeyStrokesModule extends ModuleCreator {
 
     private KeystrokesMode mode;
 
-    private int fadeTime = 40;
+    private int fadeTime = 25;
 
     public KeyStrokesModule() {
         super( "keystrokes", 0, 0);
@@ -30,9 +31,9 @@ public class KeyStrokesModule extends ModuleCreator {
         for (Key key : mode.getKeys()) {
 
             if (key.isDown()) {
-                key.fade += 1F / (float)fadeTime;
+                key.fade += (1F / (float)fadeTime) * (Delta.DELTATIME * 0.1f);
             } else {
-                key.fade -= 1F / (float)fadeTime;
+                key.fade -= (1F / (float)fadeTime) * (Delta.DELTATIME * 0.1f);
             }
             // Clamp fade
             key.fade = Math.max(0, Math.min(1, key.fade));

@@ -17,22 +17,21 @@
  */
 package tk.simplexclient.font;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.ScaledResolution;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.util.StringUtils;
-import org.lwjgl.opengl.GL11;
-import org.newdawn.slick.SlickException;
-import org.newdawn.slick.UnicodeFont;
-import org.newdawn.slick.font.effects.ColorEffect;
+import net.minecraft.client.*;
+import net.minecraft.client.gui.*;
+import net.minecraft.client.renderer.*;
+import net.minecraft.util.*;
+import org.lwjgl.opengl.*;
+import org.newdawn.slick.*;
+import org.newdawn.slick.font.effects.*;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.*;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.io.*;
 import java.util.List;
-import java.util.Map;
-import java.util.regex.Pattern;
+import java.util.*;
+import java.util.regex.*;
 
 @SuppressWarnings("all")
 public class FontRenderer {
@@ -56,7 +55,9 @@ public class FontRenderer {
         final ScaledResolution resolution = new ScaledResolution(Minecraft.getMinecraft());
         try {
             this.prevScaleFactor = resolution.getScaleFactor();
-            (this.unicodeFont = new UnicodeFont(this.getFontByName(fontName).deriveFont(fontSize * this.prevScaleFactor / 2.0f))).addAsciiGlyphs();
+            this.unicodeFont =
+                    new UnicodeFont(this.getFontByName(fontName).deriveFont(fontSize * this.prevScaleFactor / 2.0f));
+            this.unicodeFont.addAsciiGlyphs();
             this.unicodeFont.getEffects().add(new ColorEffect(Color.WHITE));
             this.unicodeFont.loadGlyphs();
         } catch (FontFormatException | IOException | SlickException e) {
@@ -139,7 +140,7 @@ public class FontRenderer {
         int currentColor = color;
         final char[] characters = text.toCharArray();
         GlStateManager.disableLighting();
-        GlStateManager.enableBlend();
+        GL11.glEnable(GL11.GL_BLEND);
         GlStateManager.tryBlendFuncSeparate(770, 771, 1, 0);
         GlStateManager.blendFunc(770, 771);
         final String[] parts = FontRenderer.COLOR_CODE_PATTERN.split(text);
@@ -229,7 +230,7 @@ public class FontRenderer {
     }
 
     public List<String> splitString(final String text, final int wrapWidth) {
-        final List<String> lines = new ArrayList<String>();
+        final List<String> lines = new ArrayList<>();
         final String[] splitText = text.split(" ");
         StringBuilder currentString = new StringBuilder();
         for (final String word : splitText) {

@@ -1,20 +1,20 @@
 package tk.simplexclient.utils;
 
-import java.io.File;
+import java.nio.file.*;
 
 public enum OSHelper {
-    WINDOWS("AppData" + File.separator + "Roaming" + File.separator + ".minecraft"),
-    MAC("Library" + File.separator + "Application Support" + File.separator + "minecraft"),
-    LINUX(".minecraft");
+    WINDOWS(Paths.get("AppData", "Roaming", ".minecraft")),
+    MAC(Paths.get("Library", "Application Support", "minecraft")),
+    LINUX(Paths.get(".minecraft"));
 
-    private final String mc;
+    private final Path mcPath;
 
-    OSHelper(String mc) {
-        this.mc = File.separator + mc + File.separator;
+    OSHelper(Path path) {
+        this.mcPath = path;
     }
 
-    public String getMc() {
-        return System.getProperty("user.home") + this.mc;
+    public String getPath() {
+        return Paths.get(System.getProperty("user.home")).resolve(mcPath).toAbsolutePath().toString();
     }
 
     public static OSHelper getOS() {

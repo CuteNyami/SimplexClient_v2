@@ -5,6 +5,7 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.util.ResourceLocation;
+import org.lwjgl.opengl.*;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.access.AccessEntityRenderer;
 import tk.simplexclient.gui.ModMenu;
@@ -39,6 +40,7 @@ public class GuiModuleDrag extends GuiScreen {
 
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+        GL11.glEnable(GL11.GL_BLEND);
         for (ModuleCreator m : SimplexClient.getInstance().getModuleManager().getModules()) {
             if (m.isEnabled()) {
                 m.renderDummy(this.width, this.height);
@@ -52,6 +54,7 @@ public class GuiModuleDrag extends GuiScreen {
             prevY = mouseY;
         });
         super.drawScreen(mouseX, mouseY, partialTicks);
+        GL11.glDisable(GL11.GL_BLEND);
     }
 
     @Override
@@ -72,8 +75,7 @@ public class GuiModuleDrag extends GuiScreen {
         prevX = mouseX;
         prevY = mouseY;
 
-        selected =
-                SimplexClient
+        selected = SimplexClient
                 .getInstance()
                 .getModuleManager()
                 .getModules()
