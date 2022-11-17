@@ -56,6 +56,8 @@ configurations {
 }
 
 dependencies {
+    implementation 'org.jetbrains:annotations:20.1.0'
+    annotationProcessor 'org.jetbrains:annotations:20.1.0'
     compileJava.options.encoding = 'UTF-8'
 
     embed('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
@@ -79,7 +81,7 @@ dependencies {
 
     extraLibs fileTree(dir: "compile", include: ['*.jar'])
 
-    compileOnly 'com.google.code.gson:gson:2.9.0'
+    compileOnly 'com.google.code.gson:gson:2.10'
 
     configurations.implementation.extendsFrom(configurations.extraLibs)
 }
