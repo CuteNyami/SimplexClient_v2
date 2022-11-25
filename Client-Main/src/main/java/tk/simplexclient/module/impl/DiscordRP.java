@@ -1,9 +1,5 @@
 package tk.simplexclient.module.impl;
 
-import com.jagrosh.discordipc.IPCClient;
-import com.jagrosh.discordipc.IPCListener;
-import com.jagrosh.discordipc.entities.RichPresence;
-import com.jagrosh.discordipc.exceptions.NoDiscordClientException;
 import tk.simplexclient.event.EventTarget;
 import tk.simplexclient.event.impl.ServerJoinEvent;
 import tk.simplexclient.event.impl.SinglePlayerJoinEvent;
@@ -11,7 +7,7 @@ import tk.simplexclient.event.impl.SinglePlayerJoinEvent;
 import java.time.OffsetDateTime;
 
 public class DiscordRP {
-    private static IPCClient client;
+    //private static IPCClient client;
 
     public static void start() {
         /*
@@ -35,6 +31,7 @@ public class DiscordRP {
         client.connect();
 
          */
+        /*
         client = new IPCClient(1002546968880496660L);
         client.setListener(new IPCListener() {
             @Override
@@ -55,10 +52,12 @@ public class DiscordRP {
         } catch (NoDiscordClientException e) {
             e.printStackTrace();
         }
+
+         */
     }
 
     public static void shutdown() {
-        client.close();
+        //client.close();
     }
 
     public static void update(String firstLine, String secondLine) {
@@ -77,6 +76,7 @@ public class DiscordRP {
 
          */
 
+        /*
         RichPresence.Builder builder = new RichPresence.Builder();
         builder.setDetails("Starting 1.8.9...")
                 .setButton1Text("Discord")
@@ -86,6 +86,8 @@ public class DiscordRP {
                 .setStartTimestamp(OffsetDateTime.now())
                 .setLargeImage("big", "SimplexClient");
         client.sendRichPresence(builder.build());
+
+         */
     }
 
     @EventTarget

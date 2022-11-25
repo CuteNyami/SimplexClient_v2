@@ -4,226 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="938c721c-e78a-4d37-a667-e7b80c775bf9" name="Changes" comment="Added Module Dropshadow and TNT Timer module">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Client-Main/SimplexClient_v2.Client-Main.api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Client-Main/SimplexClient_v2.Client-Main.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Client-Main/SimplexClient_v2.Client-Main.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Simplex-12/SimplexClient_v2.Simplex-12.api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Simplex-12/SimplexClient_v2.Simplex-12.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/discord-rpc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/run/servers.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/access/AccessEntityLookHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/entity/EntityAITasksEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/EntityAttackEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/EntityDamageEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/EntitySpawnEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/HitOverlayEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/PlayerJoinWorldEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/ServerJoinEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/SinglePlayerJoinEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/XPOrbOverlayEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/font/TextUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/DeprecatedModMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/elements/ColorPicker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/mod/settings/GuiModSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/improvements/AIImprovements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/improvements/FastTrig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/improvements/FixedEntityLookHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/improvements/ai/FixedEntityLookAtClosest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityAITasks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityLookHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiConnecting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinLayerCape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinNetHandlerPlayClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinRenderXPOrb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinRendererLivingEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiSelectWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/DiscordRP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/HitColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/ParticlesMod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/XPOrbColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/CPSModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/ComboCounterModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/FPSModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/PotionStatusModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/ReachDisplayModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/packets/packet/Packet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/packets/packet/PacketManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/packets/server/SPacketHelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/render/ComponentPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/render/RenderEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/render/Shader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/render/UIComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/render/UIRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/render/components/Button.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/render/ui/TestUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/utils/CapeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/fonts/Inter-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shader/blur.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/gradle.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shader/rectangle.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SimplexClient_v2.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simplex-Installer-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compile/slick.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/compile/slick.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/OptiFine-lib.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/libs/OptiFine-lib.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/SimplexClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/SimplexClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessEntityLivingBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/access/AccessEntityLivingBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessEntityRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/access/AccessEntityRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/access/AccessGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessGuiMultiplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/access/AccessGuiMultiplayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/access/AccessMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/access/AccessMinecraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/animations/Animate.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/animations/Animate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/animations/Delta.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/animations/Delta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/animations/Easing.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/animations/Easing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/ArrayHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/ArrayHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/EventManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/EventTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/EventTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/Priority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/impl/ClientTickEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/ClientTickEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/impl/EventUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/EventUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/impl/KeyEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/KeyEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/event/impl/TransformFirstPersonItemEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/event/impl/TransformFirstPersonItemEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/CharColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/font/CharColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/font/FontRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/font/FontUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/font/FontUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gl/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gl/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gl/GLRectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gl/GLRectUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gl/GLUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gl/GLUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gl/GlStateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gl/GlStateManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/ModMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/ModMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/elements/GuiButtonExt.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/elements/GuiButtonExt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/elements/GuiSlider.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/elements/GuiSlider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/elements/ToggleBoxButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/elements/ToggleBoxButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/elements/ToggleButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/elements/ToggleButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/main/MainButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/main/MainButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/main/PauseScreenButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/main/PauseScreenButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/main/SplashProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/main/SplashProgress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/mod/GuiModMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiModSettings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/GuiTweaks.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/mod/GuiTweaks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/TestGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/mod/TestGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/theme/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/mod/theme/Theme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/theme/ThemeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/mod/theme/ThemeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/theme/Themes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/mod/theme/Themes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/mod/theme/themes/LightTheme.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/mod/theme/themes/LightTheme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/splash/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/splash/SplashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/GuiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/utils/GuiUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/gui/utils/SimplexGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/gui/utils/SimplexGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/json/IDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/json/IDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/json/JsonDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/json/JsonDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/json/JsonFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/json/JsonFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/listener/TickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/listener/TickListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/math/MathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/math/MathUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/DebugTweaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/DebugTweaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/Tweaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/Tweaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityLivingBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityLivingBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityPlayerSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityPlayerSP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinEntityRenderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiConnecting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiDisconnected.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiDisconnected.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiIngame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinGuiIngame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinItemRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinMinecraft.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/client/MixinRenderTNTPrimed.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/client/MixinRenderTNTPrimed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiIngameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiIngameMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMultiplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiMultiplayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiNewChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiNewChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiPlayerTabOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiPlayerTabOverlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/gui/MixinGuiSlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/gui/MixinServerListEntryNormal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/gui/MixinServerListEntryNormal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/item/MixinRenderEntityItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/item/MixinRenderEntityItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/mixin/impl/mod/MixinV1_7VisualsMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/mixin/impl/mod/MixinV1_7VisualsMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/ModuleConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/ModuleCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/ModuleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/ModuleManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/dragging/GuiModuleDrag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ItemPhysics.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/ItemPhysics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/MotionBlur.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/MotionBlur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/TNTTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/TNTTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/ToggleSprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/ToggleSprint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/V1_7Visuals.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/V1_7Visuals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/hud/ArmorStatusModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/ArmorStatusModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/hud/CoordinatesModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/CoordinatesModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/hud/FPSModule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/hud/KeyStrokesModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/KeyStrokesModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/hud/MemoryModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/MemoryModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/hud/PingModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/PingModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/hud/ServerDisplayModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/ServerDisplayModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/hud/TargetHUDModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/TargetHUDModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/impl/hud/TimeModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/impl/hud/TimeModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/settings/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/settings/Option.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/settings/SettingsElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/settings/SettingsElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/module/settings/SettingsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/module/settings/SettingsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/shader/RoundedShaderRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/shader/RoundedShaderRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/ModButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/ui/buttons/ModButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/main/ExitButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/ui/buttons/main/ExitButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/round/ImageButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/ui/buttons/round/ImageButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/buttons/round/RoundedButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/ui/buttons/round/RoundedButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/ui/elements/InputField.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/ui/elements/InputField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/utils/ConnectingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/utils/ConnectingUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/simplexclient/utils/OSHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/java/tk/simplexclient/utils/OSHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/shaders/post/menu_blur.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/shaders/post/menu_blur.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/shaders/program/menu_blur.fsh" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/shaders/program/menu_blur.fsh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/shaders/program/menu_blur.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/shaders/program/menu_blur.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/fonts/smooth.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/fonts/smooth.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/icons/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/icons/back.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/icons/checkbox.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/icons/checkbox.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/icons/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/icons/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/icons/discord.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/icons/discord.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/icons/exit.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/icons/exit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/icons/options.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/icons/options.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/main/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/menu/main/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/main/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/menu/main/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/menu/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/menu/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shader/blur.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shader/rounded.frag" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shader/rounded.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shader/vertex.vert" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shader/vertex.vert" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shadow/panel_bottom.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shadow/panel_bottom.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shadow/panel_bottom_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shadow/panel_bottom_left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shadow/panel_bottom_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shadow/panel_bottom_right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shadow/panel_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shadow/panel_left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shadow/panel_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shadow/panel_right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shadow/panel_top.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shadow/panel_top.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shadow/panel_top_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shadow/panel_top_left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/simplex/shadow/panel_top_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/simplex/shadow/panel_top_right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/minecraft/textures/gui/1widgets.png" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/assets/minecraft/textures/gui/1widgets.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mixins.client.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client-Main/src/main/resources/mixins.client.json" afterDir="false" />
-    </list>
+    <list default="true" id="938c721c-e78a-4d37-a667-e7b80c775bf9" name="Changes" comment="Module Options, new Main Menu" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -334,7 +115,7 @@
     "Project.color": "3b3610",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Bylumia/Desktop/SimplexClient/SimplexClient",
+    "last_opened_file_path": "F:/client/SimplexClient_v2/Client-Main",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -343,11 +124,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\client\SimplexClient_v2\Client-Main" />
       <recent name="F:\client\SimplexClient_v2\Simplex-12" />
       <recent name="F:\client\SimplexClient_v2\run" />
       <recent name="F:\client\SimplexClient_v2\compile" />
       <recent name="F:\client\SimplexClient_v2\src\main\resources\assets\minecraft\simplex\menu\main" />
-      <recent name="F:\client\SimplexClient_v2\run\simplex\music" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\client\SimplexClient_v2\Client-Main\libs" />
@@ -657,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659082990694</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Module Options, new Main Menu">
+      <created>1669394132947</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669394132948</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -683,7 +471,8 @@
     <MESSAGE value="ඞ amongus" />
     <MESSAGE value="Fixed GuiModMenu.java" />
     <MESSAGE value="Added Module Dropshadow and TNT Timer module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Module Dropshadow and TNT Timer module" />
+    <MESSAGE value="Module Options, new Main Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module Options, new Main Menu" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
