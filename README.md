@@ -4,4 +4,4 @@ Under Developement!
 
 Join our Discord!
 
-* https://discord.gg/simplexclient
+* https://discord.gg/tk.simplexclient

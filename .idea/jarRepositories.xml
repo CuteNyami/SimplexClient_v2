@@ -56,5 +56,20 @@
       <option name="name" value="deobfDeps" />
       <option name="url" value="file:$USER_HOME$/.gradle/caches/minecraft/deobfedDeps/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://tykopvp.com" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="deobfDeps" />
+      <option name="name" value="deobfDeps" />
+      <option name="url" value="file:/$USER_HOME$/.gradle/caches/minecraft/deobfedDeps" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="deobfDeps" />
+      <option name="name" value="deobfDeps" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../.gradle/caches/minecraft/deobfedDeps/" />
+    </remote-repository>
   </component>
 </project>

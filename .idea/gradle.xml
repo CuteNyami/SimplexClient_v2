@@ -12,6 +12,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/1-12-2" />
+            <option value="$PROJECT_DIR$/Client-Main" />
+            <option value="$PROJECT_DIR$/Simplex-12" />
+            <option value="$PROJECT_DIR$/untitled" />
           </set>
         </option>
       </GradleProjectSettings>

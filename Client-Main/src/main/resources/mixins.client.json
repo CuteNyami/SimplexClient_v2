@@ -1,0 +1,38 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "verbose": true,
+  "package": "tk.simplexclient.mixin.impl",
+  "refmap": "mixins.client.refmap.json",
+  "target": "@env(DEFAULT)",
+  "mixins": [
+    "client.MixinEntityAITasks",
+    "client.MixinEntityLivingBase",
+    "client.MixinEntityLookHelper",
+    "client.MixinEntityPlayer",
+    "client.MixinEntityPlayerSP",
+    "client.MixinEntityRenderer",
+    "client.MixinGuiConnecting",
+    "client.MixinGuiDisconnected",
+    "client.MixinGuiIngame",
+    "client.MixinItemRenderer",
+    "client.MixinLayerCape",
+    "client.MixinMinecraft",
+    "client.MixinNetHandlerPlayClient",
+    "client.MixinRendererLivingEntity",
+    "client.MixinRenderTNTPrimed",
+    "client.MixinRenderXPOrb",
+    "client.MixinWorld",
+    "gui.MixinGuiIngameMenu",
+    "gui.MixinGuiMainMenu",
+    "gui.MixinGuiMultiplayer",
+    "gui.MixinGuiSelectWorld",
+    "item.MixinRenderEntityItem",
+    "mod.MixinV1_7VisualsMod$MixinEntityRenderer",
+    "mod.MixinV1_7VisualsMod$MixinItemRenderer",
+    "mod.MixinV1_7VisualsMod$MixinLayerArmorBase"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
