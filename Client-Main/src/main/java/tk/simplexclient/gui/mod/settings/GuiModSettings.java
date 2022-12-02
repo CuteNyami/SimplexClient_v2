@@ -140,21 +140,27 @@ public class GuiModSettings extends GuiScreen {
         GL11.glTranslated(-(x + (x + bgWidth)) / 2, -(y + (y + bgHeight)) / 2, 0.0);
 
         if (current != target) {
-            this.current += (target - current) / 20.0 * (Delta.DELTATIME * 0.1f);
+            this.current += (target - current) / 20.0 * (Delta.DELTA_TIME * 0.1f);
         }
 
         /* Settings Background */
+        GL11.glPushMatrix();
         RoundedShaderRenderer.getInstance().drawRound(sr, bgX - (bgWidth / 2), bgY - (bgHeight / 2), bgWidth, bgHeight, 5F, new Color(40, 40, 40));
         RoundedShaderRenderer.getInstance().drawRound(sr, bgX - 75 - ((bgWidth - 150) / 2), bgY - (bgHeight / 2), bgWidth - 150, bgHeight, 5, new Color(30, 30, 30));
         RoundedShaderRenderer.getInstance().drawRound(sr, bgX - 55 - ((bgWidth - 190) / 2), bgY - (bgHeight / 2), bgWidth - 190, bgHeight, 0, new Color(30, 30, 30));
         RoundedShaderRenderer.getInstance().drawRound(sr, bgX + 60 - (bgWidth / 2), bgY + 10 - (bgHeight / 2), bgWidth - 70, bgHeight - 20, 5F, new Color(30, 30, 30));
+        GL11.glPopMatrix();
 
+        GL11.glPushMatrix();
         fontRenderer.drawString("Simplex", this.width / 2 - 92, this.height / 2 - 69, new Color(170, 170, 170).getRGB());
         smallFontRenderer.drawString(module.getName().toUpperCase(), this.width / 2 - 92, this.height / 2 - 55, new Color(170, 170, 170).getRGB());
+        GL11.glPopMatrix();
 
+        GL11.glPushMatrix();
         for (GuiSlider slider : builder.getSliderList()) {
             slider.drawButton(mc, mouseX, mouseY);
         }
+        GL11.glPopMatrix();
 
         for (InputField field : builder.getInputList()) {
             GLRectUtils.drawRect(field.x, field.y, field.x + field.getWidth(), field.y + field.getHeight() - 10, new Color(40, 40, 40).getRGB());

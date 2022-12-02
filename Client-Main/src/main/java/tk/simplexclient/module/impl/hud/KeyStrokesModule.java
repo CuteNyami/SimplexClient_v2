@@ -2,7 +2,6 @@ package tk.simplexclient.module.impl.hud;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
-import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.settings.KeyBinding;
 import org.lwjgl.opengl.GL11;
 import tk.simplexclient.animations.*;
@@ -31,9 +30,9 @@ public class KeyStrokesModule extends ModuleCreator {
         for (Key key : mode.getKeys()) {
 
             if (key.isDown()) {
-                key.fade += (1F / (float)fadeTime) * (Delta.DELTATIME * 0.1f);
+                key.fade += (1F / (float)fadeTime) * (Delta.DELTA_TIME * 0.1f);
             } else {
-                key.fade -= (1F / (float)fadeTime) * (Delta.DELTATIME * 0.1f);
+                key.fade -= (1F / (float)fadeTime) * (Delta.DELTA_TIME * 0.1f);
             }
             // Clamp fade
             key.fade = Math.max(0, Math.min(1, key.fade));

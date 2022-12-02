@@ -19,6 +19,8 @@ public class ModuleManager {
 
     public final V1_7Visuals v1_7Visual = new V1_7Visuals();
 
+    public final MinimalViewBobbing minimalViewBobbing = new MinimalViewBobbing();
+
     private final List<ModuleCreator> modules = new ArrayList<>();
 
     public void registerModules(ModuleCreator... modules) {

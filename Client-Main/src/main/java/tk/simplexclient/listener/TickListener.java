@@ -5,8 +5,7 @@ import tk.simplexclient.SimplexClient;
 import tk.simplexclient.event.EventTarget;
 import tk.simplexclient.event.Listener;
 import tk.simplexclient.event.impl.ClientTickEvent;
-import tk.simplexclient.event.impl.EventUpdate;
-import tk.simplexclient.event.impl.ServerJoinEvent;
+import tk.simplexclient.gui.CosmeticsGui;
 import tk.simplexclient.module.dragging.GuiModuleDrag;
 
 public class TickListener implements Listener {
@@ -17,6 +16,9 @@ public class TickListener implements Listener {
     public void onTick(ClientTickEvent event) {
         if (SimplexClient.getInstance().CLICK_GUI.isPressed()) {
             mc.displayGuiScreen(new GuiModuleDrag());
+        }
+        if (SimplexClient.getInstance().COSMETICS_GUI_DEBUG.isPressed()) {
+            mc.displayGuiScreen(new CosmeticsGui());
         }
     }
 }

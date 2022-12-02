@@ -49,10 +49,10 @@ public class DeprecatedModMenu extends GuiScreen {
         // I prefer clear gl that glstatemanager
         GL11.glPushMatrix();
         if (animScroll != scrollY) {
-            this.scrollY += (animScroll - scrollY) / 20.0 * (Delta.DELTATIME * 0.1f);
+            this.scrollY += (animScroll - scrollY) / 20.0 * (Delta.DELTA_TIME * 0.1f);
         }
         if (current != target) {
-            this.current += (target - current) / 20.0 * (Delta.DELTATIME * 0.1f);
+            this.current += (target - current) / 20.0 * (Delta.DELTA_TIME * 0.1f);
         }
 
 

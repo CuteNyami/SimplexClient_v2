@@ -34,8 +34,8 @@ public class Tweaker implements ITweaker {
             this.arguments.add("--gameDir");
             this.arguments.add(gameDir.getAbsolutePath());
         }
-
 */
+
     }
 
     @Override

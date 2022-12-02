@@ -252,6 +252,8 @@ public class InputField extends Gui {
             //Gui.drawModalRectWithCustomSizedTexture(this.x, this.y, (float)i, (float)j, i, j, (float)i, (float)j);
             String s = this.getTextToDraw();
             this.fitTextInField();
+
+            if (s == null) return;
             int k = (int) SimplexClient.getInstance().getSmoothFont().getWidth(s.substring(this.firstRenderedCharacterPosition, this.lastRenderedCharacterPosition));
             int l = this.lastRenderedCharacterPosition;
 
@@ -276,23 +278,14 @@ public class InputField extends Gui {
         }
     }
 
-    public void update(int mouseX, int mouseY) {
-    }
+    public void onClick(int mouseX, int mouseY, int mouseButton) {
+        if (!this.isVisible()) return;
+        this.focused = false;
 
-    public boolean onClick(int mouseX, int mouseY, int mouseButton) {
-        if (this.isVisible()) {
-            this.focused = false;
-
-            if (mouseX > this.x && mouseX < this.x + this.width && mouseY > this.y && mouseY < this.y + this.height) {
-                this.focused = true;
-                this.textSelected = false;
-                this.resetCursorPosition();
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            return false;
+        if (mouseX > this.x && mouseX < this.x + this.width && mouseY > this.y && mouseY < this.y + this.height) {
+            this.focused = true;
+            this.textSelected = false;
+            this.resetCursorPosition();
         }
     }
 

@@ -6,9 +6,8 @@
   "refmap": "mixins.client.refmap.json",
   "target": "@env(DEFAULT)",
   "mixins": [
-    "client.MixinEntityAITasks",
+    "MixinRenderPlayer",
     "client.MixinEntityLivingBase",
-    "client.MixinEntityLookHelper",
     "client.MixinEntityPlayer",
     "client.MixinEntityPlayerSP",
     "client.MixinEntityRenderer",

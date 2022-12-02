@@ -4,6 +4,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiButton;
 import tk.simplexclient.font.FontRenderer;
+import tk.simplexclient.gl.GLRectUtils;
 
 import java.awt.*;
 
@@ -30,9 +31,6 @@ public class GuiButtonExt extends GuiButton {
     public void drawButton(Minecraft mc, int mouseX, int mouseY) {
         if (this.visible) {
             this.hovered = mouseX >= this.xPosition && mouseY >= this.yPosition && mouseX < this.xPosition + this.width && mouseY < this.yPosition + this.height;
-            Gui.drawRect(this.xPosition, this.yPosition + 5, this.xPosition + this.width, this.yPosition + 10, new Color(40, 40, 40).getRGB());
-            this.mouseDragged(mc, mouseX, mouseY);
-
             String buttonText = this.displayString;
             int strWidth = mc.fontRendererObj.getStringWidth(buttonText);
             int ellipsisWidth = mc.fontRendererObj.getStringWidth("...");
@@ -40,6 +38,9 @@ public class GuiButtonExt extends GuiButton {
             if (strWidth > width - 6 && strWidth > ellipsisWidth) buttonText = mc.fontRendererObj.trimStringToWidth(buttonText, width - 6 - ellipsisWidth).trim() + "...";
 
             fontRenderer.drawString(buttonText, this.xPosition + this.width / 2 - 49, this.yPosition + (this.height - 35) / 2, new Color(170, 170, 170).getRGB());
+
+            GLRectUtils.drawRect(this.xPosition, this.yPosition + 5, this.xPosition + this.width, this.yPosition + 10, new Color(40, 40, 40).getRGB());
+            this.mouseDragged(mc, mouseX, mouseY);
         }
     }
 

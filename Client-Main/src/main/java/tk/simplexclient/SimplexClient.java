@@ -16,6 +16,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
+import tk.simplexclient.api.ICosmeticsHandler;
+import tk.simplexclient.cosmetics.CosmeticsManager;
+import tk.simplexclient.cosmetics.impl.DragonWings;
 import tk.simplexclient.event.EventManager;
 import tk.simplexclient.font.FontRenderer;
 import tk.simplexclient.gui.mod.theme.ThemeManager;
@@ -45,19 +48,23 @@ import java.lang.reflect.Modifier;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
-@Getter @Setter
+@Getter
+@Setter
 public final class SimplexClient {
 
     /**
-    Not deleting for getter bc @Getter at class work for non-static fields
-    */
-    
-    @Getter private static SimplexClient instance;
+     * Not deleting for getter bc @Getter at class work for non-static fields
+     */
+
+    @Getter
+    private static SimplexClient instance;
 
     // Client Logger
-    @Getter private static final Logger logger = LogManager.getLogger();
+    @Getter
+    private static final Logger logger = LogManager.getLogger();
 
-    @Getter private static RoundedShaderRenderer roundedShaderRenderer;
+    @Getter
+    private static RoundedShaderRenderer roundedShaderRenderer;
 
     public static final Gson GSON = new GsonBuilder().setPrettyPrinting().serializeNulls().create();
 
@@ -72,12 +79,20 @@ public final class SimplexClient {
 
     private ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
 
-    @Getter AIImprovements aiImprovements;
+    private ICosmeticsHandler cosmeticsHandler;
 
-    @Getter @Setter private boolean haveCape = false;
+    @Getter
+    AIImprovements aiImprovements;
+
+    @Getter
+    @Setter
+    private boolean haveCape = false;
+
     public KeyBinding CLICK_GUI = new KeyBinding("Open the Settings GUI", Keyboard.KEY_RSHIFT, "SimplexClient");
+    public KeyBinding COSMETICS_GUI_DEBUG = new KeyBinding("Debug Cosmetics GUI", Keyboard.KEY_Z, "SimplexClient");
 
     public void init() {
+        /*
         try {
             Field field = net.optifine.player.CapeUtils.class.getDeclaredField("PATTERN_USERNAME");
             field.setAccessible(true);
@@ -89,25 +104,25 @@ public final class SimplexClient {
             e.printStackTrace();
         }
 
-        try{
+        try {
             Field field = HttpUtils.class.getDeclaredField("playerItemsUrl");
             field.setAccessible(true);
             field.set(null, "");
         } catch (NoSuchFieldException | IllegalAccessException e) {
             e.printStackTrace();
         }
+
+         */
     }
 
     public void start() {
-        //DiscordRP.start();
-
+        cosmeticsHandler = new CosmeticsManager();
         aiImprovements = new AIImprovements();
         smoothFont = new FontRenderer("smooth", 15.0F);
         instance = this;
         gui = new SimplexGui();
         roundedShaderRenderer = new RoundedShaderRenderer();
 
-        aiImprovements.init();
         Display.setTitle("SimplexClient v2 | 1.8.9");
 
         // Module instances
@@ -135,7 +150,8 @@ public final class SimplexClient {
                 moduleManager.motionBlur,
                 moduleManager.toggleSprint,
                 moduleManager.itemPhysics,
-                moduleManager.v1_7Visual
+                moduleManager.v1_7Visual,
+                moduleManager.minimalViewBobbing
         );
 
         settingsBuilder = new SettingsManager();
@@ -149,13 +165,13 @@ public final class SimplexClient {
         // Keybindings
         registerKeyBind(CLICK_GUI);
 
-        ThemeManager.registerTheme(new LightTheme());
-
         // Events
         EventManager.register(new TickListener());
         EventManager.register(new DiscordRP());
         EventManager.register(moduleManager.v1_7Visual);
         EventManager.register(aiImprovements);
+
+        cosmeticsHandler.registerCosmetic(new DragonWings(cosmeticsHandler.getPlayerRenderer()));
 
         for (ModuleCreator module : moduleManager.getModules()) {
             module.onEnable();
@@ -218,6 +234,7 @@ public final class SimplexClient {
         if (Arrays.asList(Minecraft.getMinecraft().gameSettings.keyBindings).contains(key))
             Minecraft.getMinecraft().gameSettings.keyBindings = ArrayUtils.remove(Minecraft.getMinecraft().gameSettings.keyBindings, Arrays.asList(Minecraft.getMinecraft().gameSettings.keyBindings).indexOf(key));
     }
+
     public void sendPayloadToServer(String channel, String payload) {
         Minecraft mc = Minecraft.getMinecraft();
         mc.getNetHandler().addToSendQueue(new C17PacketCustomPayload(channel, new PacketBuffer(Unpooled.buffer()).writeString(payload)));

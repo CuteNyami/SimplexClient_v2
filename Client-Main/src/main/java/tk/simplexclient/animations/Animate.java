@@ -19,9 +19,9 @@ public class Animate {
 
     public Animate update() {
         if (reversed) {
-            if (time > min) time -= (Delta.DELTATIME * .001F * speed);
+            if (time > min) time -= (Delta.DELTA_TIME * .001F * speed);
         } else {
-            if (time < max) time += (Delta.DELTATIME * .001F * speed);
+            if (time < max) time += (Delta.DELTA_TIME * .001F * speed);
         }
         time = clamp(time, min, max);
         float easeVal = getEase().ease(time, min, max, max);

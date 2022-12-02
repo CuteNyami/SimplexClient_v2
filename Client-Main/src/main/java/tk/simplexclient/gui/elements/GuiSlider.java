@@ -1,7 +1,6 @@
 package tk.simplexclient.gui.elements;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.GlStateManager;
 import tk.simplexclient.SimplexClient;
 import tk.simplexclient.gl.GLRectUtils;
 import tk.simplexclient.module.ModuleCreator;
@@ -102,10 +101,9 @@ public class GuiSlider extends GuiButtonExt {
                 updateSlider();
             }
 
-            GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
             //this.drawTexturedModalRect(this.xPosition + (int)(this.sliderValue * (float)(this.width - 8)), this.yPosition, 0, 66, 4, 20);
             int x = this.xPosition + (int) (this.sliderValue * (this.width - 8));
-            GLRectUtils.drawRoundedRect(x, (this.yPosition + 2), (x + 10), (this.yPosition + 12), 5.0F, (new Color(0, 148, 255)).getRGB());
+            GLRectUtils.drawSmoothRoundedRect(x, (this.yPosition + 3.5F), (x + 8), (this.yPosition + 11.5F), 8.0F, (new Color(0, 148, 255)).getRGB());
         }
     }
 

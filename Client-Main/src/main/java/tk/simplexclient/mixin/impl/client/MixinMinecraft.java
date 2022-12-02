@@ -32,7 +32,6 @@ import tk.simplexclient.event.impl.ClientTickEvent;
 import tk.simplexclient.event.impl.SinglePlayerJoinEvent;
 import tk.simplexclient.event.impl.PlayerJoinWorldEvent;
 import tk.simplexclient.module.impl.MotionBlur;
-import tk.simplexclient.utils.CapeUtils;
 
 @Mixin(Minecraft.class)
 public abstract class MixinMinecraft implements AccessMinecraft {
@@ -80,7 +79,7 @@ public abstract class MixinMinecraft implements AccessMinecraft {
         long currentTime = getTime();
         int deltaTime = (int) (currentTime - lastFrame);
         lastFrame = currentTime;
-        Delta.DELTATIME = deltaTime;
+        Delta.DELTA_TIME = deltaTime;
     }
 
     @Inject(method = "loadWorld(Lnet/minecraft/client/multiplayer/WorldClient;Ljava/lang/String;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/entity/EntityPlayerSP;preparePlayerToSpawn()V"))
